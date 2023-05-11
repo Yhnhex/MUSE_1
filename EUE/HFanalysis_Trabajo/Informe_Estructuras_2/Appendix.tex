@@ -1,0 +1,380 @@
+\section{Script de GMAT}
+
+\begin{lstlisting}[language=MATLAB, caption= Scrit de GMAT]
+
+%General Mission Analysis Tool(GMAT) Script
+%Created: 2022-11-11 12:56:01
+
+
+%----------------------------------------
+%---------- Spacecraft
+%----------------------------------------
+
+Create Spacecraft PequeSpace;
+GMAT PequeSpace.DateFormat = UTCGregorian;
+GMAT PequeSpace.Epoch = '19 Aug 2014 11:59:28.000';
+GMAT PequeSpace.CoordinateSystem = EarthMJ2000Eq;
+GMAT PequeSpace.DisplayStateType = Keplerian;
+GMAT PequeSpace.SMA = 15738;
+GMAT PequeSpace.ECC = 0.5807000000000001;
+GMAT PequeSpace.INC = 29.99999999999998;
+GMAT PequeSpace.RAAN = 0;
+GMAT PequeSpace.AOP = 0;
+GMAT PequeSpace.TA = 0;
+GMAT PequeSpace.DryMass = 800;
+GMAT PequeSpace.Cd = 2.5;
+GMAT PequeSpace.Cr = 0;
+GMAT PequeSpace.DragArea = 20;
+GMAT PequeSpace.SRPArea = 20;
+GMAT PequeSpace.SPADDragScaleFactor = 1;
+GMAT PequeSpace.SPADSRPScaleFactor = 1;
+GMAT PequeSpace.Tanks = {ChemicalTank1};
+GMAT PequeSpace.Thrusters = {ChemicalThruster1};
+GMAT PequeSpace.NAIFId = -10002001;
+GMAT PequeSpace.NAIFIdReferenceFrame = -9002001;
+GMAT PequeSpace.OrbitColor = Red;
+GMAT PequeSpace.TargetColor = Teal;
+GMAT PequeSpace.OrbitErrorCovariance = [ 1e+70 0 0 0 0 0 ; 0 1e+70 0 0 0 0 ; 0 0 1e+70 0 0 0 ; 0 0 0 1e+70 0 0 ; 0 0 0 0 1e+70 0 ; 0 0 0 0 0 1e+70 ];
+GMAT PequeSpace.CdSigma = 1e+70;
+GMAT PequeSpace.CrSigma = 1e+70;
+GMAT PequeSpace.Id = 'SatId';
+GMAT PequeSpace.Attitude = CoordinateSystemFixed;
+GMAT PequeSpace.SPADSRPInterpolationMethod = Bilinear;
+GMAT PequeSpace.SPADSRPScaleFactorSigma = 1e+70;
+GMAT PequeSpace.SPADDragInterpolationMethod = Bilinear;
+GMAT PequeSpace.SPADDragScaleFactorSigma = 1e+70;
+GMAT PequeSpace.ModelFile = 'aura.3ds';
+GMAT PequeSpace.ModelOffsetX = 0;
+GMAT PequeSpace.ModelOffsetY = 0;
+GMAT PequeSpace.ModelOffsetZ = 0;
+GMAT PequeSpace.ModelRotationX = 0;
+GMAT PequeSpace.ModelRotationY = 0;
+GMAT PequeSpace.ModelRotationZ = 0;
+GMAT PequeSpace.ModelScale = 1;
+GMAT PequeSpace.AttitudeDisplayStateType = 'Quaternion';
+GMAT PequeSpace.AttitudeRateDisplayStateType = 'AngularVelocity';
+GMAT PequeSpace.AttitudeCoordinateSystem = EarthMJ2000Eq;
+GMAT PequeSpace.EulerAngleSequence = '321';
+
+
+
+%----------------------------------------
+%---------- Spacecraft
+%----------------------------------------
+
+Create Spacecraft FalconFoge;
+GMAT FalconFoge.DateFormat = UTCGregorian;
+GMAT FalconFoge.Epoch = '19 Aug 2014 11:59:28.000';
+GMAT FalconFoge.CoordinateSystem = EarthMJ2000Eq;
+GMAT FalconFoge.DisplayStateType = Keplerian;
+GMAT FalconFoge.SMA = 15738;
+GMAT FalconFoge.ECC = 0.5807000000000001;
+GMAT FalconFoge.INC = 29.99999999999998;
+GMAT FalconFoge.RAAN = 0;
+GMAT FalconFoge.AOP = 0;
+GMAT FalconFoge.TA = 0;
+GMAT FalconFoge.DryMass = 800;
+GMAT FalconFoge.Cd = 2.5;
+GMAT FalconFoge.Cr = 0;
+GMAT FalconFoge.DragArea = 20;
+GMAT FalconFoge.SRPArea = 20;
+GMAT FalconFoge.SPADDragScaleFactor = 1;
+GMAT FalconFoge.SPADSRPScaleFactor = 1;
+GMAT FalconFoge.Tanks = {ChemicalTank1};
+GMAT FalconFoge.Thrusters = {ChemicalThruster1};
+GMAT FalconFoge.NAIFId = -10002001;
+GMAT FalconFoge.NAIFIdReferenceFrame = -9002001;
+GMAT FalconFoge.OrbitColor = [0 255 0];
+GMAT FalconFoge.TargetColor = Teal;
+GMAT FalconFoge.OrbitErrorCovariance = [ 1e+70 0 0 0 0 0 ; 0 1e+70 0 0 0 0 ; 0 0 1e+70 0 0 0 ; 0 0 0 1e+70 0 0 ; 0 0 0 0 1e+70 0 ; 0 0 0 0 0 1e+70 ];
+GMAT FalconFoge.CdSigma = 1e+70;
+GMAT FalconFoge.CrSigma = 1e+70;
+GMAT FalconFoge.Id = 'SatId';
+GMAT FalconFoge.Attitude = CoordinateSystemFixed;
+GMAT FalconFoge.SPADSRPInterpolationMethod = Bilinear;
+GMAT FalconFoge.SPADSRPScaleFactorSigma = 1e+70;
+GMAT FalconFoge.SPADDragInterpolationMethod = Bilinear;
+GMAT FalconFoge.SPADDragScaleFactorSigma = 1e+70;
+GMAT FalconFoge.ModelFile = 'aura.3ds';
+GMAT FalconFoge.ModelOffsetX = 0;
+GMAT FalconFoge.ModelOffsetY = 0;
+GMAT FalconFoge.ModelOffsetZ = 0;
+GMAT FalconFoge.ModelRotationX = 0;
+GMAT FalconFoge.ModelRotationY = 0;
+GMAT FalconFoge.ModelRotationZ = 0;
+GMAT FalconFoge.ModelScale = 1;
+GMAT FalconFoge.AttitudeDisplayStateType = 'Quaternion';
+GMAT FalconFoge.AttitudeRateDisplayStateType = 'AngularVelocity';
+GMAT FalconFoge.AttitudeCoordinateSystem = EarthMJ2000Eq;
+GMAT FalconFoge.EulerAngleSequence = '321';
+
+%----------------------------------------
+%---------- Hardware Components
+%----------------------------------------
+
+Create ChemicalTank ChemicalTank1;
+GMAT ChemicalTank1.AllowNegativeFuelMass = true;
+GMAT ChemicalTank1.FuelMass = 20;
+GMAT ChemicalTank1.Pressure = 1500;
+GMAT ChemicalTank1.Temperature = 20;
+GMAT ChemicalTank1.RefTemperature = 20;
+GMAT ChemicalTank1.Volume = 0.75;
+GMAT ChemicalTank1.FuelDensity = 1260;
+GMAT ChemicalTank1.PressureModel = PressureRegulated;
+
+Create ChemicalThruster ChemicalThruster1;
+GMAT ChemicalThruster1.CoordinateSystem = Local;
+GMAT ChemicalThruster1.Origin = Earth;
+GMAT ChemicalThruster1.Axes = VNB;
+GMAT ChemicalThruster1.ThrustDirection1 = 1;
+GMAT ChemicalThruster1.ThrustDirection2 = 0;
+GMAT ChemicalThruster1.ThrustDirection3 = 0;
+GMAT ChemicalThruster1.DutyCycle = 1;
+GMAT ChemicalThruster1.ThrustScaleFactor = 1;
+GMAT ChemicalThruster1.DecrementMass = false;
+GMAT ChemicalThruster1.GravitationalAccel = 9.81;
+GMAT ChemicalThruster1.C1 = 10;
+GMAT ChemicalThruster1.C2 = 0;
+GMAT ChemicalThruster1.C3 = 0;
+GMAT ChemicalThruster1.C4 = 0;
+GMAT ChemicalThruster1.C5 = 0;
+GMAT ChemicalThruster1.C6 = 0;
+GMAT ChemicalThruster1.C7 = 0;
+GMAT ChemicalThruster1.C8 = 0;
+GMAT ChemicalThruster1.C9 = 0;
+GMAT ChemicalThruster1.C10 = 0;
+GMAT ChemicalThruster1.C11 = 0;
+GMAT ChemicalThruster1.C12 = 0;
+GMAT ChemicalThruster1.C13 = 0;
+GMAT ChemicalThruster1.C14 = 0;
+GMAT ChemicalThruster1.C15 = 0;
+GMAT ChemicalThruster1.C16 = 0;
+GMAT ChemicalThruster1.K1 = 300;
+GMAT ChemicalThruster1.K2 = 0;
+GMAT ChemicalThruster1.K3 = 0;
+GMAT ChemicalThruster1.K4 = 0;
+GMAT ChemicalThruster1.K5 = 0;
+GMAT ChemicalThruster1.K6 = 0;
+GMAT ChemicalThruster1.K7 = 0;
+GMAT ChemicalThruster1.K8 = 0;
+GMAT ChemicalThruster1.K9 = 0;
+GMAT ChemicalThruster1.K10 = 0;
+GMAT ChemicalThruster1.K11 = 0;
+GMAT ChemicalThruster1.K12 = 0;
+GMAT ChemicalThruster1.K13 = 0;
+GMAT ChemicalThruster1.K14 = 0;
+GMAT ChemicalThruster1.K15 = 0;
+GMAT ChemicalThruster1.K16 = 0;
+
+
+%----------------------------------------
+%---------- ForceModels
+%----------------------------------------
+
+Create ForceModel MarsScape_ForceModel;
+GMAT MarsScape_ForceModel.CentralBody = Mars;
+GMAT MarsScape_ForceModel.PrimaryBodies = {Mars};
+GMAT MarsScape_ForceModel.PointMasses = {Sun};
+GMAT MarsScape_ForceModel.Drag = None;
+GMAT MarsScape_ForceModel.SRP = Off;
+GMAT MarsScape_ForceModel.RelativisticCorrection = Off;
+GMAT MarsScape_ForceModel.ErrorControl = RSSStep;
+GMAT MarsScape_ForceModel.GravityField.Mars.Degree = 2;
+GMAT MarsScape_ForceModel.GravityField.Mars.Order = 0;
+GMAT MarsScape_ForceModel.GravityField.Mars.StmLimit = 100;
+GMAT MarsScape_ForceModel.GravityField.Mars.PotentialFile = 'Mars50c.cof';
+GMAT MarsScape_ForceModel.GravityField.Mars.TideModel = 'None';
+
+Create ForceModel Propagator1_ForceModel;
+GMAT Propagator1_ForceModel.CentralBody = Earth;
+GMAT Propagator1_ForceModel.PrimaryBodies = {Earth};
+GMAT Propagator1_ForceModel.Drag = None;
+GMAT Propagator1_ForceModel.SRP = Off;
+GMAT Propagator1_ForceModel.RelativisticCorrection = Off;
+GMAT Propagator1_ForceModel.ErrorControl = RSSStep;
+GMAT Propagator1_ForceModel.GravityField.Earth.Degree = 4;
+GMAT Propagator1_ForceModel.GravityField.Earth.Order = 4;
+GMAT Propagator1_ForceModel.GravityField.Earth.StmLimit = 100;
+GMAT Propagator1_ForceModel.GravityField.Earth.PotentialFile = 'JGM2.cof';
+GMAT Propagator1_ForceModel.GravityField.Earth.TideModel = 'None';
+
+Create ForceModel AerobreakingJ2SunProp_ForceModel;
+GMAT AerobreakingJ2SunProp_ForceModel.CentralBody = Earth;
+GMAT AerobreakingJ2SunProp_ForceModel.PrimaryBodies = {Earth};
+GMAT AerobreakingJ2SunProp_ForceModel.PointMasses = {Sun};
+GMAT AerobreakingJ2SunProp_ForceModel.SRP = Off;
+GMAT AerobreakingJ2SunProp_ForceModel.RelativisticCorrection = Off;
+GMAT AerobreakingJ2SunProp_ForceModel.ErrorControl = RSSStep;
+GMAT AerobreakingJ2SunProp_ForceModel.GravityField.Earth.Degree = 2;
+GMAT AerobreakingJ2SunProp_ForceModel.GravityField.Earth.Order = 0;
+GMAT AerobreakingJ2SunProp_ForceModel.GravityField.Earth.StmLimit = 100;
+GMAT AerobreakingJ2SunProp_ForceModel.GravityField.Earth.PotentialFile = 'JGM2.cof';
+GMAT AerobreakingJ2SunProp_ForceModel.GravityField.Earth.TideModel = 'None';
+GMAT AerobreakingJ2SunProp_ForceModel.Drag.AtmosphereModel = JacchiaRoberts;
+GMAT AerobreakingJ2SunProp_ForceModel.Drag.HistoricWeatherSource = 'ConstantFluxAndGeoMag';
+GMAT AerobreakingJ2SunProp_ForceModel.Drag.PredictedWeatherSource = 'ConstantFluxAndGeoMag';
+GMAT AerobreakingJ2SunProp_ForceModel.Drag.CSSISpaceWeatherFile = 'SpaceWeather-All-v1.2.txt';
+GMAT AerobreakingJ2SunProp_ForceModel.Drag.SchattenFile = 'SchattenPredict.txt';
+GMAT AerobreakingJ2SunProp_ForceModel.Drag.F107 = 150;
+GMAT AerobreakingJ2SunProp_ForceModel.Drag.F107A = 150;
+GMAT AerobreakingJ2SunProp_ForceModel.Drag.MagneticIndex = 3;
+GMAT AerobreakingJ2SunProp_ForceModel.Drag.SchattenErrorModel = 'Nominal';
+GMAT AerobreakingJ2SunProp_ForceModel.Drag.SchattenTimingModel = 'NominalCycle';
+GMAT AerobreakingJ2SunProp_ForceModel.Drag.DragModel = 'Spherical';
+
+Create ForceModel AerobreakingnoPerturbation_ForceModel;
+GMAT AerobreakingnoPerturbation_ForceModel.CentralBody = Earth;
+GMAT AerobreakingnoPerturbation_ForceModel.PrimaryBodies = {Earth};
+GMAT AerobreakingnoPerturbation_ForceModel.SRP = Off;
+GMAT AerobreakingnoPerturbation_ForceModel.RelativisticCorrection = Off;
+GMAT AerobreakingnoPerturbation_ForceModel.ErrorControl = RSSStep;
+GMAT AerobreakingnoPerturbation_ForceModel.GravityField.Earth.Degree = 1;
+GMAT AerobreakingnoPerturbation_ForceModel.GravityField.Earth.Order = 0;
+GMAT AerobreakingnoPerturbation_ForceModel.GravityField.Earth.StmLimit = 100;
+GMAT AerobreakingnoPerturbation_ForceModel.GravityField.Earth.PotentialFile = 'JGM2.cof';
+GMAT AerobreakingnoPerturbation_ForceModel.GravityField.Earth.TideModel = 'None';
+GMAT AerobreakingnoPerturbation_ForceModel.Drag.AtmosphereModel = JacchiaRoberts;
+GMAT AerobreakingnoPerturbation_ForceModel.Drag.HistoricWeatherSource = 'ConstantFluxAndGeoMag';
+GMAT AerobreakingnoPerturbation_ForceModel.Drag.PredictedWeatherSource = 'ConstantFluxAndGeoMag';
+GMAT AerobreakingnoPerturbation_ForceModel.Drag.CSSISpaceWeatherFile = 'SpaceWeather-All-v1.2.txt';
+GMAT AerobreakingnoPerturbation_ForceModel.Drag.SchattenFile = 'SchattenPredict.txt';
+GMAT AerobreakingnoPerturbation_ForceModel.Drag.F107 = 150;
+GMAT AerobreakingnoPerturbation_ForceModel.Drag.F107A = 150;
+GMAT AerobreakingnoPerturbation_ForceModel.Drag.MagneticIndex = 3;
+GMAT AerobreakingnoPerturbation_ForceModel.Drag.SchattenErrorModel = 'Nominal';
+GMAT AerobreakingnoPerturbation_ForceModel.Drag.SchattenTimingModel = 'NominalCycle';
+GMAT AerobreakingnoPerturbation_ForceModel.Drag.DragModel = 'Spherical';
+
+%----------------------------------------
+%---------- Propagators
+%----------------------------------------
+
+Create Propagator AerobreakingJ2SunProp;
+GMAT AerobreakingJ2SunProp.FM = AerobreakingJ2SunProp_ForceModel;
+GMAT AerobreakingJ2SunProp.Type = RungeKutta89;
+GMAT AerobreakingJ2SunProp.InitialStepSize = 60;
+GMAT AerobreakingJ2SunProp.Accuracy = 9.999999999999999e-12;
+GMAT AerobreakingJ2SunProp.MinStep = 0.001;
+GMAT AerobreakingJ2SunProp.MaxStep = 2700;
+GMAT AerobreakingJ2SunProp.MaxStepAttempts = 50;
+GMAT AerobreakingJ2SunProp.StopIfAccuracyIsViolated = true;
+
+Create Propagator AerobreakingnoPerturbation;
+GMAT AerobreakingnoPerturbation.FM = AerobreakingnoPerturbation_ForceModel;
+GMAT AerobreakingnoPerturbation.Type = RungeKutta89;
+GMAT AerobreakingnoPerturbation.InitialStepSize = 60;
+GMAT AerobreakingnoPerturbation.Accuracy = 9.999999999999999e-12;
+GMAT AerobreakingnoPerturbation.MinStep = 0.001;
+GMAT AerobreakingnoPerturbation.MaxStep = 2700;
+GMAT AerobreakingnoPerturbation.MaxStepAttempts = 50;
+GMAT AerobreakingnoPerturbation.StopIfAccuracyIsViolated = true;
+
+%----------------------------------------
+%---------- Coordinate Systems
+%----------------------------------------
+
+Create CoordinateSystem MarsInertial;
+GMAT MarsInertial.Origin = Mars;
+GMAT MarsInertial.Axes = BodyInertial;
+
+%----------------------------------------
+%---------- Subscribers
+%----------------------------------------
+
+Create OrbitView DefaultOrbitView;
+GMAT DefaultOrbitView.SolverIterations = Current;
+GMAT DefaultOrbitView.UpperLeft = [ 0.001764705882352941 0.009950248756218905 ];
+GMAT DefaultOrbitView.Size = [ 0.5 0.6156716417910447 ];
+GMAT DefaultOrbitView.RelativeZOrder = 344;
+GMAT DefaultOrbitView.Maximized = false;
+GMAT DefaultOrbitView.Add = {PequeSpace, FalconFoge, Earth};
+GMAT DefaultOrbitView.CoordinateSystem = EarthMJ2000Eq;
+GMAT DefaultOrbitView.DrawObject = [ true true true ];
+GMAT DefaultOrbitView.DataCollectFrequency = 1;
+GMAT DefaultOrbitView.UpdatePlotFrequency = 50;
+GMAT DefaultOrbitView.NumPointsToRedraw = 0;
+GMAT DefaultOrbitView.ShowPlot = true;
+GMAT DefaultOrbitView.MaxPlotPoints = 20000;
+GMAT DefaultOrbitView.ShowLabels = true;
+GMAT DefaultOrbitView.ViewPointReference = Earth;
+GMAT DefaultOrbitView.ViewPointVector = [ 30000 0 0 ];
+GMAT DefaultOrbitView.ViewDirection = Earth;
+GMAT DefaultOrbitView.ViewScaleFactor = 1;
+GMAT DefaultOrbitView.ViewUpCoordinateSystem = EarthMJ2000Eq;
+GMAT DefaultOrbitView.ViewUpAxis = Z;
+GMAT DefaultOrbitView.EclipticPlane = Off;
+GMAT DefaultOrbitView.XYPlane = On;
+GMAT DefaultOrbitView.WireFrame = Off;
+GMAT DefaultOrbitView.Axes = On;
+GMAT DefaultOrbitView.Grid = Off;
+GMAT DefaultOrbitView.SunLine = Off;
+GMAT DefaultOrbitView.UseInitialView = On;
+GMAT DefaultOrbitView.StarCount = 7000;
+GMAT DefaultOrbitView.EnableStars = On;
+GMAT DefaultOrbitView.EnableConstellations = On;
+
+Create GroundTrackPlot DefaultGroundTrackPlot;
+GMAT DefaultGroundTrackPlot.SolverIterations = Current;
+GMAT DefaultGroundTrackPlot.UpperLeft = [ 0 0.4465174129353234 ];
+GMAT DefaultGroundTrackPlot.Size = [ 0.5 0.4502487562189055 ];
+GMAT DefaultGroundTrackPlot.RelativeZOrder = 176;
+GMAT DefaultGroundTrackPlot.Maximized = false;
+GMAT DefaultGroundTrackPlot.DataCollectFrequency = 1;
+GMAT DefaultGroundTrackPlot.UpdatePlotFrequency = 50;
+GMAT DefaultGroundTrackPlot.NumPointsToRedraw = 0;
+GMAT DefaultGroundTrackPlot.ShowPlot = true;
+GMAT DefaultGroundTrackPlot.MaxPlotPoints = 20000;
+GMAT DefaultGroundTrackPlot.CentralBody = Earth;
+GMAT DefaultGroundTrackPlot.TextureMap = 'ModifiedBlueMarble.jpg';
+
+Create XYPlot XYPlot1;
+GMAT XYPlot1.SolverIterations = Current;
+GMAT XYPlot1.UpperLeft = [ 0.5052941176470588 0.008706467661691543 ];
+GMAT XYPlot1.Size = [ 0.5 0.4502487562189055 ];
+GMAT XYPlot1.RelativeZOrder = 240;
+GMAT XYPlot1.Maximized = false;
+GMAT XYPlot1.XVariable = PequeSpace.ElapsedDays;
+GMAT XYPlot1.YVariables = {PequeSpace.EarthMJ2000Eq.INC};
+GMAT XYPlot1.ShowGrid = true;
+GMAT XYPlot1.ShowPlot = true;
+
+Create XYPlot XvsRaRp;
+GMAT XvsRaRp.SolverIterations = Current;
+GMAT XvsRaRp.UpperLeft = [ 0.1788235294117647 0.5149253731343284 ];
+GMAT XvsRaRp.Size = [ 0.5 0.4502487562189055 ];
+GMAT XvsRaRp.RelativeZOrder = 97;
+GMAT XvsRaRp.Maximized = true;
+GMAT XvsRaRp.XVariable = PequeSpace.ElapsedDays;
+GMAT XvsRaRp.YVariables = {PequeSpace.Earth.RadApo, PequeSpace.Earth.RadPer};
+GMAT XvsRaRp.ShowGrid = true;
+GMAT XvsRaRp.ShowPlot = true;
+
+Create ReportFile MARTATQ;
+GMAT MARTATQ.SolverIterations = Current;
+GMAT MARTATQ.UpperLeft = [ 0.1094117647058823 0.150497512437811 ];
+GMAT MARTATQ.Size = [ 0.5994117647058823 0.7985074626865671 ];
+GMAT MARTATQ.RelativeZOrder = 348;
+GMAT MARTATQ.Maximized = false;
+GMAT MARTATQ.Filename = 'MARTATEQUEREMOS.txt';
+GMAT MARTATQ.Precision = 16;
+GMAT MARTATQ.Add = {PequeSpace.Earth.Altitude, PequeSpace.EarthMJ2000Eq.AOP, PequeSpace.Earth.EA, PequeSpace.Earth.ECC, PequeSpace.ElapsedDays, PequeSpace.EarthMJ2000Eq.INC, PequeSpace.Earth.RadApo, PequeSpace.Earth.RadPer, PequeSpace.Earth.SMA, PequeSpace.Earth.TA, FalconFoge.Earth.Altitude, FalconFoge.EarthMJ2000Eq.AOP, FalconFoge.Earth.EA, FalconFoge.Earth.ECC, FalconFoge.EarthMJ2000Eq.INC, FalconFoge.Earth.RadApo, FalconFoge.Earth.RadPer, FalconFoge.Earth.SMA, FalconFoge.Earth.TA};
+GMAT MARTATQ.WriteHeaders = true;
+GMAT MARTATQ.LeftJustify = On;
+GMAT MARTATQ.ZeroFill = Off;
+GMAT MARTATQ.FixedWidth = true;
+GMAT MARTATQ.Delimiter = ' ';
+GMAT MARTATQ.ColumnWidth = 23;
+GMAT MARTATQ.WriteReport = true;
+
+
+%----------------------------------------
+%---------- Mission Sequence
+%----------------------------------------
+
+BeginMissionSequence;
+Propagate Synchronized AerobreakingJ2SunProp(PequeSpace) AerobreakingnoPerturbation(FalconFoge) {FalconFoge.Earth.SMA = 7100, PequeSpace.Earth.ECC = 0.001};
+
+
+\end{lstlisting}
+
+

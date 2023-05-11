@@ -1,0 +1,7 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {section}{\numberline {2}Statement}{1}{section.2}%
+\contentsline {section}{\numberline {3}Theoretical foundation}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Statistic energy analysis}{3}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Results}{4}{section.4}%
+\contentsline {section}{\numberline {5}Conclusions}{7}{section.5}%

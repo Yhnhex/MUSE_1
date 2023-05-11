@@ -1,0 +1,51 @@
+\section{Theoretical foundation} \label{sec: ft}
+
+As previously stated in Section \ref{sec: stat}, the purpose of this study is to obtain the model's response to variable excitation in the high-frequency range. To achieve this, the Statistical Energy Analysis method is employed, which is elucidated in this section.
+
+
+\subsection{Statistic energy analysis}
+Statistical Energy Analysis (SEA) is a method used to analyze the vibrational behavior of complex structures, especially those subjected to high-frequency excitations. The method is based on statistical techniques and assumes that the vibrational energy of a system can be partitioned into discrete energy "bins" that are statistically independent.
+
+To apply the SEA approach, a complex structure is divided into interconnected subsystems, each with its own set of vibrational modes. The energy stored in each subsystem is modeled as a statistical energy distribution, where each mode of vibration behaves as an independent, damped harmonic oscillator. The energy exchange between subsystems is described by coupling coefficients, known as coupling loss factors.
+
+Given the systems $i$ and $j$ (with $i\neq j$) the conservation of the power flux can be applied as,
+
+\begin{align}
+P_{i,in} &= P_{i,diss} + P_{ij}\\
+P_{j,in} &= P_{j,diss} + P_{ji}
+\end{align}
+
+where $P_{i,diss}$ is the internal dissipated power, defined as 
+\begin{equation}
+P_{i,diss} = \eta_i \omega E_i
+\end{equation}
+and $P_{ij}$ is the energy exchanged, 
+\begin{equation}
+P_{ij} = \eta_{ij} \omega E_i -\eta_{ji} \omega E_j
+\end{equation}
+
+The combination of these equations result in 
+
+\begin{equation}
+P_{i,in} = \eta_i \omega E_i + \omega \sum_{i=0}^N  (\eta_{ij}  E_i -\eta_{ji}  E_j),
+\end{equation}
+
+then, knowing that the modal density is 
+
+\begin{equation}
+n_i = \frac{N_i}{\Delta \omega},
+\end{equation}
+
+there is one last equation derived from the reciprocity relationship between the modal densities:
+
+
+\begin{equation}
+\eta_{ij} n_i = \eta_{ji} n_j
+\label{eq: reciproc}
+\end{equation}
+
+Applying this process to the analysis system yields the results presented in \autoref{sec: res}.
+
+
+
+
