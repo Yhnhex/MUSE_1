@@ -1,0 +1,172 @@
+BEGIN_MODEL ArausatV5 WORKBENCH_V1 ESARAD_GENERATED
+
+BOUNDARY_CONDITION PL1_BC;
+PL1_BC = TOTAL_AREA_HEAT_LOAD (
+    reference = "PL1",
+    value = 15.0);
+
+BOUNDARY_CONDITION PL2_BC;
+PL2_BC = TOTAL_AREA_HEAT_LOAD (
+    reference = "PL2",
+    value = 7.5);
+
+BOUNDARY_CONDITION PL3_BC;
+PL3_BC = TOTAL_AREA_HEAT_LOAD (
+    reference = "PL3",
+    value = 7.5);
+
+ANALYSIS_CASE THERMAL;
+DEFINE_ANALYSIS_CASE (
+    analysis_case = THERMAL,
+    solver = "ESATAN",
+    template_file = "Template.tpl",
+    analysis_file = "ARAUSAT_V3_THERMAL.d",
+    radiative_case = SSO);
+
+SET_BOUNDARY_CONDITION (
+    analysis_case = THERMAL,
+    boundary_condition = PL1_BC,
+    applies = TRUE);
+
+SET_BOUNDARY_CONDITION (
+    analysis_case = THERMAL,
+    boundary_condition = PL2_BC,
+    applies = TRUE);
+
+SET_BOUNDARY_CONDITION (
+    analysis_case = THERMAL,
+    boundary_condition = PL3_BC,
+    applies = TRUE);
+
+GENERATE_TEMPLATE (
+    analysis_case = THERMAL,
+    submodel_files = FALSE,
+    maxmin = FALSE,
+    execution_block = "
+
+C
+      TIMEND=6009.7945
+      OUTINT=300.489725
+      NLOOP=500
+      RELXCA=0.01
+      DTIMEI=10.0
+      CALL SOLCYC('SLCRNC',0.01D0,0.01D0,6009.7945D0,500,' ','NONE')
+C
+      CALL SLCRNC
+C
+
+",
+    output_block = "      CALL PRNDTB(' ', 'L, T, QS, QE, QA, QI, C', CURRENT)
+C
+      CALL DMPTMD(' ', 'NODES, CONDUCTORS, CONSTANTS', CURRENT, ' ')
+
+
+
+
+");
+
+IMPORT_ANALYSIS_CASE_FILE(
+    analysis_case = THERMAL,
+    source_file_path = "ArausatV5_THERMAL.tpl",
+    destination_file_name = "Template.tpl");
+
+GENERATE_ANALYSIS_FILE (
+    analysis_case = THERMAL,
+    results = "GL,TRANS_HF,REF",
+    ref_averaged = TRUE,
+    ref_cyclic = TRUE,
+    ref_mf = 1.0,
+    hf_averaged = TRUE,
+    hf_cyclic = TRUE,
+    hf_type = "S,A,P",
+    title = "ArausatV5_THERMAL",
+    dystor = 0,
+    environment = 99999,
+    environment_temperature = -270.0,
+    inactive = 99998,
+    area_mf = 1.0,
+    segments = TRUE,
+    acd_file = TRUE,
+    ref_deviation = 5.0e-03,
+    hf_deviation = 5.0e-03);
+
+RUN_ANALYSIS (
+    analysis_case = THERMAL,
+    options = "PreProcess,Solve");
+
+ANALYSIS_CASE THERMAL2;
+DEFINE_ANALYSIS_CASE (
+    analysis_case = THERMAL2,
+    solver = "ESATAN",
+    template_file = "Template.tpl",
+    analysis_file = "ARAUSAT_V3_THERMAL2.d",
+    radiative_case = SSO);
+
+SET_BOUNDARY_CONDITION (
+    analysis_case = THERMAL2,
+    boundary_condition = PL1_BC,
+    applies = TRUE);
+
+SET_BOUNDARY_CONDITION (
+    analysis_case = THERMAL2,
+    boundary_condition = PL2_BC,
+    applies = TRUE);
+
+SET_BOUNDARY_CONDITION (
+    analysis_case = THERMAL2,
+    boundary_condition = PL3_BC,
+    applies = TRUE);
+
+GENERATE_TEMPLATE (
+    analysis_case = THERMAL2,
+    submodel_files = FALSE,
+    maxmin = FALSE,
+    execution_block = "
+C
+      TIMEND=6009.7945
+      OUTINT=300.489725
+      NLOOP=500
+      RELXCA=0.01
+      DTIMEI=10.0
+      CALL SOLCYC('SLCRNC',0.01D0,0.01D0,6009.7945D0,500,' ','NONE')
+C
+      CALL SLCRNC
+C
+
+",
+    output_block = "      CALL PRNDTB(' ', 'L, T, QS, QE, QA, QI, C', CURRENT)
+C
+      CALL DMPTMD(' ', 'NODES, CONDUCTORS, CONSTANTS', CURRENT, ' ')
+
+");
+
+IMPORT_ANALYSIS_CASE_FILE(
+    analysis_case = THERMAL2,
+    source_file_path = "ArausatV5_THERMAL2.tpl",
+    destination_file_name = "Template.tpl");
+
+GENERATE_ANALYSIS_FILE (
+    analysis_case = THERMAL2,
+    results = "GL,TRANS_HF,REF",
+    ref_averaged = TRUE,
+    ref_cyclic = TRUE,
+    ref_mf = 1.0,
+    hf_averaged = TRUE,
+    hf_cyclic = TRUE,
+    hf_type = "S,A,P",
+    title = "ArausatV5_THERMAL2",
+    dystor = 0,
+    environment = 99999,
+    environment_temperature = -270.0,
+    inactive = 99998,
+    area_mf = 1.0,
+    segments = TRUE,
+    acd_file = TRUE,
+    ref_deviation = 5.0e-03,
+    hf_deviation = 5.0e-03);
+
+RUN_ANALYSIS (
+    analysis_case = THERMAL2,
+    options = "PreProcess,Solve");
+
+END_MODEL

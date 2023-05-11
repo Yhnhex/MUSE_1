@@ -1,0 +1,1091 @@
+BEGIN_MODEL ArausatV5 WORKBENCH_V1 ESARAD_GENERATED
+
+/* Start of independent variable block */
+
+/* --- 
+ --- */
+
+/* End of independent variable block - no errors */
+
+/* Start of geometry vectors and matrices declaration block */
+
+/* End of geometry vectors and matrices declaration block - no errors */
+
+/* Start of bound variable block */
+
+REAL MLI_k_data[5, 2] =
+    {-75.000000, 0.003930, 
+    -45.000000, 0.010400, 
+    14.000000, 0.014990, 
+    50.000000, 0.022890, 
+    70.000000, 0.033680};
+
+PROPERTY MLI_k;
+MLI_k = DEFINE_PROPERTY (
+    data = MLI_k_data,
+    dependence = "TIME");
+
+BULK Al6061T6;
+DEFINE_BULK (
+    bulk = Al6061T6,
+    density = 2700.0,
+    sp_heat = 896.0,
+    type = "Isotropic",
+    cond = 160.0);
+
+BULK GaAs;
+DEFINE_BULK (
+    bulk = GaAs,
+    density = 5300.0,
+    sp_heat = 1020.0,
+    type = "Isotropic",
+    cond = 55.0);
+
+BULK MLI;
+DEFINE_BULK (
+    bulk = MLI,
+    density = 300.0,
+    sp_heat = 900.0,
+    type = "Isotropic",
+    cond = MLI_k);
+
+BULK PCB;
+DEFINE_BULK (
+    bulk = PCB,
+    density = 3312.0,
+    sp_heat = 661.52,
+    type = "Isotropic",
+    cond = 83.16);
+
+OPTICAL ATU211;
+DEFINE_OPTICAL (
+    optical = ATU211,
+    ir_emiss = 2.0e-03,
+    ir_transm = 0.0,
+    solar_absorb = 0.27,
+    solar_transm = 0.0,
+    ir_spec_refl = 0.0,
+    solar_spec_refl = 0.0);
+
+OPTICAL WhiteTiO2;
+DEFINE_OPTICAL (
+    optical = WhiteTiO2,
+    ir_emiss = 0.9,
+    ir_transm = 0.0,
+    solar_absorb = 0.1,
+    solar_transm = 0.0,
+    ir_spec_refl = 0.0,
+    solar_spec_refl = 0.0);
+
+OPTICAL Solar_Cells;
+DEFINE_OPTICAL (
+    optical = Solar_Cells,
+    ir_emiss = 0.8,
+    ir_transm = 0.0,
+    solar_absorb = 0.85,
+    solar_transm = 0.0,
+    ir_spec_refl = 0.0,
+    solar_spec_refl = 0.0);
+
+OPTICAL CopperCoat;
+DEFINE_OPTICAL (
+    optical = CopperCoat,
+    ir_emiss = 0.9,
+    ir_transm = 0.0,
+    solar_absorb = 0.9,
+    solar_transm = 0.0,
+    ir_spec_refl = 0.0,
+    solar_spec_refl = 0.0);
+
+/* End of bound variable block - no errors */
+
+/* Start of primitive block */
+
+GEOMETRY BODY;
+BODY = SHELL_SCS_BOX (
+    height = 0.3,
+    xmax = 0.2,
+    ymax = 0.2,
+    xmin = 0.0,
+    ymin = 0.0,
+    sense = -1,
+    meshType1 = "regular",
+    nodes1 = 2,
+    ratio1 = 1.0,
+    meshType2 = "regular",
+    nodes2 = 2,
+    ratio2 = 1.0,
+    meshType3 = "regular",
+    nodes3 = 3,
+    ratio3 = 1.0,
+    analysis_type = "Lumped Parameter",
+    label1 = "Body_ext",
+    side1 = "Active",
+    criticality1 = "NORMAL",
+    nbase1 = 100,
+    ndelta1 = 1,
+    opt1 = WhiteTiO2,
+    colour1 = "GREY",
+    label2 = "Body_int",
+    side2 = "Active",
+    criticality2 = "NORMAL",
+    nbase2 = 200,
+    ndelta2 = 1,
+    opt2 = CopperCoat,
+    colour2 = "ABSINTH",
+    composition = "DUAL",
+    bulk = [-10000.0, -10000.0, -10000.0],
+    thick = 0.0,
+    bulk1 = MLI,
+    thick1 = 2.0e-03,
+    bulk2 = Al6061T6,
+    thick2 = 2.0e-03,
+    through_cond = "BULK",
+    conductance = 0.0,
+    emittance = 0.0);
+
+GEOMETRY Ebox;
+Ebox = SHELL_SCS_BOX (
+    height = 0.05,
+    xmax = 0.1,
+    ymax = 0.1,
+    xmin = 0.0,
+    ymin = 0.0,
+    sense = -1,
+    meshType1 = "regular",
+    nodes1 = 1,
+    ratio1 = 1.0,
+    meshType2 = "regular",
+    nodes2 = 1,
+    ratio2 = 1.0,
+    meshType3 = "regular",
+    nodes3 = 1,
+    ratio3 = 1.0,
+    analysis_type = "Lumped Parameter",
+    label1 = "Ebox_ext",
+    side1 = "Active",
+    criticality1 = "NORMAL",
+    nbase1 = 300,
+    ndelta1 = 1,
+    opt1 = CopperCoat,
+    colour1 = "LAVENDER",
+    label2 = "Ebox_ext",
+    side2 = "Active",
+    criticality2 = "NORMAL",
+    nbase2 = 300,
+    ndelta2 = 1,
+    opt2 = CopperCoat,
+    colour2 = "LAVENDER",
+    composition = "SINGLE",
+    bulk = Al6061T6,
+    thick = 1.0e-03,
+    bulk1 = [-10000.0, -10000.0, -10000.0],
+    thick1 = 0.0,
+    bulk2 = [-10000.0, -10000.0, -10000.0],
+    thick2 = 0.0,
+    through_cond = "BULK",
+    conductance = 0.0,
+    emittance = 0.0);
+
+Ebox = TRANSLATE (
+    object_name = Ebox,
+    x_dist = 0.095,
+    y_dist = 0.05,
+    z_dist = 1.0e-03,
+    clear = TRUE);
+
+GEOMETRY PL1;
+PL1 = NON_GEOMETRIC_THERMAL_NODE (
+    origin = [0.17, 0.1, 0.03],
+    radius = 0.02,
+    node_number = 5000,
+    volume = 2.16e-04,
+    bulk = PCB,
+    capacitance_override = 10000.0,
+    colour1 = "ABSINTH",
+    colour2 = "BLACK");
+
+GEOMETRY PL2;
+PL2 = NON_GEOMETRIC_THERMAL_NODE (
+    origin = [0.1, 0.1, 0.13],
+    radius = 0.02,
+    node_number = 5100,
+    volume = 1.25e-04,
+    bulk = PCB,
+    capacitance_override = 20000.0,
+    colour1 = "ABSINTH",
+    colour2 = "BLACK");
+
+GEOMETRY PL3;
+PL3 = NON_GEOMETRIC_THERMAL_NODE (
+    origin = [0.1, 0.1, 0.23],
+    radius = 0.02,
+    node_number = 5200,
+    volume = 1.25e-04,
+    bulk = Al6061T6,
+    capacitance_override = 5000.0,
+    colour1 = "ABSINTH",
+    colour2 = "BLACK");
+
+GEOMETRY Radiator;
+Radiator = SHELL_SCS_RECTANGLE (
+    xmax = 0.28,
+    ymax = 0.18,
+    height = -3.0e-03,
+    xmin = 0.0,
+    ymin = 0.0,
+    sense = -1,
+    meshType1 = "regular",
+    nodes1 = 1,
+    ratio1 = 1.0,
+    meshType2 = "regular",
+    nodes2 = 1,
+    ratio2 = 1.0,
+    analysis_type = "Lumped Parameter",
+    label1 = "Rad_int",
+    side1 = "Active",
+    criticality1 = "NORMAL",
+    nbase1 = 600,
+    ndelta1 = 1,
+    opt1 = ATU211,
+    colour1 = "TURQUOISE",
+    label2 = "Rad_ext",
+    side2 = "Active",
+    criticality2 = "NORMAL",
+    nbase2 = 700,
+    ndelta2 = 1,
+    opt2 = WhiteTiO2,
+    colour2 = "YELLOW",
+    composition = "SINGLE",
+    bulk = Al6061T6,
+    thick = 2.0e-03,
+    bulk1 = [-10000.0, -10000.0, -10000.0],
+    thick1 = 0.0,
+    bulk2 = [-10000.0, -10000.0, -10000.0],
+    thick2 = 0.0,
+    through_cond = "BULK",
+    conductance = 0.0,
+    emittance = 0.0);
+
+Radiator = ROTATE (
+    object_name = Radiator,
+    y_ang = 270.0,
+    clear = TRUE);
+
+Radiator = TRANSLATE (
+    object_name = Radiator,
+    x_dist = 0.202,
+    y_dist = 0.01,
+    z_dist = 0.01);
+
+GEOMETRY Solar_Panels;
+Solar_Panels = SHELL_SCS_RECTANGLE (
+    xmax = 0.3,
+    ymax = 0.6,
+    height = 0.0,
+    xmin = 0.0,
+    ymin = 0.0,
+    sense = -1,
+    meshType1 = "regular",
+    nodes1 = 3,
+    ratio1 = 1.0,
+    meshType2 = "regular",
+    nodes2 = 6,
+    ratio2 = 1.0,
+    analysis_type = "Lumped Parameter",
+    label1 = "SP_sun",
+    side1 = "Active",
+    criticality1 = "NORMAL",
+    nbase1 = 800,
+    ndelta1 = 1,
+    opt1 = Solar_Cells,
+    colour1 = "DARK_RED",
+    label2 = "Sp_nosun",
+    side2 = "Active",
+    criticality2 = "NORMAL",
+    nbase2 = 900,
+    ndelta2 = 1,
+    opt2 = WhiteTiO2,
+    colour2 = "YELLOW_GREEN",
+    composition = "DUAL",
+    bulk = [-10000.0, -10000.0, -10000.0],
+    thick = 0.0,
+    bulk1 = GaAs,
+    thick1 = 4.0e-04,
+    bulk2 = Al6061T6,
+    thick2 = 1.0e-03,
+    through_cond = "EFFECTIVE",
+    conductance = 50.0,
+    emittance = 0.0);
+
+Solar_Panels = ROTATE (
+    object_name = Solar_Panels,
+    y_ang = 270.0,
+    clear = TRUE);
+
+Solar_Panels = TRANSLATE (
+    object_name = Solar_Panels,
+    x_dist = -3.0e-03,
+    y_dist = -0.2);
+
+GEOMETRY Tray_A;
+Tray_A = SHELL_SCS_RECTANGLE (
+    xmax = 0.2,
+    ymax = 0.2,
+    height = 0.1,
+    xmin = 0.0,
+    ymin = 0.0,
+    sense = -1,
+    meshType1 = "regular",
+    nodes1 = 2,
+    ratio1 = 1.0,
+    meshType2 = "regular",
+    nodes2 = 2,
+    ratio2 = 1.0,
+    analysis_type = "Lumped Parameter",
+    label1 = "trayA",
+    side1 = "Active",
+    criticality1 = "NORMAL",
+    nbase1 = 400,
+    ndelta1 = 1,
+    opt1 = CopperCoat,
+    colour1 = "PALE_RED",
+    label2 = "trayA",
+    side2 = "Active",
+    criticality2 = "NORMAL",
+    nbase2 = 400,
+    ndelta2 = 1,
+    opt2 = CopperCoat,
+    colour2 = "PALE_RED",
+    composition = "SINGLE",
+    bulk = Al6061T6,
+    thick = 2.0e-03,
+    bulk1 = [-10000.0, -10000.0, -10000.0],
+    thick1 = 0.0,
+    bulk2 = [-10000.0, -10000.0, -10000.0],
+    thick2 = 0.0,
+    through_cond = "BULK",
+    conductance = 0.0,
+    emittance = 0.0);
+
+GEOMETRY Tray_B;
+Tray_B = SHELL_SCS_RECTANGLE (
+    xmax = 0.2,
+    ymax = 0.2,
+    height = 0.2,
+    xmin = 0.0,
+    ymin = 0.0,
+    sense = -1,
+    meshType1 = "regular",
+    nodes1 = 2,
+    ratio1 = 1.0,
+    meshType2 = "regular",
+    nodes2 = 2,
+    ratio2 = 1.0,
+    analysis_type = "Lumped Parameter",
+    label1 = "trayA",
+    side1 = "Active",
+    criticality1 = "NORMAL",
+    nbase1 = 500,
+    ndelta1 = 1,
+    opt1 = CopperCoat,
+    colour1 = "PALE_GREEN",
+    label2 = "trayA",
+    side2 = "Active",
+    criticality2 = "NORMAL",
+    nbase2 = 500,
+    ndelta2 = 1,
+    opt2 = CopperCoat,
+    colour2 = "PALE_GREEN",
+    composition = "SINGLE",
+    bulk = Al6061T6,
+    thick = 2.0e-03,
+    bulk1 = [-10000.0, -10000.0, -10000.0],
+    thick1 = 0.0,
+    bulk2 = [-10000.0, -10000.0, -10000.0],
+    thick2 = 0.0,
+    through_cond = "BULK",
+    conductance = 0.0,
+    emittance = 0.0);
+
+/* End of primitive block - no errors */
+
+/* Start of structure block */
+
+GEOMETRY STRUCTURE;
+STRUCTURE = Tray_B + Tray_A + BODY;
+
+GEOMETRY INSTRUMENTS;
+INSTRUMENTS = PL1 + Ebox + PL3 + 
+    PL2;
+
+ArausatV5 = Radiator + Solar_Panels + STRUCTURE + 
+    INSTRUMENTS;
+
+/* End of structure block - no errors */
+
+/* Start of conductive interface block */
+
+CONDUCTIVE_INTERFACE ci_11;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_11,
+    primitiveA = Ebox,
+    primitiveB = Ebox,
+    start_point = [0.0, 0.0, 0.0],
+    end_point = [0.05, 0.0, 0.0],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_12;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_12,
+    primitiveA = Ebox,
+    primitiveB = Ebox,
+    start_point = [0.0, 0.0, 0.05],
+    end_point = [0.05, 0.0, 0.05],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_14;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_14,
+    primitiveA = Ebox,
+    primitiveB = Ebox,
+    start_point = [0.0, 0.05, 0.05],
+    end_point = [0.0, 0.0, 0.05],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_15;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_15,
+    primitiveA = Ebox,
+    primitiveB = Ebox,
+    start_point = [0.0, 0.0, 0.0],
+    end_point = [0.0, 0.0, 0.05],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_16;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_16,
+    primitiveA = Ebox,
+    primitiveB = Ebox,
+    start_point = [0.0, 0.05, 0.0],
+    end_point = [0.0, 0.0, 0.0],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_2;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_2,
+    primitiveA = BODY,
+    primitiveB = BODY,
+    start_point = [0.0, 0.0, 0.3],
+    end_point = [0.1, 0.0, 0.3],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_4;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_4,
+    primitiveA = BODY,
+    primitiveB = BODY,
+    start_point = [0.0, 0.0, 0.0],
+    end_point = [0.0, 0.0, 0.3],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_5;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_5,
+    primitiveA = BODY,
+    primitiveB = BODY,
+    start_point = [0.0, 0.1, 0.0],
+    end_point = [0.0, 0.0, 0.0],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_6;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_6,
+    primitiveA = BODY,
+    primitiveB = BODY,
+    start_point = [0.0, 0.1, 0.3],
+    end_point = [0.0, 0.0, 0.3],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_7;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_7,
+    primitiveA = BODY,
+    primitiveB = BODY,
+    start_point = [0.0, 0.0, 0.0],
+    end_point = [0.1, 0.0, 0.0],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_A1;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_A1,
+    primitiveA = BODY,
+    primitiveB = BODY,
+    start_point = [0.0, 0.2, 0.0],
+    end_point = [0.0, 0.2, 0.3],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_A10;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_A10,
+    primitiveA = Ebox,
+    primitiveB = Ebox,
+    start_point = [0.0, 0.1, 0.0],
+    end_point = [0.0, 0.1, 0.05],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_A11;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_A11,
+    primitiveA = Ebox,
+    primitiveB = Ebox,
+    start_point = [0.1, 0.1, 0.0],
+    end_point = [0.0, 0.1, 0.0],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_A12;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_A12,
+    primitiveA = Ebox,
+    primitiveB = Ebox,
+    start_point = [0.0, 0.0, 0.0],
+    end_point = [0.1, 0.0, 0.0],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_A13;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_A13,
+    primitiveA = Ebox,
+    primitiveB = Ebox,
+    start_point = [0.0, 0.0, 0.05],
+    end_point = [0.1, 0.0, 0.05],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_A14;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_A14,
+    primitiveA = Ebox,
+    primitiveB = Ebox,
+    start_point = [0.1, 0.1, 0.05],
+    end_point = [0.0, 0.1, 0.05],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_A15;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_A15,
+    primitiveA = Ebox,
+    primitiveB = Ebox,
+    start_point = [0.1, 0.1, 0.0],
+    end_point = [0.1, 0.0, 0.0],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_A16;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_A16,
+    primitiveA = Ebox,
+    primitiveB = Ebox,
+    start_point = [0.1, 0.1, 0.0],
+    end_point = [0.1, 0.1, 0.05],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_A17;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_A17,
+    primitiveA = Ebox,
+    primitiveB = Ebox,
+    start_point = [0.1, 0.0, 0.05],
+    end_point = [0.1, 0.1, 0.05],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_A18;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_A18,
+    primitiveA = Ebox,
+    primitiveB = Ebox,
+    start_point = [0.1, 0.0, 0.0],
+    end_point = [0.1, 0.0, 0.05],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_A19;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_A19,
+    primitiveA = BODY,
+    primitiveB = BODY,
+    start_point = [0.2, 0.0, 0.0],
+    end_point = [0.2, 0.0, 0.3],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_A2;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_A2,
+    primitiveA = BODY,
+    primitiveB = BODY,
+    start_point = [0.0, 0.0, 0.3],
+    end_point = [0.0, 0.2, 0.3],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_A20;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_A20,
+    primitiveA = BODY,
+    primitiveB = BODY,
+    start_point = [0.2, 0.0, 0.3],
+    end_point = [0.2, 0.2, 0.3],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_A21;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_A21,
+    primitiveA = BODY,
+    primitiveB = BODY,
+    start_point = [0.2, 0.2, 0.0],
+    end_point = [0.2, 0.0, 0.0],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_A22;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_A22,
+    primitiveA = BODY,
+    primitiveB = BODY,
+    start_point = [0.2, 0.2, 0.0],
+    end_point = [0.2, 0.2, 0.3],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_A3;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_A3,
+    primitiveA = BODY,
+    primitiveB = BODY,
+    start_point = [0.0, 0.2, 0.0],
+    end_point = [0.2, 0.2, 0.0],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_A4;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_A4,
+    primitiveA = BODY,
+    primitiveB = BODY,
+    start_point = [0.0, 0.0, 0.3],
+    end_point = [0.2, 0.0, 0.3],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_A5;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_A5,
+    primitiveA = BODY,
+    primitiveB = BODY,
+    start_point = [0.0, 0.2, 0.3],
+    end_point = [0.2, 0.2, 0.3],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_A6;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_A6,
+    primitiveA = BODY,
+    primitiveB = BODY,
+    start_point = [0.0, 0.2, 0.0],
+    end_point = [0.0, 0.0, 0.0],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_A7;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_A7,
+    primitiveA = BODY,
+    primitiveB = BODY,
+    start_point = [0.0, 0.0, 0.0],
+    end_point = [0.2, 0.0, 0.0],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_A8;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_A8,
+    primitiveA = Ebox,
+    primitiveB = Ebox,
+    start_point = [0.0, 0.1, 0.0],
+    end_point = [0.0, 0.0, 0.0],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+CONDUCTIVE_INTERFACE ci_A9;
+DEFINE_CONDUCTIVE_INTERFACE (
+    conductive_interface = ci_A9,
+    primitiveA = Ebox,
+    primitiveB = Ebox,
+    start_point = [0.0, 0.0, 0.05],
+    end_point = [0.0, 0.1, 0.05],
+    connect_type = "CONTACT",
+    contact_conductance = 300.0);
+
+/* End of conductive interface block - no errors */
+
+/* Start of group block */
+
+/* End of group block - no errors */
+
+/* Start of conductor block */
+
+CONDUCTOR BODY_SP1;
+BODY_SP1 = CONDUCTIVE_CONDUCTOR (
+    source_reference = "BODY:face47",
+    destination_reference = "Solar_Panels:face14",
+    conductor_override = -10000.0,
+    shape_factor = 0.013,
+    conductivity = 22.0);
+
+CONDUCTOR BODY_SP2;
+BODY_SP2 = CONDUCTIVE_CONDUCTOR (
+    source_reference = "BODY:face45",
+    destination_reference = "Solar_Panels:face20",
+    conductor_override = -10000.0,
+    shape_factor = 0.013,
+    conductivity = 22.0);
+
+CONDUCTOR BODY_SP3;
+BODY_SP3 = CONDUCTIVE_CONDUCTOR (
+    source_reference = "BODY:face51",
+    destination_reference = "Solar_Panels:face16",
+    conductor_override = -10000.0,
+    shape_factor = 0.013,
+    conductivity = 22.0);
+
+CONDUCTOR BODY_SP4;
+BODY_SP4 = CONDUCTIVE_CONDUCTOR (
+    source_reference = "BODY:face49",
+    destination_reference = "Solar_Panels:face22",
+    conductor_override = -10000.0,
+    shape_factor = 0.013,
+    conductivity = 22.0);
+
+CONDUCTOR BODY_SP5;
+BODY_SP5 = CONDUCTIVE_CONDUCTOR (
+    source_reference = "BODY:face55",
+    destination_reference = "Solar_Panels:face18",
+    conductor_override = -10000.0,
+    shape_factor = 0.013,
+    conductivity = 22.0);
+
+CONDUCTOR BODY_SP6;
+BODY_SP6 = CONDUCTIVE_CONDUCTOR (
+    source_reference = "BODY:face53",
+    destination_reference = "Solar_Panels:face24",
+    conductor_override = -10000.0,
+    shape_factor = 0.013,
+    conductivity = 22.0);
+
+CONDUCTOR BODY_TRAYA;
+BODY_TRAYA = CONDUCTIVE_CONDUCTOR (
+    source_reference = "Tray_A:face1",
+    destination_reference = "BODY:face52",
+    conductor_override = -10000.0,
+    shape_factor = 2.0e-03,
+    conductivity = 300.0);
+
+CONDUCTOR BODY_TRAYA2;
+BODY_TRAYA2 = CONDUCTIVE_CONDUCTOR (
+    source_reference = "Tray_A:face5",
+    destination_reference = "BODY:face50",
+    conductor_override = -10000.0,
+    shape_factor = 2.0e-03,
+    conductivity = 300.0);
+
+CONDUCTOR BODY_TRAYA3;
+BODY_TRAYA3 = CONDUCTIVE_CONDUCTOR (
+    source_reference = "Tray_A:face5",
+    destination_reference = "BODY:face40",
+    conductor_override = -10000.0,
+    shape_factor = 2.0e-03,
+    conductivity = 300.0);
+
+CONDUCTOR BODY_TRAYA4;
+BODY_TRAYA4 = CONDUCTIVE_CONDUCTOR (
+    source_reference = "Tray_A:face7",
+    destination_reference = "BODY:face38",
+    conductor_override = -10000.0,
+    shape_factor = 2.0e-03,
+    conductivity = 300.0);
+
+CONDUCTOR BODY_TRAYA5;
+BODY_TRAYA5 = CONDUCTIVE_CONDUCTOR (
+    source_reference = "Tray_A:face7",
+    destination_reference = "BODY:face28",
+    conductor_override = -10000.0,
+    shape_factor = 2.0e-03,
+    conductivity = 300.0);
+
+CONDUCTOR BODY_TRAYA6;
+BODY_TRAYA6 = CONDUCTIVE_CONDUCTOR (
+    source_reference = "Tray_A:face3",
+    destination_reference = "BODY:face26",
+    conductor_override = -10000.0,
+    shape_factor = 2.0e-03,
+    conductivity = 300.0);
+
+CONDUCTOR BODY_TRAYA7;
+BODY_TRAYA7 = CONDUCTIVE_CONDUCTOR (
+    source_reference = "Tray_A:face3",
+    destination_reference = "BODY:face16",
+    conductor_override = -10000.0,
+    shape_factor = 2.0e-03,
+    conductivity = 300.0);
+
+CONDUCTOR BODY_TRAYA8;
+BODY_TRAYA8 = CONDUCTIVE_CONDUCTOR (
+    source_reference = "Tray_A:face1",
+    destination_reference = "BODY:face14",
+    conductor_override = -10000.0,
+    shape_factor = 2.0e-03,
+    conductivity = 300.0);
+
+CONDUCTOR BODY_TRAYB1;
+BODY_TRAYB1 = CONDUCTIVE_CONDUCTOR (
+    source_reference = "Tray_B:face1",
+    destination_reference = "BODY:face52",
+    conductor_override = -10000.0,
+    shape_factor = 2.0e-03,
+    conductivity = 300.0);
+
+CONDUCTOR BODY_TRAYB2;
+BODY_TRAYB2 = CONDUCTIVE_CONDUCTOR (
+    source_reference = "Tray_B:face5",
+    destination_reference = "BODY:face50",
+    conductor_override = -10000.0,
+    shape_factor = 2.0e-03,
+    conductivity = 300.0);
+
+CONDUCTOR BODY_TRAYB3;
+BODY_TRAYB3 = CONDUCTIVE_CONDUCTOR (
+    source_reference = "Tray_B:face5",
+    destination_reference = "BODY:face40",
+    conductor_override = -10000.0,
+    shape_factor = 2.0e-03,
+    conductivity = 300.0);
+
+CONDUCTOR BODY_TRAYB4;
+BODY_TRAYB4 = CONDUCTIVE_CONDUCTOR (
+    source_reference = "Tray_B:face7",
+    destination_reference = "BODY:face38",
+    conductor_override = -10000.0,
+    shape_factor = 2.0e-03,
+    conductivity = 300.0);
+
+CONDUCTOR BODY_TRAYB5;
+BODY_TRAYB5 = CONDUCTIVE_CONDUCTOR (
+    source_reference = "Tray_B:face7",
+    destination_reference = "BODY:face28",
+    conductor_override = -10000.0,
+    shape_factor = 2.0e-03,
+    conductivity = 300.0);
+
+CONDUCTOR BODY_TRAYB6;
+BODY_TRAYB6 = CONDUCTIVE_CONDUCTOR (
+    source_reference = "Tray_B:face3",
+    destination_reference = "BODY:face26",
+    conductor_override = -10000.0,
+    shape_factor = 2.0e-03,
+    conductivity = 300.0);
+
+CONDUCTOR BODY_TRAYB7;
+BODY_TRAYB7 = CONDUCTIVE_CONDUCTOR (
+    source_reference = "Tray_B:face3",
+    destination_reference = "BODY:face16",
+    conductor_override = -10000.0,
+    shape_factor = 2.0e-03,
+    conductivity = 300.0);
+
+CONDUCTOR BODY_TRAYB8;
+BODY_TRAYB8 = CONDUCTIVE_CONDUCTOR (
+    source_reference = "Tray_B:face1",
+    destination_reference = "BODY:face14",
+    conductor_override = -10000.0,
+    shape_factor = 2.0e-03,
+    conductivity = 300.0);
+
+CONDUCTOR EBOX_RAD;
+EBOX_RAD = CONDUCTIVE_CONDUCTOR (
+    source_reference = "Radiator:surface1",
+    destination_reference = "Ebox:face11",
+    conductor_override = 100.0);
+
+CONDUCTOR PL1_BOX;
+PL1_BOX = CONDUCTIVE_CONDUCTOR (
+    source_reference = "Ebox:surface2",
+    destination_reference = "PL1",
+    conductor_override = 20.0);
+
+CONDUCTOR PL2_TRAYA;
+PL2_TRAYA = CONDUCTIVE_CONDUCTOR (
+    source_reference = "PL2",
+    destination_reference = "Tray_A:surface1",
+    conductor_override = 10.0);
+
+CONDUCTOR PL3_TRAYb;
+PL3_TRAYb = CONDUCTIVE_CONDUCTOR (
+    source_reference = "PL3",
+    destination_reference = "Tray_B:surface1",
+    conductor_override = 10.0);
+
+CONDUCTOR Rad_Body1;
+Rad_Body1 = CONDUCTIVE_CONDUCTOR (
+    source_reference = "BODY:face29",
+    destination_reference = "Radiator:face1",
+    conductor_override = -10000.0,
+    shape_factor = 5.6e-03,
+    conductivity = 163.0);
+
+CONDUCTOR Rad_Body2;
+Rad_Body2 = CONDUCTIVE_CONDUCTOR (
+    source_reference = "BODY:face31",
+    destination_reference = "Radiator:face1",
+    conductor_override = -10000.0,
+    shape_factor = 5.6e-03,
+    conductivity = 163.0);
+
+CONDUCTOR Rad_Body3;
+Rad_Body3 = CONDUCTIVE_CONDUCTOR (
+    source_reference = "BODY:face25",
+    destination_reference = "Radiator:face1",
+    conductor_override = -10000.0,
+    shape_factor = 5.6e-03,
+    conductivity = 163.0);
+
+CONDUCTOR Rad_Body4;
+Rad_Body4 = CONDUCTIVE_CONDUCTOR (
+    source_reference = "BODY:face27",
+    destination_reference = "Radiator:face1",
+    conductor_override = -10000.0,
+    shape_factor = 5.6e-03,
+    conductivity = 163.0);
+
+CONDUCTOR Rad_Body5;
+Rad_Body5 = CONDUCTIVE_CONDUCTOR (
+    source_reference = "BODY:face21",
+    destination_reference = "Radiator:face1",
+    conductor_override = -10000.0,
+    shape_factor = 5.6e-03,
+    conductivity = 163.0);
+
+CONDUCTOR Rad_Body6;
+Rad_Body6 = CONDUCTIVE_CONDUCTOR (
+    source_reference = "BODY:face23",
+    destination_reference = "Radiator:face1",
+    conductor_override = -10000.0,
+    shape_factor = 5.6e-03,
+    conductivity = 163.0);
+
+/* End of conductor block - no errors */
+
+/* Start of contact zone block */
+
+CONTACT_ZONE EBOX_BODY1;
+EBOX_BODY1 = DEFINE_CONTACT_ZONE (
+    source_reference = "BODY:face60",
+    destination_reference = "Ebox:face11",
+    contact_conductance = 300.0,
+    maximum_gap = 3.0e-03,
+    number_sample_points = 10000);
+
+CONTACT_ZONE EBOX_BODY2;
+EBOX_BODY2 = DEFINE_CONTACT_ZONE (
+    source_reference = "BODY:face58",
+    destination_reference = "Ebox:face11",
+    contact_conductance = 300.0,
+    maximum_gap = 3.0e-03,
+    number_sample_points = 10000);
+
+CONTACT_ZONE EBOX_BODY3;
+EBOX_BODY3 = DEFINE_CONTACT_ZONE (
+    source_reference = "BODY:face62",
+    destination_reference = "Ebox:face11",
+    contact_conductance = 300.0,
+    maximum_gap = 3.0e-03,
+    number_sample_points = 10000);
+
+CONTACT_ZONE EBOX_BODY4;
+EBOX_BODY4 = DEFINE_CONTACT_ZONE (
+    source_reference = "BODY:face62",
+    destination_reference = "Ebox:face11",
+    contact_conductance = 300.0,
+    maximum_gap = 3.0e-03,
+    number_sample_points = 10000);
+
+CONTACT_ZONE SP_BODY1;
+SP_BODY1 = DEFINE_CONTACT_ZONE (
+    source_reference = "Solar_Panels:face18",
+    destination_reference = "BODY:face55",
+    contact_conductance = 200.0,
+    maximum_gap = 3.0e-03,
+    number_sample_points = 10000);
+
+CONTACT_ZONE SP_BODY2;
+SP_BODY2 = DEFINE_CONTACT_ZONE (
+    source_reference = "Solar_Panels:face24",
+    destination_reference = "BODY:face53",
+    contact_conductance = 200.0,
+    maximum_gap = 3.0e-03,
+    number_sample_points = 10000);
+
+CONTACT_ZONE SP_BODY3;
+SP_BODY3 = DEFINE_CONTACT_ZONE (
+    source_reference = "Solar_Panels:face22",
+    destination_reference = "BODY:face49",
+    contact_conductance = 200.0,
+    maximum_gap = 3.0e-03,
+    number_sample_points = 10000);
+
+CONTACT_ZONE SP_BODY4;
+SP_BODY4 = DEFINE_CONTACT_ZONE (
+    source_reference = "Solar_Panels:face20",
+    destination_reference = "BODY:face45",
+    contact_conductance = 200.0,
+    maximum_gap = 3.0e-03,
+    number_sample_points = 10000);
+
+CONTACT_ZONE SP_BODY5;
+SP_BODY5 = DEFINE_CONTACT_ZONE (
+    source_reference = "Solar_Panels:face14",
+    destination_reference = "BODY:face47",
+    contact_conductance = 200.0,
+    maximum_gap = 3.0e-03,
+    number_sample_points = 10000);
+
+CONTACT_ZONE SP_BODY6;
+SP_BODY6 = DEFINE_CONTACT_ZONE (
+    source_reference = "Solar_Panels:face16",
+    destination_reference = "BODY:face51",
+    contact_conductance = 200.0,
+    maximum_gap = 3.0e-03,
+    number_sample_points = 10000);
+
+/* End of contact zone block - no errors */
+
+END_MODEL

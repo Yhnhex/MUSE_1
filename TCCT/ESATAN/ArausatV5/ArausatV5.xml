@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<postprocessdatafile build="$ProjectRevision: 1.435 $" esatantmsversion="2021" version="4.0">
+    <attributechart>
+        <name>Attribute Chart 1</name>
+        <attributechartdata displaystyle="LINE_STYLE" timestep="0.0"/>
+        <commondata timeformat="SECONDS">
+            <datasources>
+                <acasetmd id="1">
+                    <casename>THERMAL2</casename>
+                    <filename>ARAUSAT_V3_THERMAL2.TMD</filename>
+                    <lastversion>03 May       2023 08:56:52 [22]</lastversion>
+                </acasetmd>
+            </datasources>
+            <attributes>
+                <attribute datasourcetype="TMD" datatype="DOUBLE" displaytype="SCALE_DISPLAY" id="2" name="Average Temperature" type="CONTAINER_ATTRIBUTE" visible="true"/>
+                <attribute datasourcetype="TMD" datatype="DOUBLE" displaytype="SCALE_DISPLAY" id="3" name="Temperature" type="ENTITY_ATTRIBUTE" visible="true"/>
+                <attribute datasourcetype="TMD" datatype="DOUBLE" displaytype="SCALE_DISPLAY" id="4" name="Value" type="CONSTANT_ATTRIBUTE" visible="true"/>
+                <attribute datasourcetype="TMD" datatype="DOUBLE" displaytype="SCALE_DISPLAY" id="5" name="Value" type="CONDUCTOR_ATTRIBUTE" visible="true"/>
+            </attributes>
+            <referencedelements>
+                <node id="6" visible="true">
+                    <number>5000</number>
+                    <submodel/>
+                </node>
+                <node id="7" visible="true">
+                    <number>5100</number>
+                    <submodel/>
+                </node>
+                <node id="8" visible="true">
+                    <number>5200</number>
+                    <submodel/>
+                </node>
+            </referencedelements>
+            <chartelements>
+                <element id="6"/>
+                <element id="7"/>
+                <element id="8"/>
+            </chartelements>
+            <dataseriesmap>
+                <dataseries type="VALUE">
+                    <parts attribute="3" datasource="1" element="6"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="14.497230428460874"/>
+                        <dataseriesvalue domain="300.4897155761719" range="14.771529634559322"/>
+                        <dataseriesvalue domain="600.9794311523438" range="15.047655096834623"/>
+                        <dataseriesvalue domain="901.4691467285156" range="15.29319185052181"/>
+                        <dataseriesvalue domain="1201.9588623046875" range="15.487543248405219"/>
+                        <dataseriesvalue domain="1502.4485778808594" range="15.609411786849513"/>
+                        <dataseriesvalue domain="1802.9382934570312" range="15.656044982559425"/>
+                        <dataseriesvalue domain="2103.428009033203" range="15.678482991634151"/>
+                        <dataseriesvalue domain="2403.917724609375" range="15.676866195210508"/>
+                        <dataseriesvalue domain="2704.407440185547" range="15.619004997331462"/>
+                        <dataseriesvalue domain="3004.8971557617188" range="15.48731270517753"/>
+                        <dataseriesvalue domain="3305.3868713378906" range="15.287478716523172"/>
+                        <dataseriesvalue domain="3605.8765869140625" range="15.044585184459919"/>
+                        <dataseriesvalue domain="3906.3663024902344" range="14.841979744431281"/>
+                        <dataseriesvalue domain="4206.856018066406" range="14.630094525896533"/>
+                        <dataseriesvalue domain="4507.345733642578" range="14.380397534378277"/>
+                        <dataseriesvalue domain="4807.83544921875" range="14.159714819890986"/>
+                        <dataseriesvalue domain="5108.325164794922" range="14.062598834956434"/>
+                        <dataseriesvalue domain="5408.814880371094" range="14.121265515557516"/>
+                        <dataseriesvalue domain="5709.304595947266" range="14.27552813831039"/>
+                        <dataseriesvalue domain="6009.7943115234375" range="14.502962227226588"/>
+                        <dataseriesvalue domain="6009.79443359375" range="14.502962361148052"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="3" datasource="1" element="7"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="40.372968605217906"/>
+                        <dataseriesvalue domain="300.4897155761719" range="40.79733355115512"/>
+                        <dataseriesvalue domain="600.9794311523438" range="41.238103293425084"/>
+                        <dataseriesvalue domain="901.4691467285156" range="41.67205950183092"/>
+                        <dataseriesvalue domain="1201.9588623046875" range="42.08330925912662"/>
+                        <dataseriesvalue domain="1502.4485778808594" range="42.44685142059543"/>
+                        <dataseriesvalue domain="1802.9382934570312" range="42.75164097884362"/>
+                        <dataseriesvalue domain="2103.428009033203" range="43.02881635901188"/>
+                        <dataseriesvalue domain="2403.917724609375" range="43.28021870936157"/>
+                        <dataseriesvalue domain="2704.407440185547" range="43.25394426801707"/>
+                        <dataseriesvalue domain="3004.8971557617188" range="42.95457407124084"/>
+                        <dataseriesvalue domain="3305.3868713378906" range="42.49247007568588"/>
+                        <dataseriesvalue domain="3605.8765869140625" range="41.945133348975894"/>
+                        <dataseriesvalue domain="3906.3663024902344" range="41.37264744333922"/>
+                        <dataseriesvalue domain="4206.856018066406" range="40.79099849299121"/>
+                        <dataseriesvalue domain="4507.345733642578" range="40.21637761887778"/>
+                        <dataseriesvalue domain="4807.83544921875" range="39.79575893341474"/>
+                        <dataseriesvalue domain="5108.325164794922" range="39.64059646562128"/>
+                        <dataseriesvalue domain="5408.814880371094" range="39.73554346743064"/>
+                        <dataseriesvalue domain="5709.304595947266" range="40.00435569965596"/>
+                        <dataseriesvalue domain="6009.7943115234375" range="40.37740168273329"/>
+                        <dataseriesvalue domain="6009.79443359375" range="40.37740185355299"/>
+                    </dataseriesvalues>
+                </dataseries>
+                <dataseries type="VALUE">
+                    <parts attribute="3" datasource="1" element="8"/>
+                    <dataseriesvalues>
+                        <dataseriesvalue domain="0.0" range="40.78396757513129"/>
+                        <dataseriesvalue domain="300.4897155761719" range="41.21080926906408"/>
+                        <dataseriesvalue domain="600.9794311523438" range="41.65320098479539"/>
+                        <dataseriesvalue domain="901.4691467285156" range="42.08863392524225"/>
+                        <dataseriesvalue domain="1201.9588623046875" range="42.5020865776631"/>
+                        <dataseriesvalue domain="1502.4485778808594" range="42.86972871333083"/>
+                        <dataseriesvalue domain="1802.9382934570312" range="43.17965122188091"/>
+                        <dataseriesvalue domain="2103.428009033203" range="43.4622372031233"/>
+                        <dataseriesvalue domain="2403.917724609375" range="43.719423119689175"/>
+                        <dataseriesvalue domain="2704.407440185547" range="43.70137292871323"/>
+                        <dataseriesvalue domain="3004.8971557617188" range="43.40298921097147"/>
+                        <dataseriesvalue domain="3305.3868713378906" range="42.93648755137562"/>
+                        <dataseriesvalue domain="3605.8765869140625" range="42.38253226979633"/>
+                        <dataseriesvalue domain="3906.3663024902344" range="41.80218426842911"/>
+                        <dataseriesvalue domain="4206.856018066406" range="41.21296257720801"/>
+                        <dataseriesvalue domain="4507.345733642578" range="40.63161283320423"/>
+                        <dataseriesvalue domain="4807.83544921875" range="40.20360104834007"/>
+                        <dataseriesvalue domain="5108.325164794922" range="40.044536053027116"/>
+                        <dataseriesvalue domain="5408.814880371094" range="40.13993184239763"/>
+                        <dataseriesvalue domain="5709.304595947266" range="40.41189785875611"/>
+                        <dataseriesvalue domain="6009.7943115234375" range="40.78839280667503"/>
+                        <dataseriesvalue domain="6009.79443359375" range="40.78839297800631"/>
+                    </dataseriesvalues>
+                </dataseries>
+            </dataseriesmap>
+        </commondata>
+        <dualaxisviewmodel>
+            <seriespropertiescollection>
+                <seriesproperties>
+                    <key>Value : THERMAL2 : TMD : ARAUSAT_V3_THERMAL2 : Temperature : 5000</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>0</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-65536</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : THERMAL2 : TMD : ARAUSAT_V3_THERMAL2 : Temperature : 5100</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>1</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-2502389</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+                <seriesproperties>
+                    <key>Value : THERMAL2 : TMD : ARAUSAT_V3_THERMAL2 : Temperature : 5200</key>
+                    <label/>
+                    <legenddetail>LABEL_AND_DETAILS</legenddetail>
+                    <shapetype>2</shapetype>
+                    <shapecolor>6</shapecolor>
+                    <color>-16711895</color>
+                    <strokewidth>2.0</strokewidth>
+                    <dasharray/>
+                </seriesproperties>
+            </seriespropertiescollection>
+            <titletext>Attribute Chart 1</titletext>
+            <viewport height="821" width="34"/>
+            <zoomselection2d x="0" y="0">
+                <domainzoom lower="0.0" upper="0.0"/>
+                <rangezoom lower="0.0" upper="0.0"/>
+            </zoomselection2d>
+            <rangelabel>Data</rangelabel>
+            <domainlabel>Time[s]</domainlabel>
+            <titlecolor>-16777216</titlecolor>
+            <rangecolor>-12566464</rangecolor>
+            <domaincolor>-12566464</domaincolor>
+            <backgroundpaint>-4144960</backgroundpaint>
+            <plotoutlinepaint>-8355712</plotoutlinepaint>
+            <drawlines>true</drawlines>
+            <showlegend>true</showlegend>
+            <drawmarkers>true</drawmarkers>
+            <rangetickmarks>true</rangetickmarks>
+            <domaintickmarks>true</domaintickmarks>
+            <rangeticklabels>true</rangeticklabels>
+            <domainticklabels>true</domainticklabels>
+            <autoadjustrangerange>true</autoadjustrangerange>
+            <autoadjustdomainrange>true</autoadjustdomainrange>
+            <autoselectrangetickunit>true</autoselectrangetickunit>
+            <autoselectdomaintickunit>true</autoselectdomaintickunit>
+            <minrangerange>0.0</minrangerange>
+            <maxrangerange>0.0</maxrangerange>
+            <mindomainrange>0.0</mindomainrange>
+            <maxdomainrange>0.0</maxdomainrange>
+            <rangetickunitvalue>0.1</rangetickunitvalue>
+            <domaintickunitvalue>0.1</domaintickunitvalue>
+            <titlefont>
+                <name>Tahoma</name>
+                <size>20</size>
+                <style>1</style>
+            </titlefont>
+            <rangefont>
+                <name>Tahoma</name>
+                <size>10</size>
+                <style>0</style>
+            </rangefont>
+            <domainfont>
+                <name>Tahoma</name>
+                <size>10</size>
+                <style>0</style>
+            </domainfont>
+            <rangeticklabelfont>
+                <name>Tahoma</name>
+                <size>10</size>
+                <style>0</style>
+            </rangeticklabelfont>
+            <domainticklabelfont>
+                <name>Tahoma</name>
+                <size>10</size>
+                <style>0</style>
+            </domainticklabelfont>
+            <plotorientation>PlotOrientation.VERTICAL</plotorientation>
+            <plotoutlinestrokewidth>1.0</plotoutlinestrokewidth>
+            <secondaryrangelabel>Data 2</secondaryrangelabel>
+            <secondaryrangecolor>-12566464</secondaryrangecolor>
+            <secondaryrangetickmarks>true</secondaryrangetickmarks>
+            <secondaryrangeticklabels>true</secondaryrangeticklabels>
+            <autoadjustsecondaryrangerange>true</autoadjustsecondaryrangerange>
+            <autoselectsecondaryrangetickunit>true</autoselectsecondaryrangetickunit>
+            <minsecondaryrangerange>0.0</minsecondaryrangerange>
+            <maxsecondaryrangerange>0.0</maxsecondaryrangerange>
+            <secondaryrangetickunitvalue>0.1</secondaryrangetickunitvalue>
+            <secondaryrangefont>
+                <name>Tahoma</name>
+                <size>10</size>
+                <style>0</style>
+            </secondaryrangefont>
+            <secondaryrangeticklabelfont>
+                <name>Tahoma</name>
+                <size>10</size>
+                <style>0</style>
+            </secondaryrangeticklabelfont>
+            <secondaryattributes/>
+        </dualaxisviewmodel>
+    </attributechart>
+</postprocessdatafile>

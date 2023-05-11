@@ -1,0 +1,13 @@
+Spacecraft: PindadEx_b00
+
+Start Time (UTC)            Stop Time (UTC)               Duration (s)    Occ Body        Type        Event Number  Total Duration (s)
+20 Mar 2023 22:31:11.309    20 Mar 2023 22:31:20.038      8.7289002375    Earth           Penumbra    1             2118.8413846
+20 Mar 2023 22:31:20.038    20 Mar 2023 23:06:21.394      2101.3559899    Earth           Umbra       1             2118.8413846
+20 Mar 2023 23:06:21.394    20 Mar 2023 23:06:30.150      8.7564945105    Earth           Penumbra    1             2118.8413846
+
+Number of individual events : 3
+Number of total events      : 1
+Maximum duration (s)        :   2118.8413846
+Maximum duration at the 1st eclipse.
+
+

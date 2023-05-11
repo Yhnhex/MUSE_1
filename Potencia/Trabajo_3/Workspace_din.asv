@@ -1,0 +1,14 @@
+M=xlsread("medidas_bateria_dinamico.xlsx");
+t = M(:, 1);
+V = M(:, 2);
+I = M(:, 3);
+
+R_c = 0.14415;
+R_d = 0.11872;
+E_c = V - R_c*I;
+E_d = V + R_d+I;
+Ec_Ed = E_c - E_d;
+
+R_1 = 0;
+R_1 = 0;
+R_1 = 0;

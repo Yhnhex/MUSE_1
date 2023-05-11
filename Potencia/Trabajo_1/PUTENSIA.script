@@ -1,0 +1,571 @@
+%General Mission Analysis Tool(GMAT) Script
+%Created: 2022-11-29 17:03:37
+
+
+%----------------------------------------
+%---------- Spacecraft
+%----------------------------------------
+
+Create Spacecraft PindadEx_b10;
+GMAT PindadEx_b10.DateFormat = UTCGregorian;
+GMAT PindadEx_b10.Epoch = '20 Mar 2023 22:24:28.000';
+GMAT PindadEx_b10.CoordinateSystem = Helio;
+GMAT PindadEx_b10.DisplayStateType = Keplerian;
+GMAT PindadEx_b10.SMA = 6871;
+GMAT PindadEx_b10.ECC = 1.227898772788985e-16;
+GMAT PindadEx_b10.INC = 97.178;
+GMAT PindadEx_b10.RAAN = 10.00000000000001;
+GMAT PindadEx_b10.AOP = 0;
+GMAT PindadEx_b10.TA = 00;
+GMAT PindadEx_b10.DryMass = 20;
+GMAT PindadEx_b10.Cd = 2.2;
+GMAT PindadEx_b10.Cr = 1.8;
+GMAT PindadEx_b10.DragArea = 0.07706;
+GMAT PindadEx_b10.SRPArea = 1;
+GMAT PindadEx_b10.SPADDragScaleFactor = 1;
+GMAT PindadEx_b10.SPADSRPScaleFactor = 1;
+GMAT PindadEx_b10.NAIFId = -10000001;
+GMAT PindadEx_b10.NAIFIdReferenceFrame = -9000001;
+GMAT PindadEx_b10.OrbitColor = Red;
+GMAT PindadEx_b10.TargetColor = Teal;
+GMAT PindadEx_b10.OrbitErrorCovariance = [ 1e+70 0 0 0 0 0 ; 0 1e+70 0 0 0 0 ; 0 0 1e+70 0 0 0 ; 0 0 0 1e+70 0 0 ; 0 0 0 0 1e+70 0 ; 0 0 0 0 0 1e+70 ];
+GMAT PindadEx_b10.CdSigma = 1e+70;
+GMAT PindadEx_b10.CrSigma = 1e+70;
+GMAT PindadEx_b10.Id = 'SatId';
+GMAT PindadEx_b10.Attitude = CoordinateSystemFixed;
+GMAT PindadEx_b10.SPADSRPInterpolationMethod = Bilinear;
+GMAT PindadEx_b10.SPADSRPScaleFactorSigma = 1e+70;
+GMAT PindadEx_b10.SPADDragInterpolationMethod = Bilinear;
+GMAT PindadEx_b10.SPADDragScaleFactorSigma = 1e+70;
+GMAT PindadEx_b10.ModelFile = 'aura.3ds';
+GMAT PindadEx_b10.ModelOffsetX = 0;
+GMAT PindadEx_b10.ModelOffsetY = 0;
+GMAT PindadEx_b10.ModelOffsetZ = 0;
+GMAT PindadEx_b10.ModelRotationX = 0;
+GMAT PindadEx_b10.ModelRotationY = 0;
+GMAT PindadEx_b10.ModelRotationZ = 0;
+GMAT PindadEx_b10.ModelScale = 1;
+GMAT PindadEx_b10.AttitudeDisplayStateType = 'Quaternion';
+GMAT PindadEx_b10.AttitudeRateDisplayStateType = 'AngularVelocity';
+GMAT PindadEx_b10.AttitudeCoordinateSystem = EarthMJ2000Eq;
+GMAT PindadEx_b10.EulerAngleSequence = '321';
+
+%----------------------------------------
+%---------- Spacecraft
+%----------------------------------------
+
+Create Spacecraft PindadEx_b20;
+GMAT PindadEx_b20.DateFormat = UTCGregorian;
+GMAT PindadEx_b20.Epoch = '20 Mar 2023 22:24:28.000';
+GMAT PindadEx_b20.CoordinateSystem = Helio;
+GMAT PindadEx_b20.DisplayStateType = Keplerian;
+GMAT PindadEx_b20.SMA = 6870.99999999999;
+GMAT PindadEx_b20.ECC = 7.350916231732104e-16;
+GMAT PindadEx_b20.INC = 97.178;
+GMAT PindadEx_b20.RAAN = 19.99999999999998;
+GMAT PindadEx_b20.AOP = 0;
+GMAT PindadEx_b20.TA = 00;
+GMAT PindadEx_b20.DryMass = 20;
+GMAT PindadEx_b20.Cd = 2.2;
+GMAT PindadEx_b20.Cr = 1.8;
+GMAT PindadEx_b20.DragArea = 0.07706;
+GMAT PindadEx_b20.SRPArea = 1;
+GMAT PindadEx_b20.SPADDragScaleFactor = 1;
+GMAT PindadEx_b20.SPADSRPScaleFactor = 1;
+GMAT PindadEx_b20.NAIFId = -10000001;
+GMAT PindadEx_b20.NAIFIdReferenceFrame = -9000001;
+GMAT PindadEx_b20.OrbitColor = Red;
+GMAT PindadEx_b20.TargetColor = Teal;
+GMAT PindadEx_b20.OrbitErrorCovariance = [ 1e+70 0 0 0 0 0 ; 0 1e+70 0 0 0 0 ; 0 0 1e+70 0 0 0 ; 0 0 0 1e+70 0 0 ; 0 0 0 0 1e+70 0 ; 0 0 0 0 0 1e+70 ];
+GMAT PindadEx_b20.CdSigma = 1e+70;
+GMAT PindadEx_b20.CrSigma = 1e+70;
+GMAT PindadEx_b20.Id = 'SatId';
+GMAT PindadEx_b20.Attitude = CoordinateSystemFixed;
+GMAT PindadEx_b20.SPADSRPInterpolationMethod = Bilinear;
+GMAT PindadEx_b20.SPADSRPScaleFactorSigma = 1e+70;
+GMAT PindadEx_b20.SPADDragInterpolationMethod = Bilinear;
+GMAT PindadEx_b20.SPADDragScaleFactorSigma = 1e+70;
+GMAT PindadEx_b20.ModelFile = 'aura.3ds';
+GMAT PindadEx_b20.ModelOffsetX = 0;
+GMAT PindadEx_b20.ModelOffsetY = 0;
+GMAT PindadEx_b20.ModelOffsetZ = 0;
+GMAT PindadEx_b20.ModelRotationX = 0;
+GMAT PindadEx_b20.ModelRotationY = 0;
+GMAT PindadEx_b20.ModelRotationZ = 0;
+GMAT PindadEx_b20.ModelScale = 1;
+GMAT PindadEx_b20.AttitudeDisplayStateType = 'Quaternion';
+GMAT PindadEx_b20.AttitudeRateDisplayStateType = 'AngularVelocity';
+GMAT PindadEx_b20.AttitudeCoordinateSystem = EarthMJ2000Eq;
+GMAT PindadEx_b20.EulerAngleSequence = '321';
+
+%----------------------------------------
+%---------- Spacecraft
+%----------------------------------------
+
+Create Spacecraft PindadEx_b30;
+GMAT PindadEx_b30.DateFormat = UTCGregorian;
+GMAT PindadEx_b30.Epoch = '20 Mar 2023 22:24:28.000';
+GMAT PindadEx_b30.CoordinateSystem = EarthMJ2000Eq;
+GMAT PindadEx_b30.DisplayStateType = Keplerian;
+GMAT PindadEx_b30.SMA = 6871.000000000002;
+GMAT PindadEx_b30.ECC = 2.451181291531184e-16;
+GMAT PindadEx_b30.INC = 97.178;
+GMAT PindadEx_b30.RAAN = 29.99999999999998;
+GMAT PindadEx_b30.AOP = 0;
+GMAT PindadEx_b30.TA = 00;
+GMAT PindadEx_b30.DryMass = 20;
+GMAT PindadEx_b30.Cd = 2.2;
+GMAT PindadEx_b30.Cr = 1.8;
+GMAT PindadEx_b30.DragArea = 0.07706;
+GMAT PindadEx_b30.SRPArea = 1;
+GMAT PindadEx_b30.SPADDragScaleFactor = 1;
+GMAT PindadEx_b30.SPADSRPScaleFactor = 1;
+GMAT PindadEx_b30.NAIFId = -10000001;
+GMAT PindadEx_b30.NAIFIdReferenceFrame = -9000001;
+GMAT PindadEx_b30.OrbitColor = Red;
+GMAT PindadEx_b30.TargetColor = Teal;
+GMAT PindadEx_b30.OrbitErrorCovariance = [ 1e+70 0 0 0 0 0 ; 0 1e+70 0 0 0 0 ; 0 0 1e+70 0 0 0 ; 0 0 0 1e+70 0 0 ; 0 0 0 0 1e+70 0 ; 0 0 0 0 0 1e+70 ];
+GMAT PindadEx_b30.CdSigma = 1e+70;
+GMAT PindadEx_b30.CrSigma = 1e+70;
+GMAT PindadEx_b30.Id = 'SatId';
+GMAT PindadEx_b30.Attitude = CoordinateSystemFixed;
+GMAT PindadEx_b30.SPADSRPInterpolationMethod = Bilinear;
+GMAT PindadEx_b30.SPADSRPScaleFactorSigma = 1e+70;
+GMAT PindadEx_b30.SPADDragInterpolationMethod = Bilinear;
+GMAT PindadEx_b30.SPADDragScaleFactorSigma = 1e+70;
+GMAT PindadEx_b30.ModelFile = 'aura.3ds';
+GMAT PindadEx_b30.ModelOffsetX = 0;
+GMAT PindadEx_b30.ModelOffsetY = 0;
+GMAT PindadEx_b30.ModelOffsetZ = 0;
+GMAT PindadEx_b30.ModelRotationX = 0;
+GMAT PindadEx_b30.ModelRotationY = 0;
+GMAT PindadEx_b30.ModelRotationZ = 0;
+GMAT PindadEx_b30.ModelScale = 1;
+GMAT PindadEx_b30.AttitudeDisplayStateType = 'Quaternion';
+GMAT PindadEx_b30.AttitudeRateDisplayStateType = 'AngularVelocity';
+GMAT PindadEx_b30.AttitudeCoordinateSystem = EarthMJ2000Eq;
+GMAT PindadEx_b30.EulerAngleSequence = '321';
+
+%----------------------------------------
+%---------- Spacecraft
+%----------------------------------------
+
+Create Spacecraft PindadEx_b45;
+GMAT PindadEx_b45.DateFormat = UTCGregorian;
+GMAT PindadEx_b45.Epoch = '20 Mar 2023 22:24:28.000';
+GMAT PindadEx_b45.CoordinateSystem = Helio;
+GMAT PindadEx_b45.DisplayStateType = Keplerian;
+GMAT PindadEx_b45.SMA = 6870.99999999999;
+GMAT PindadEx_b45.ECC = 9.800103475963018e-16;
+GMAT PindadEx_b45.INC = 97.178;
+GMAT PindadEx_b45.RAAN = 45;
+GMAT PindadEx_b45.AOP = 0;
+GMAT PindadEx_b45.TA = 00;
+GMAT PindadEx_b45.DryMass = 20;
+GMAT PindadEx_b45.Cd = 2.2;
+GMAT PindadEx_b45.Cr = 1.8;
+GMAT PindadEx_b45.DragArea = 0.07706;
+GMAT PindadEx_b45.SRPArea = 1;
+GMAT PindadEx_b45.SPADDragScaleFactor = 1;
+GMAT PindadEx_b45.SPADSRPScaleFactor = 1;
+GMAT PindadEx_b45.NAIFId = -10000001;
+GMAT PindadEx_b45.NAIFIdReferenceFrame = -9000001;
+GMAT PindadEx_b45.OrbitColor = Red;
+GMAT PindadEx_b45.TargetColor = Teal;
+GMAT PindadEx_b45.OrbitErrorCovariance = [ 1e+70 0 0 0 0 0 ; 0 1e+70 0 0 0 0 ; 0 0 1e+70 0 0 0 ; 0 0 0 1e+70 0 0 ; 0 0 0 0 1e+70 0 ; 0 0 0 0 0 1e+70 ];
+GMAT PindadEx_b45.CdSigma = 1e+70;
+GMAT PindadEx_b45.CrSigma = 1e+70;
+GMAT PindadEx_b45.Id = 'SatId';
+GMAT PindadEx_b45.Attitude = CoordinateSystemFixed;
+GMAT PindadEx_b45.SPADSRPInterpolationMethod = Bilinear;
+GMAT PindadEx_b45.SPADSRPScaleFactorSigma = 1e+70;
+GMAT PindadEx_b45.SPADDragInterpolationMethod = Bilinear;
+GMAT PindadEx_b45.SPADDragScaleFactorSigma = 1e+70;
+GMAT PindadEx_b45.ModelFile = 'aura.3ds';
+GMAT PindadEx_b45.ModelOffsetX = 0;
+GMAT PindadEx_b45.ModelOffsetY = 0;
+GMAT PindadEx_b45.ModelOffsetZ = 0;
+GMAT PindadEx_b45.ModelRotationX = 0;
+GMAT PindadEx_b45.ModelRotationY = 0;
+GMAT PindadEx_b45.ModelRotationZ = 0;
+GMAT PindadEx_b45.ModelScale = 1;
+GMAT PindadEx_b45.AttitudeDisplayStateType = 'Quaternion';
+GMAT PindadEx_b45.AttitudeRateDisplayStateType = 'AngularVelocity';
+GMAT PindadEx_b45.AttitudeCoordinateSystem = EarthMJ2000Eq;
+GMAT PindadEx_b45.EulerAngleSequence = '321';
+
+%----------------------------------------
+%---------- Spacecraft
+%----------------------------------------
+
+Create Spacecraft PindadEx_b00;
+GMAT PindadEx_b00.DateFormat = UTCGregorian;
+GMAT PindadEx_b00.Epoch = '20 Mar 2023 22:24:28.000';
+GMAT PindadEx_b00.CoordinateSystem = EarthMJ2000Eq;
+GMAT PindadEx_b00.DisplayStateType = Keplerian;
+GMAT PindadEx_b00.SMA = 6871.000000000002;
+GMAT PindadEx_b00.ECC = 2.449640607037636e-16;
+GMAT PindadEx_b00.INC = 97.178;
+GMAT PindadEx_b00.RAAN = 0;
+GMAT PindadEx_b00.AOP = 0;
+GMAT PindadEx_b00.TA = 00;
+GMAT PindadEx_b00.DryMass = 20;
+GMAT PindadEx_b00.Cd = 2.2;
+GMAT PindadEx_b00.Cr = 1.8;
+GMAT PindadEx_b00.DragArea = 0.07706;
+GMAT PindadEx_b00.SRPArea = 1;
+GMAT PindadEx_b00.SPADDragScaleFactor = 1;
+GMAT PindadEx_b00.SPADSRPScaleFactor = 1;
+GMAT PindadEx_b00.NAIFId = -10000001;
+GMAT PindadEx_b00.NAIFIdReferenceFrame = -9000001;
+GMAT PindadEx_b00.OrbitColor = Red;
+GMAT PindadEx_b00.TargetColor = Teal;
+GMAT PindadEx_b00.OrbitErrorCovariance = [ 1e+70 0 0 0 0 0 ; 0 1e+70 0 0 0 0 ; 0 0 1e+70 0 0 0 ; 0 0 0 1e+70 0 0 ; 0 0 0 0 1e+70 0 ; 0 0 0 0 0 1e+70 ];
+GMAT PindadEx_b00.CdSigma = 1e+70;
+GMAT PindadEx_b00.CrSigma = 1e+70;
+GMAT PindadEx_b00.Id = 'SatId';
+GMAT PindadEx_b00.Attitude = CoordinateSystemFixed;
+GMAT PindadEx_b00.SPADSRPInterpolationMethod = Bilinear;
+GMAT PindadEx_b00.SPADSRPScaleFactorSigma = 1e+70;
+GMAT PindadEx_b00.SPADDragInterpolationMethod = Bilinear;
+GMAT PindadEx_b00.SPADDragScaleFactorSigma = 1e+70;
+GMAT PindadEx_b00.ModelFile = 'aura.3ds';
+GMAT PindadEx_b00.ModelOffsetX = 0;
+GMAT PindadEx_b00.ModelOffsetY = 0;
+GMAT PindadEx_b00.ModelOffsetZ = 0;
+GMAT PindadEx_b00.ModelRotationX = 0;
+GMAT PindadEx_b00.ModelRotationY = 0;
+GMAT PindadEx_b00.ModelRotationZ = 0;
+GMAT PindadEx_b00.ModelScale = 1;
+GMAT PindadEx_b00.AttitudeDisplayStateType = 'Quaternion';
+GMAT PindadEx_b00.AttitudeRateDisplayStateType = 'AngularVelocity';
+GMAT PindadEx_b00.AttitudeCoordinateSystem = EarthMJ2000Eq;
+GMAT PindadEx_b00.EulerAngleSequence = '321';
+
+
+
+
+
+
+
+
+
+
+
+
+%----------------------------------------
+%---------- ForceModels
+%----------------------------------------
+
+Create ForceModel J2Drag_ForceModel;
+GMAT J2Drag_ForceModel.CentralBody = Earth;
+GMAT J2Drag_ForceModel.PrimaryBodies = {Earth};
+GMAT J2Drag_ForceModel.SRP = Off;
+GMAT J2Drag_ForceModel.RelativisticCorrection = Off;
+GMAT J2Drag_ForceModel.ErrorControl = RSSStep;
+GMAT J2Drag_ForceModel.GravityField.Earth.Degree = 2;
+GMAT J2Drag_ForceModel.GravityField.Earth.Order = 0;
+GMAT J2Drag_ForceModel.GravityField.Earth.StmLimit = 100;
+GMAT J2Drag_ForceModel.GravityField.Earth.PotentialFile = 'JGM2.cof';
+GMAT J2Drag_ForceModel.GravityField.Earth.TideModel = 'None';
+GMAT J2Drag_ForceModel.Drag.AtmosphereModel = JacchiaRoberts;
+GMAT J2Drag_ForceModel.Drag.HistoricWeatherSource = 'ConstantFluxAndGeoMag';
+GMAT J2Drag_ForceModel.Drag.PredictedWeatherSource = 'ConstantFluxAndGeoMag';
+GMAT J2Drag_ForceModel.Drag.CSSISpaceWeatherFile = 'SpaceWeather-All-v1.2.txt';
+GMAT J2Drag_ForceModel.Drag.SchattenFile = 'SchattenPredict.txt';
+GMAT J2Drag_ForceModel.Drag.F107 = 150;
+GMAT J2Drag_ForceModel.Drag.F107A = 150;
+GMAT J2Drag_ForceModel.Drag.MagneticIndex = 3;
+GMAT J2Drag_ForceModel.Drag.SchattenErrorModel = 'Nominal';
+GMAT J2Drag_ForceModel.Drag.SchattenTimingModel = 'NominalCycle';
+GMAT J2Drag_ForceModel.Drag.DragModel = 'Spherical';
+
+%----------------------------------------
+%---------- Propagators
+%----------------------------------------
+
+Create Propagator J2Drag;
+GMAT J2Drag.FM = J2Drag_ForceModel;
+GMAT J2Drag.Type = RungeKutta89;
+GMAT J2Drag.InitialStepSize = 60;
+GMAT J2Drag.Accuracy = 9.999999999999999e-12;
+GMAT J2Drag.MinStep = 0.001;
+GMAT J2Drag.MaxStep = 2700;
+GMAT J2Drag.MaxStepAttempts = 50;
+GMAT J2Drag.StopIfAccuracyIsViolated = true;
+
+%----------------------------------------
+%---------- Coordinate Systems
+%----------------------------------------
+
+Create CoordinateSystem sataxis;
+GMAT sataxis.Origin = PindadEx_b10;
+GMAT sataxis.Axes = ObjectReferenced;
+GMAT sataxis.XAxis = R;
+GMAT sataxis.ZAxis = N;
+GMAT sataxis.Primary = Earth;
+GMAT sataxis.Secondary = Luna;
+
+Create CoordinateSystem Helio;
+GMAT Helio.Origin = Earth;
+GMAT Helio.Axes = BodySpinSun;
+
+%----------------------------------------
+%---------- EventLocators
+%----------------------------------------
+
+Create EclipseLocator EclipseLocator1;
+GMAT EclipseLocator1.Spacecraft = PindadEx_b10;
+GMAT EclipseLocator1.Filename = 'Eclipses10.txt';
+GMAT EclipseLocator1.OccultingBodies = {Earth, Venus};
+GMAT EclipseLocator1.InputEpochFormat = 'TAIModJulian';
+GMAT EclipseLocator1.InitialEpoch = '21545';
+GMAT EclipseLocator1.StepSize = 10;
+GMAT EclipseLocator1.FinalEpoch = '21545.138';
+GMAT EclipseLocator1.UseLightTimeDelay = true;
+GMAT EclipseLocator1.UseStellarAberration = true;
+GMAT EclipseLocator1.WriteReport = true;
+GMAT EclipseLocator1.RunMode = Automatic;
+GMAT EclipseLocator1.UseEntireInterval = true;
+GMAT EclipseLocator1.EclipseTypes = {'Umbra', 'Penumbra', 'Antumbra'};
+
+%----------------------------------------
+%---------- EventLocators
+%----------------------------------------
+
+Create EclipseLocator EclipseLocator2;
+GMAT EclipseLocator2.Spacecraft = PindadEx_b20;
+GMAT EclipseLocator2.Filename = 'Eclipses20.txt';
+GMAT EclipseLocator2.OccultingBodies = {Earth, Venus};
+GMAT EclipseLocator2.InputEpochFormat = 'TAIModJulian';
+GMAT EclipseLocator2.InitialEpoch = '21545';
+GMAT EclipseLocator2.StepSize = 10;
+GMAT EclipseLocator2.FinalEpoch = '21545.138';
+GMAT EclipseLocator2.UseLightTimeDelay = true;
+GMAT EclipseLocator2.UseStellarAberration = true;
+GMAT EclipseLocator2.WriteReport = true;
+GMAT EclipseLocator2.RunMode = Automatic;
+GMAT EclipseLocator2.UseEntireInterval = true;
+GMAT EclipseLocator2.EclipseTypes = {'Umbra', 'Penumbra', 'Antumbra'};
+
+%----------------------------------------
+%---------- EventLocators
+%----------------------------------------
+
+Create EclipseLocator EclipseLocator3;
+GMAT EclipseLocator3.Spacecraft = PindadEx_b30;
+GMAT EclipseLocator3.Filename = 'Eclipses30.txt';
+GMAT EclipseLocator3.OccultingBodies = {Earth, Venus};
+GMAT EclipseLocator3.InputEpochFormat = 'TAIModJulian';
+GMAT EclipseLocator3.InitialEpoch = '21545';
+GMAT EclipseLocator3.StepSize = 10;
+GMAT EclipseLocator3.FinalEpoch = '21545.138';
+GMAT EclipseLocator3.UseLightTimeDelay = true;
+GMAT EclipseLocator3.UseStellarAberration = true;
+GMAT EclipseLocator3.WriteReport = true;
+GMAT EclipseLocator3.RunMode = Automatic;
+GMAT EclipseLocator3.UseEntireInterval = true;
+GMAT EclipseLocator3.EclipseTypes = {'Umbra', 'Penumbra', 'Antumbra'};
+
+%----------------------------------------
+%---------- EventLocators
+%----------------------------------------
+
+Create EclipseLocator EclipseLocator4;
+GMAT EclipseLocator4.Spacecraft = PindadEx_b45;
+GMAT EclipseLocator4.Filename = 'Eclipses45.txt';
+GMAT EclipseLocator4.OccultingBodies = {Earth, Venus};
+GMAT EclipseLocator4.InputEpochFormat = 'TAIModJulian';
+GMAT EclipseLocator4.InitialEpoch = '21545';
+GMAT EclipseLocator4.StepSize = 10;
+GMAT EclipseLocator4.FinalEpoch = '21545.138';
+GMAT EclipseLocator4.UseLightTimeDelay = true;
+GMAT EclipseLocator4.UseStellarAberration = true;
+GMAT EclipseLocator4.WriteReport = true;
+GMAT EclipseLocator4.RunMode = Automatic;
+GMAT EclipseLocator4.UseEntireInterval = true;
+GMAT EclipseLocator4.EclipseTypes = {'Umbra', 'Penumbra', 'Antumbra'};
+
+%----------------------------------------
+%---------- EventLocators
+%----------------------------------------
+
+Create EclipseLocator EclipseLocator5;
+GMAT EclipseLocator5.Spacecraft = PindadEx_b00;
+GMAT EclipseLocator5.Filename = 'Eclipses00.txt';
+GMAT EclipseLocator5.OccultingBodies = {Earth, Venus};
+GMAT EclipseLocator5.InputEpochFormat = 'TAIModJulian';
+GMAT EclipseLocator5.InitialEpoch = '21545';
+GMAT EclipseLocator5.StepSize = 10;
+GMAT EclipseLocator5.FinalEpoch = '21545.138';
+GMAT EclipseLocator5.UseLightTimeDelay = true;
+GMAT EclipseLocator5.UseStellarAberration = true;
+GMAT EclipseLocator5.WriteReport = true;
+GMAT EclipseLocator5.RunMode = Automatic;
+GMAT EclipseLocator5.UseEntireInterval = true;
+GMAT EclipseLocator5.EclipseTypes = {'Umbra', 'Penumbra', 'Antumbra'};
+
+%----------------------------------------
+%---------- Subscribers
+%----------------------------------------
+
+Create OrbitView DefaultOrbitView;
+GMAT DefaultOrbitView.SolverIterations = Current;
+GMAT DefaultOrbitView.UpperLeft = [ -0.009030704394942806 0.2725880551301684 ];
+GMAT DefaultOrbitView.Size = [ 0.3714629741119808 0.4532924961715161 ];
+GMAT DefaultOrbitView.RelativeZOrder = 1022;
+GMAT DefaultOrbitView.Maximized = false;
+GMAT DefaultOrbitView.Add = {PindadEx_b10, PindadEx_b00, PindadEx_b20, PindadEx_b30, PindadEx_b45, Earth};
+GMAT DefaultOrbitView.CoordinateSystem = EarthMJ2000Eq;
+GMAT DefaultOrbitView.DrawObject = [ true true true true true true ];
+GMAT DefaultOrbitView.DataCollectFrequency = 1;
+GMAT DefaultOrbitView.UpdatePlotFrequency = 50;
+GMAT DefaultOrbitView.NumPointsToRedraw = 0;
+GMAT DefaultOrbitView.ShowPlot = true;
+GMAT DefaultOrbitView.MaxPlotPoints = 20000;
+GMAT DefaultOrbitView.ShowLabels = true;
+GMAT DefaultOrbitView.ViewPointReference = Earth;
+GMAT DefaultOrbitView.ViewPointVector = [ 30000 0 0 ];
+GMAT DefaultOrbitView.ViewDirection = Earth;
+GMAT DefaultOrbitView.ViewScaleFactor = 1;
+GMAT DefaultOrbitView.ViewUpCoordinateSystem = EarthMJ2000Eq;
+GMAT DefaultOrbitView.ViewUpAxis = Z;
+GMAT DefaultOrbitView.EclipticPlane = Off;
+GMAT DefaultOrbitView.XYPlane = On;
+GMAT DefaultOrbitView.WireFrame = Off;
+GMAT DefaultOrbitView.Axes = On;
+GMAT DefaultOrbitView.Grid = Off;
+GMAT DefaultOrbitView.SunLine = Off;
+GMAT DefaultOrbitView.UseInitialView = On;
+GMAT DefaultOrbitView.StarCount = 7000;
+GMAT DefaultOrbitView.EnableStars = On;
+GMAT DefaultOrbitView.EnableConstellations = On;
+
+Create GroundTrackPlot DefaultGroundTrackPlot;
+GMAT DefaultGroundTrackPlot.SolverIterations = Current;
+GMAT DefaultGroundTrackPlot.UpperLeft = [ 0.2414208308248043 0.3889739663093415 ];
+GMAT DefaultGroundTrackPlot.Size = [ 0.4990969295605057 0.447166921898928 ];
+GMAT DefaultGroundTrackPlot.RelativeZOrder = 1027;
+GMAT DefaultGroundTrackPlot.Maximized = false;
+GMAT DefaultGroundTrackPlot.Add = {PindadEx_b00, PindadEx_b10, PindadEx_b20, PindadEx_b30, PindadEx_b45};
+GMAT DefaultGroundTrackPlot.DataCollectFrequency = 1;
+GMAT DefaultGroundTrackPlot.UpdatePlotFrequency = 50;
+GMAT DefaultGroundTrackPlot.NumPointsToRedraw = 0;
+GMAT DefaultGroundTrackPlot.ShowPlot = true;
+GMAT DefaultGroundTrackPlot.MaxPlotPoints = 20000;
+GMAT DefaultGroundTrackPlot.CentralBody = Earth;
+GMAT DefaultGroundTrackPlot.TextureMap = 'ModifiedBlueMarble.jpg';
+
+Create XYPlot XYPlot2;
+GMAT XYPlot2.SolverIterations = Current;
+GMAT XYPlot2.UpperLeft = [ 0.3534015653220951 0.03522205206738132 ];
+GMAT XYPlot2.Size = [ 0.4996989765201686 0.4486983154670751 ];
+GMAT XYPlot2.RelativeZOrder = 1041;
+GMAT XYPlot2.Maximized = false;
+GMAT XYPlot2.XVariable = I;
+GMAT XYPlot2.YVariables = {i_b00, i_b10, i_b20, i_b30, i_b45};
+GMAT XYPlot2.ShowGrid = true;
+GMAT XYPlot2.ShowPlot = true;
+
+Create ReportFile ReportFile1;
+GMAT ReportFile1.SolverIterations = Current;
+GMAT ReportFile1.UpperLeft = [ 0 0 ];
+GMAT ReportFile1.Size = [ 0 0 ];
+GMAT ReportFile1.RelativeZOrder = 0;
+GMAT ReportFile1.Maximized = false;
+GMAT ReportFile1.Filename = 'Incidencias.txt';
+GMAT ReportFile1.Precision = 16;
+GMAT ReportFile1.Add = {I, i_b00, i_b10, i_b20, i_b30, i_b45};
+GMAT ReportFile1.WriteHeaders = true;
+GMAT ReportFile1.LeftJustify = On;
+GMAT ReportFile1.ZeroFill = Off;
+GMAT ReportFile1.FixedWidth = true;
+GMAT ReportFile1.Delimiter = ' ';
+GMAT ReportFile1.ColumnWidth = 23;
+GMAT ReportFile1.WriteReport = true;
+
+%----------------------------------------
+%---------- Arrays, Variables, Strings
+%----------------------------------------
+
+Create Array SunPos[1,3] PEX_b00[1,3] PEX_b10[1,3] PEX_b20[1,3] PEX_b30[1,3] PEX_b45[1,3];
+Create Variable PEX_00_X PEX_00_Y PEX_00_Z PEX_10_X PEX_10_Y PEX_10_Z PEX_20_X PEX_20_Y PEX_20_Z PEX_30_X;
+Create Variable PEX_30_Y PEX_30_Z PEX_45_X PEX_45_Y PEX_45_Z Sun_X Sun_Y Sun_Z I i_b00;
+Create Variable i_b10 i_b20 i_b30 i_b45 IncidenciaDEG_b00 IncidenciaDEG_b10 IncidenciaDEG_b20 IncidenciaDEG_b30 IncidenciaDEG_b45;
+GMAT PEX_00_X = 0;
+GMAT PEX_00_Y = 0;
+GMAT PEX_00_Z = 0;
+GMAT PEX_10_X = 0;
+GMAT PEX_10_Y = 0;
+GMAT PEX_10_Z = 0;
+GMAT PEX_20_X = 0;
+GMAT PEX_20_Y = 0;
+GMAT PEX_20_Z = 0;
+GMAT PEX_30_X = 0;
+GMAT PEX_30_Y = 0;
+GMAT PEX_30_Z = 0;
+GMAT PEX_45_X = 0;
+GMAT PEX_45_Y = 0;
+GMAT PEX_45_Z = 0;
+GMAT Sun_X = 0;
+GMAT Sun_Y = 0;
+GMAT Sun_Z = 0;
+GMAT i_b00 = 0;
+GMAT i_b10 = 0;
+GMAT i_b20 = 0;
+GMAT i_b30 = 0;
+GMAT i_b45 = 0;
+GMAT IncidenciaDEG_b00 = 0;
+GMAT IncidenciaDEG_b10 = 0;
+GMAT IncidenciaDEG_b20 = 0;
+GMAT IncidenciaDEG_b30 = 0;
+GMAT IncidenciaDEG_b45 = 0;
+
+
+
+
+
+
+
+
+%----------------------------------------
+%---------- Mission Sequence
+%----------------------------------------
+
+BeginMissionSequence;
+For I = 1:1:360;
+   Propagate Synchronized J2Drag(PindadEx_b00) J2Drag(PindadEx_b10) J2Drag(PindadEx_b20) J2Drag(PindadEx_b30) J2Drag(PindadEx_b45) {PindadEx_b10.ElapsedSecs = 15.745};
+   %b00
+   GMAT 'PEX_00_X' PEX_b00(1,1) = PindadEx_b00.Helio.X/(PindadEx_b00.Helio.X^2+PindadEx_b00.Helio.Y^2+PindadEx_b00.Helio.Z^2)^0.5;
+   GMAT 'PEX_00_Y' PEX_b00(1,2) = PindadEx_b00.Helio.Y/(PindadEx_b00.Helio.X^2+PindadEx_b00.Helio.Y^2+PindadEx_b00.Helio.Z^2)^0.5;
+   GMAT 'PEX_00_Z' PEX_b00(1,3) = PindadEx_b00.Helio.Z/(PindadEx_b00.Helio.X^2+PindadEx_b00.Helio.Y^2+PindadEx_b00.Helio.Z^2)^0.5;
+   GMAT 'Sun_X' SunPos(1,1) = Sun.Helio.X/(Sun.Helio.X^2+Sun.Helio.Y^2+Sun.Helio.Z^2)^0.5;
+   GMAT 'Sun_Y' SunPos(1,2) = Sun.Helio.Y/(Sun.Helio.X^2+Sun.Helio.Y^2+Sun.Helio.Z^2)^0.5;
+   GMAT 'Sun_Z' SunPos(1,3) = Sun.Helio.Z/(Sun.Helio.X^2+Sun.Helio.Y^2+Sun.Helio.Z^2)^0.5;
+   GMAT 'IncidenciaDEG_b00' i_b00 = acos(PEX_b00(1,1)*SunPos(1,1)+PEX_b00(1,2)*SunPos(1,2)+PEX_b00(1,3)*SunPos(1,3))*180/3.1416;
+   
+   %b10
+   GMAT 'PEX_10_X' PEX_b10(1,1) = PindadEx_b10.Helio.X/(PindadEx_b10.Helio.X^2+PindadEx_b10.Helio.Y^2+PindadEx_b10.Helio.Z^2)^0.5;
+   GMAT 'PEX_10_Y' PEX_b10(1,2) = PindadEx_b10.Helio.Y/(PindadEx_b10.Helio.X^2+PindadEx_b10.Helio.Y^2+PindadEx_b10.Helio.Z^2)^0.5;
+   GMAT 'PEX_10_Z' PEX_b10(1,3) = PindadEx_b10.Helio.Z/(PindadEx_b10.Helio.X^2+PindadEx_b10.Helio.Y^2+PindadEx_b10.Helio.Z^2)^0.5;
+   GMAT 'IncidenciaDEG_b10' i_b10 = acos(PEX_b10(1,1)*SunPos(1,1)+PEX_b10(1,2)*SunPos(1,2)+PEX_b10(1,3)*SunPos(1,3))*180/3.1416;
+   
+   %b20
+   GMAT 'PEX_20_X' PEX_b20(1,1) = PindadEx_b20.Helio.X/(PindadEx_b20.Helio.X^2+PindadEx_b20.Helio.Y^2+PindadEx_b20.Helio.Z^2)^0.5;
+   GMAT 'PEX_20_Y' PEX_b20(1,2) = PindadEx_b20.Helio.Y/(PindadEx_b20.Helio.X^2+PindadEx_b20.Helio.Y^2+PindadEx_b20.Helio.Z^2)^0.5;
+   GMAT 'PEX_20_Z' PEX_b20(1,3) = PindadEx_b20.Helio.Z/(PindadEx_b20.Helio.X^2+PindadEx_b20.Helio.Y^2+PindadEx_b20.Helio.Z^2)^0.5;
+   GMAT 'IncidenciaDEG_b20' i_b20 = acos(PEX_b20(1,1)*SunPos(1,1)+PEX_b20(1,2)*SunPos(1,2)+PEX_b20(1,3)*SunPos(1,3))*180/3.1416;
+   
+   %b30
+   GMAT 'PEX_30_X' PEX_b30(1,1) = PindadEx_b30.Helio.X/(PindadEx_b30.Helio.X^2+PindadEx_b30.Helio.Y^2+PindadEx_b30.Helio.Z^2)^0.5;
+   GMAT 'PEX_30_Y' PEX_b30(1,2) = PindadEx_b30.Helio.Y/(PindadEx_b30.Helio.X^2+PindadEx_b30.Helio.Y^2+PindadEx_b30.Helio.Z^2)^0.5;
+   GMAT 'PEX_30_Z' PEX_b30(1,3) = PindadEx_b30.Helio.Z/(PindadEx_b30.Helio.X^2+PindadEx_b30.Helio.Y^2+PindadEx_b30.Helio.Z^2)^0.5;
+   GMAT 'IncidenciaDEG_b30' i_b30 = acos(PEX_b30(1,1)*SunPos(1,1)+PEX_b30(1,2)*SunPos(1,2)+PEX_b30(1,3)*SunPos(1,3))*180/3.1416;
+   
+   %b45
+   GMAT 'PEX_45_X' PEX_b45(1,1) = PindadEx_b45.Helio.X/(PindadEx_b45.Helio.X^2+PindadEx_b45.Helio.Y^2+PindadEx_b45.Helio.Z^2)^0.5;
+   GMAT 'PEX_45_Y' PEX_b45(1,2) = PindadEx_b45.Helio.Y/(PindadEx_b45.Helio.X^2+PindadEx_b45.Helio.Y^2+PindadEx_b45.Helio.Z^2)^0.5;
+   GMAT 'PEX_45_Z' PEX_b45(1,3) = PindadEx_b45.Helio.Z/(PindadEx_b45.Helio.X^2+PindadEx_b45.Helio.Y^2+PindadEx_b45.Helio.Z^2)^0.5;
+   GMAT 'IncidenciaDEG_b45' i_b45 = acos(PEX_b45(1,1)*SunPos(1,1)+PEX_b45(1,2)*SunPos(1,2)+PEX_b45(1,3)*SunPos(1,3))*180/3.1416;
+
+EndFor;
