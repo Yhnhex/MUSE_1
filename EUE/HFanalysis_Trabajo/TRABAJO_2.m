@@ -60,16 +60,16 @@ E=zeros(16, 5);
 %% RESOLUTION %%-----------------------------------------------------------
 for i = 1:length(fm)
     a.n(i) = a.V / (pi * a.c0) * (w(i) / a.c0)^2 + a.A / (4 * a.c0) * (w(i) / a.c0) + a.L / (8 * a.c0);
-    a.N(i) = a.n(i) * bws_w(i);
-    p.N(i) = p.n * bws_w(i);
+    a.N(i) = a.n(i) * bws(i);
+    p.N(i) = p.n * bws(i);
     eta_pa(i) = p.A * a.rho * a.c0 * sigma(w(i), p, a) / (p.rho * p.A * p.t * w(i));
     eta_ap(i) = p.n / a.n(i) * eta_pa(i);
 
 end
-f5 =fm(fm>=315);
-% eta_ap = eta_ap(14:end);
-% eta_pa = eta_pa(14:end);
-% P2 = P(14:end, :);
+f5 =fm(p.N >= 5 );
+% eta_ap = eta_ap((length(E) - length(f5)+1):end);
+% eta_pa = eta_pa((length(E) - length(f5)+1):end);
+% P2 = P((length(E) - length(f5)+1):end, :);
 f_plot = linspace(16, 10000, 9984);
 w_plot = 2 * pi * f_plot;
 for i = 1:length(fm)
@@ -109,7 +109,7 @@ loglog(fm, (p.N)', Color='k', LineWidth=1.5 );
 hold on
 loglog( fm, a.N,Color='r', LineWidth=1.5)
 yline(5)
-xline(315)
+xline(2000)
 grid on
 % loglog(fm, );
 legend('$$N_p$$' , '$$N_a$$', Location='best')
@@ -129,11 +129,11 @@ ylabel('CLF')
 figure(3)
 hold on
 grid on
-plot(f5, E(14:end, 1), Color='r', LineStyle= "-", LineWidth=1.5);
-plot(f5, E(14:end, 2), Color='#7E2F8E', LineStyle= "-", LineWidth=1.5);
-plot(f5, E(14:end, 3), Color='b', LineStyle= "-", LineWidth=1.5);
-plot(f5, E(14:end, 4), Color='#D95319', LineStyle= "-.", LineWidth=1.5);
-plot(f5, E(14:end, 5), Color='k', LineStyle= "--", LineWidth=1.5);
+plot(f5, E((length(E) - length(f5)+1):end, 1), Color='r', LineStyle= "-", LineWidth=1.5);
+plot(f5, E((length(E) - length(f5)+1):end, 2), Color='#7E2F8E', LineStyle= "-", LineWidth=1.5);
+plot(f5, E((length(E) - length(f5)+1):end, 3), Color='b', LineStyle= "-", LineWidth=1.5);
+plot(f5, E((length(E) - length(f5)+1):end, 4), Color='#D95319', LineStyle= "-.", LineWidth=1.5);
+plot(f5, E((length(E) - length(f5)+1):end, 5), Color='k', LineStyle= "--", LineWidth=1.5);
 
 legend('Plate 1' , 'Air layer 1', 'Plate 2' , 'Air layer 2', 'Plate 3', Location='best')
 xlabel('$$f$$ [Hz]')
@@ -142,9 +142,9 @@ ylabel('$$E$$ [J]')
 figure(4)
 hold on
 grid on
-plot(f5, v_RMS(14:end, 1), Color='r', LineStyle= "-", LineWidth=1.5);
-plot(f5, v_RMS(14:end, 2), Color='b', LineStyle= "-", LineWidth=1.5);
-plot(f5, v_RMS(14:end, 3), Color='k', LineStyle= "--", LineWidth=1.5);
+plot(f5, v_RMS((length(E) - length(f5)+1):end, 1), Color='r', LineStyle= "-", LineWidth=1.5);
+plot(f5, v_RMS((length(E) - length(f5)+1):end, 2), Color='b', LineStyle= "-", LineWidth=1.5);
+plot(f5, v_RMS((length(E) - length(f5)+1):end, 3), Color='k', LineStyle= "--", LineWidth=1.5);
 
 legend('Plate 1' , 'Plate 2' , 'Plate 3', Location='best')
 xlabel('$$f$$ [Hz]')
@@ -153,8 +153,8 @@ ylabel('$$v_{RMS}$$ [m/s]', Interpreter='latex')
 figure(5)
 hold on
 grid on
-plot(f5, P_RMS(14:end, 1), Color='#7E2F8E', LineStyle= "-", LineWidth=1.5);
-plot(f5, P_RMS(14:end, 2), Color='#D95319', LineStyle= "--", LineWidth=1.5);
+plot(f5, P_RMS((length(E) - length(f5)+1):end, 1), Color='#7E2F8E', LineStyle= "-", LineWidth=1.5);
+plot(f5, P_RMS((length(E) - length(f5)+1):end, 2), Color='#D95319', LineStyle= "--", LineWidth=1.5);
 
 legend( 'Air layer 1', 'Air layer 2', Location='best')
 xlabel('$$f$$ [Hz]')
@@ -181,7 +181,7 @@ f = w/(2*pi);
         end
     elseif p.f11>p.fc/2
         if f<p.fc
-            s = 4*p.A^2*(f/a.c0)^2;
+            s = 4*p.P^2*(f/a.c0)^2;
         elseif f>p.fc
             s = 1/(sqrt(1-p.fc/f));
         end
