@@ -1,0 +1,2869 @@
+$# Session file patran.ses.02 started recording at 17-May-23 16:48:04
+$# Build: 28.1.873987 Wed Mar 23 13:21:32 PDT 2022
+$# Recorded by: Patran 2022.1  (Student Edition)
+uil_file_open.go( "D:\Descargas\Aeroespecial\MUSE 1\EUE\Trabajo nastran 2\" // @
+"Placa3rig\Inf\Placa3rig.db" )
+$# Database version 3.26 created by Patran 2022.1  (Student Edition) 
+$# successfully opened.
+$# Warning reported from application Results
+$#     Unable to open Direct Results Access file: 
+$# "D:\Universidad\Apuntes\MUSE1\2_Cuatrimestre\Estructuras_de_uso_espacial\Pr
+$# actica 2\Bandeja_Inf\Inf_3\Inf\Analisis\Est_Lat\model_quasistatic_xy.xdb". 
+$# Please i) verify that the file exists and is a valid results file for the 
+$# current analysis preference; or ii) delete the attachment using the 
+$# Analysis form option Delete "Attachment" then re-attach.
+$# Warning reported from application Results
+$#     Unable to build a data object to display results.
+$# Warning reported in application FILE by application Journal
+$#     Journal file D:\Descargas\Aeroespecial\MUSE 1\EUE\Trabajo nastran 
+$# 2\Placa3rig\Inf\Placa3rig.db.jou does not exist. No journal file will be 
+$# created.
+$# FLEXlm initialization complete.  Acquiring license(s)...
+$# License File: EDU
+$# Patran 2022.1  (Student Edition) has obtained 0 concurrent license(s) from 
+$# FLEXlm per a request to execute on Windows node DESKTOP-SL99VP6(
+$# 60f6775e7a6d) (Windows 6.2 (Build 9200: Service Pack 0)) at 17-May-23 
+$# 16:48:06.
+$# Begin Reading RMB Menu definitions
+$# Done Reading RMB Menu definitions
+$# Loading dynamic library D:\Program 
+$# Files\MSC.Software\NaPa_SE\20221\Patran\bin\exe\loads_browser.dll
+$#  éŸº[ shared library 'Loads Browser', Version 2022, Revision 3, Patch 0, 
+$# has been loaded for: MSC.Patran.
+ga_view_aa_set( 0., 0., 0. )
+ga_view_aa_set( -76.744247, -28.351543, -67.672371 )
+ga_view_aa_set( -60.420647, -4.792829, 59.511749 )
+ga_view_center_set( 0.177603, -0.024337 )
+ga_view_center_set( 0.220804, -0.009937 )
+ga_view_zoom_set( 0.571669 )
+ga_view_center_set( 0.269183, 0.006263 )
+ga_view_zoom_set( 0.643127 )
+ga_view_center_set( 0.323609, 0.024488 )
+ga_view_zoom_set( 0.723518 )
+ga_view_center_set( 0.384838, 0.044711 )
+ga_view_zoom_set( 0.813958 )
+ga_view_center_set( 0.497186, 0.078415 )
+ga_view_zoom_set( 0.723518 )
+ga_view_center_set( 0.665258, 0.127848 )
+ga_view_zoom_set( 0.578815 )
+ga_view_center_set( 0.737959, 0.149019 )
+ga_view_zoom_set( 0.514502 )
+ga_view_center_set( 0.800807, 0.167306 )
+ga_view_zoom_set( 0.457335 )
+ga_view_center_set( 0.853674, 0.182455 )
+ga_view_zoom_set( 0.406520 )
+ga_view_center_set( 0.897300, 0.194800 )
+ga_view_zoom_set( 0.361351 )
+ga_view_center_set( 0.105941, -0.108735 )
+ga_view_center_set( 0.083621, -0.109857 )
+ga_view_zoom_set( 0.321201 )
+ga_view_center_set( 0.063560, -0.111077 )
+ga_view_zoom_set( 0.285512 )
+ga_view_center_set( 0.069270, -0.065395 )
+$# MSC.Patran Analysis Manager NOT licensed or installed!
+$# Warning reported from application Results
+$#     Detaching from the selected Direct Results Access file(s). This 
+$# operation cannot be undone. Please reattach file(s) if this was not the 
+$# desired action!
+$# Detach external results file:  
+$# D:\Universidad\Apuntes\MUSE1\2_Cuatrimestre\Estru
+$# cturas_de_uso_espacial\Practica 
+$# 2\Bandeja_Inf\Inf_3\Inf\Analisis\Est_Lat\model_q
+$# uasistatic_xy.xdb
+res_dra_detach_file( 1, 130, 43 )
+$# Warning reported from application Results
+$#     Unable to open Direct Results Access file: 
+$# "D:\Universidad\Apuntes\MUSE1\2_Cuatrimestre\Estructuras_de_uso_espacial\Pr
+$# actica 2\Bandeja_Inf\Inf_3\Inf\Analisis\Est_Lat\model_quasistatic_xy.xdb". 
+$# Please i) verify that the file exists and is a valid results file for the 
+$# current analysis preference; or ii) delete the attachment using the 
+$# Analysis form option Delete "Attachment" then re-attach.
+$# Error reported from application Attach/Read Results File
+$#     No Results File was selected and the Results File Placa3rig.xdb for 
+$# job Placa3rig does not exist.  Please select an existing Results File.
+$? NO 5000000 
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "D:\Descargas\Aeroespecial\MUSE 1\EUE\Traba" // @
+"jo nastran 2\Placa3rig\Inf\Placa3rig.db" )
+msc_dra_add_param( "JOBNAME", "" )
+msc_dra_add_param( "RESULTS FILE", "D:\Descargas\Aeroespecial\MUSE 1\EUE\T" // @
+"rabajo nastran 2\Placa3rig\Inf\Analisis\Est_Lat\model_quasistatic_xy.xdb" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "4.9999999E-06" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "ON" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Both        " )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "", "Attach Results File No Job",  @
+"D:\Descargas\Aeroespecial\MUSE 1\EUE\Trabajo nastran 2\Placa3rig\Inf\Anal" // @
+"isis\Est_Lat\model_quasistatic_xy.xdb", TRUE )
+$# Attaching Direct Results Access file: "D:\Descargas\Aeroespecial\MUSE 
+$# 1\EUE\Trabajo nastran 
+$# 2\Placa3rig\Inf\Analisis\Est_Lat\model_quasistatic_xy.xdb"
+$# XDB file created by "MSC.NASTRAN V2022" on 5/17/2023 using "VENDOR:INTEL   
+$#              MODEL:INTEL(R) CORE(TM) I7 OPSYS:WINDOWS 10 HOME 6.2"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "D:\Descargas\Aeroespecial\MUSE 1\EUE\Traba" // @
+"jo nastran 2\Placa3rig\Inf\Placa3rig.db" )
+msc_dra_add_param( "JOBNAME", "" )
+msc_dra_add_param( "RESULTS FILE", "D:\Descargas\Aeroespecial\MUSE 1\EUE\T" // @
+"rabajo nastran 2\Placa3rig\Inf\Analisis\Est_Long\model_quasistatic_z.xdb" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "4.9999999E-06" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "ON" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Both        " )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "", "Attach Results File No Job",  @
+"D:\Descargas\Aeroespecial\MUSE 1\EUE\Trabajo nastran 2\Placa3rig\Inf\Anal" // @
+"isis\Est_Long\model_quasistatic_z.xdb", TRUE )
+$# Attaching Direct Results Access file: "D:\Descargas\Aeroespecial\MUSE 
+$# 1\EUE\Trabajo nastran 
+$# 2\Placa3rig\Inf\Analisis\Est_Long\model_quasistatic_z.xdb"
+$# XDB file created by "MSC.NASTRAN V2022" on 5/17/2023 using "VENDOR:INTEL   
+$#              MODEL:INTEL(R) CORE(TM) I5 OPSYS:WINDOWS 10 HOME 6.2"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A2:Static Subcase", "Bar Stresses", "Axial", "At Center", "VONM", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A2:Static Subcase", "Bar Stresses", "Bending", "At Point C", "VONM", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A2:Static Subcase", "Bar Stresses", "Maximum Combined", "At Center", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A2:Static Subcase", "Bar Stresses", "Minimum Combined", "At Center", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A2:Static Subcase", "Stress Tensor", "", "At Z1", "VONM", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A2:Static Subcase", "Stress Invariants", "Von Mises", "At Z1", "", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A2:Static Subcase", "Stress Invariants", "Minor Principal", "At Z1", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A2:Static Subcase", "Stress Invariants", "Major Principal", "At Z1", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_display_tool_delete( "Fringe", "default_Fringe" )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Stress Tensor", "", "At Z1", "VONM", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Stress Invariants", "Von Mises", "At Z1", "", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Stress Invariants", "Minor Principal", "At Z1", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Stress Invariants", "Major Principal", "At Z1", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Bar Stresses", "Minimum Combined", "At Center", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Bar Stresses", "Maximum Combined", "At Center", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Bar Stresses", "Bending", "At Point C", "VONM", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Bar Stresses", "Axial", "At Center", "VONM", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+beam_section_display( "I", "Sect_Rig1", ["0.015", "0.015", "0.015", "0.002",  @
+"0.002", "0.002"], "", "", 0. )
+beam_section_display( "I", "Sect_Rig1", ["0.015", "0.015", "0.015", "0.003",  @
+"0.003", "0.003"], "", "", 0. )
+beam_section_create( "Sect_RigI1", "I", ["0.015", "0.015", "0.015", "0.003",  @
+"0.003", "0.003"] )
+$# Beam Section "Sect_RigI1" created.
+elementprops_modify( "1D_Beam_Int", "1D_Beam_Int", 11, 2, 42, 1, 1, 20, [39,  @
+13, 6, 4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047,  @
+4048, 4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404,  @
+4410, 4411, 8200, 8201, 8202], [12, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1, 1, 1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sect_RigI1",  @
+"m:Al6061", "<0. 0. 1.>", "<0. 0. -0.0125>", "<0. 0. -0.0125>", "", "", "", "" @
+, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+"", "", "", "Analysis", "Analysis", "Analysis"], "Element 1096:1351" )
+$# Property Set "1D_Beam_Int" modified.
+sys_poll_option( 2 )
+pref_fa_set( [FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE,  @
+FALSE, FALSE, FALSE, FALSE], [6, 3, 1, 1, 5, 7, 2, 2, 8, 11, 2, 3, 3, 5, 2, 1, @
+ 3, 6, 5, 5, 3, 2, 2, 2, 2, 2, 6, 6, 6, 9, 9, 3, 5, 5, 5, 1, 3, 3, 15, 13], [ @
+TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,  @
+TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,  @
+TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,  @
+TRUE], [3, 4, 5, 6, 1, 1, 7, 8, 9, 10], [TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,  @
+TRUE, TRUE, TRUE, TRUE], FALSE )
+display_fa_vectors( TRUE )
+result_label_format_set( 1, 4 )
+gm_elem_prop_init_list(  )
+ga_display_offsets_set( "general", 1 )
+ga_display_beam_set( "general", 2 )
+sys_poll_option( 0 )
+ga_view_aa_set( -63.806217, -9.443895, 178.234879 )
+res_display_tool_delete( "Fringe", "default_Fringe" )
+ga_view_aa_set( -131.866028, -20.105719, -160.741272 )
+ga_view_center_set( 0.000489, -0.061129 )
+ga_view_zoom_set( 0.336658 )
+ga_view_center_set( -0.009799, -0.045573 )
+ga_view_zoom_set( 0.378740 )
+ga_view_center_set( -0.021373, -0.028073 )
+ga_view_zoom_set( 0.426082 )
+ga_view_center_set( -0.034394, -0.008384 )
+ga_view_zoom_set( 0.479343 )
+ga_view_center_set( -0.049043, 0.013765 )
+ga_view_zoom_set( 0.539260 )
+ga_view_center_set( -0.065522, 0.038683 )
+ga_view_zoom_set( 0.606668 )
+ga_view_center_set( -0.049043, 0.013765 )
+ga_view_zoom_set( 0.539260 )
+ga_view_center_set( -0.034394, -0.008384 )
+ga_view_zoom_set( 0.479343 )
+ga_view_center_set( -0.021373, -0.028072 )
+ga_view_zoom_set( 0.426082 )
+ga_view_center_set( -0.009799, -0.045573 )
+ga_view_zoom_set( 0.378740 )
+ga_view_center_set( 0.008720, -0.073574 )
+ga_view_zoom_set( 0.302992 )
+ga_view_center_set( 0.028678, -0.105581 )
+ga_view_zoom_set( 0.220358 )
+ga_view_center_set( 0.034520, -0.115570 )
+ga_view_zoom_set( 0.195873 )
+ga_view_center_set( 0.039712, -0.125089 )
+ga_view_zoom_set( 0.174110 )
+ga_view_center_set( 0.044328, -0.133551 )
+ga_view_zoom_set( 0.154764 )
+ga_view_center_set( 0.051713, -0.147090 )
+ga_view_zoom_set( 0.123811 )
+ga_view_center_set( 0.057621, -0.158067 )
+ga_view_zoom_set( 0.099049 )
+ga_view_center_set( 0.054776, -0.151667 )
+ga_view_zoom_set( 0.111430 )
+ga_view_center_set( 0.051576, -0.144467 )
+ga_view_zoom_set( 0.125359 )
+ga_view_center_set( 0.047976, -0.136366 )
+ga_view_zoom_set( 0.141029 )
+ga_view_center_set( 0.043926, -0.127253 )
+ga_view_zoom_set( 0.158658 )
+ga_view_center_set( 0.039369, -0.117001 )
+ga_view_zoom_set( 0.178490 )
+ga_view_center_set( 0.034243, -0.105468 )
+ga_view_zoom_set( 0.200801 )
+ga_view_center_set( 0.028477, -0.092493 )
+ga_view_zoom_set( 0.225901 )
+ga_view_aa_set( -74.659554, 3.454855, -123.891914 )
+REAL mass_prop_mass_props_array(VIRTUAL)
+STRING mass_prop_entity_list[VIRTUAL]
+STRING mass_prop_reject_list[VIRTUAL]
+mass_prop.cleanup_detailed( mass_prop_mass_props_array, mass_prop_entity_list, @
+ mass_prop_reject_list )
+INTEGER mass_prop_noutputs
+STRING mass_prop_gnames_out[32](VIRTUAL)
+INTEGER mass_prop_entities(VIRTUAL)
+INTEGER mass_prop_entity_types(VIRTUAL)
+INTEGER mass_prop_len_elist
+INTEGER mass_prop_num_ents
+INTEGER mass_prop_len_rlist
+INTEGER mass_prop_num_rejects
+INTEGER mass_prop_segment_id
+INTEGER mass_prop_cord_label
+INTEGER mass_prop_user_cord_label
+mass_prop_create_detailed( "3D", "Group", "FEM", "Summary", 1, [ @
+"default_group"], "", "Coord 0", "Use Element Properties",  @
+"Use Element Properties", "Coord 0", 3, 1, FALSE, FALSE, mass_prop_noutputs,  @
+mass_prop_gnames_out, mass_prop_entities, mass_prop_entity_types,  @
+mass_prop_mass_props_array, mass_prop_entity_list, mass_prop_len_elist,  @
+mass_prop_num_ents, mass_prop_reject_list, mass_prop_len_rlist,  @
+mass_prop_num_rejects, mass_prop_segment_id, mass_prop_cord_label,  @
+mass_prop_user_cord_label )
+$# Warning reported from application MASP
+$#     Some of the referenced element properties define an offset.  All 
+$# offsets are ignored in the calculation of mass properties. This can cause 
+$# the results to change substantially.
+ga_view_center_set( 0.012757, -0.081888 )
+ga_view_zoom_set( 0.254139 )
+$# Warning reported from application MASP
+$#     The moment of inertia tensor has 2 equal eigenvalues, or principal 
+$# inertias, 1.301072, 1.301072, and 0.180661.  The choices of the 
+$# corresponding eigenvectors or principal directions is arbitrary and may 
+$# not be what you expected.
+$# Warning reported from application MASP
+$#     Some of the specified entities were excluded from the mass property 
+$# calculations because they have no material assigned to them in their 
+$# element property records.
+$# Warning reported from application MASP
+$#     Some of the specified entities were excluded from the mass property 
+$# calculations because some of their needed element properties are not found 
+$# or represented using data types that are supported by the Mass Properties.
+$# Warning reported from application MASP
+$#     The specified entities that were excluded because of the indicated 
+$# warning conditions are: Element 1352:1363
+$#  Beginning analysis of  Placa3rig
+jobfile.open( "Placa3rig", "ANALYZE NO JOBFILE" )
+$# Question from application APP INTERFACES
+$#     The jobname (Placa3rig) is already defined in the database. Do you 
+$# wish to overwrite?
+$? YES 6016027 
+msc_delete_old_files( "Placa3rig", ".bdf", ".h5" )
+$# Question from application APP INTERFACES
+$#     Files from a previous analysis conflict with the current job name: 
+$# "Placa3rig".  These files are Placa3rig.bdf.  Will you permit deletion of 
+$# these files?
+$? YES 6022037 
+jobfile.write_spl( "/* Jobfile for PATNAS created %A% at %A% */", ["17-May-23" @
+, "16:59:49"] )
+jobfile.writec( "", "TRANSLATOR = pat3nas" )
+jobfile.writec( "DATABASE", "D:\Descargas\Aeroespecial\MUSE 1\EUE\Trabajo " // @
+"nastran 2\Placa3rig\Inf\Placa3rig.db" )
+jobfile.writec( "JOBNAME", "Placa3rig" )
+jobfile.writec( "ANALYSIS TITLE", "" )
+jobfile.writec( "ANALYSIS SUBTITLE", "" )
+jobfile.writec( "ANALYSIS LABEL", "" )
+jobfile.writec( "", "" )
+jobfile.writec( "OBJECT", "Entire Model" )
+jobfile.writec( "METHOD", "Analysis Deck" )
+jobfile.writec( "", "" )
+jobfile.writec( "MODEL SUFFIX", ".bdf" )
+jobfile.writec( "RESULTS SUFFIX", ".h5" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * File Search Path Declaration" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "File Search Path", "C:\Users\tomas" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\helpfiles" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\alters" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\icons" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\icons\RibbonIcons" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\bin" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\bin\exe" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\mscexplore_files\" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\mscprocor_files\dmap" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\mscprocor_files\plb" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\mscprocor_files\lib" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\mscprocor_files\icons" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\shareware\msc\unsupported\utilities\icons" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\shareware\msc\unsupported\utilities\plb" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\shareware\msc\unsupported\utilities\extra_files" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Translation Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "DATA OUTPUT", "HDF5+PRINT" )
+jobfile.writec( "OUTPUT2 REQUESTS", "P3 Built In" )
+jobfile.writec( "OUTPUT2 FORMAT", "Binary" )
+jobfile.writec( "DIVISION TOLERANCE", "1.0e-08" )
+jobfile.writec( "NUMERICAL TOLERANCE", "1.0e-04" )
+jobfile.writec( "WRITING TOLERANCE", "1.0e-21" )
+jobfile.writec( "GEOM CHECK", "INFORM" )
+jobfile.writec( "SORTED BULK", "NO" )
+jobfile.writec( "CARD FORMAT", "either" )
+jobfile.writec( "NODE COORDINATES", "reference frame" )
+jobfile.writec( "COORD COORDINATES", "global" )
+jobfile.writec( "MSC.Nastran VERSION", "2022.1" )
+jobfile.writec( "WRITE STORED PRECISION", "TRUE" )
+jobfile.writec( "WRITE IN FREE FORMAT", "FALSE" )
+jobfile.writec( "PROPS ON ELEM ENTRY", "FALSE" )
+jobfile.writec( "CONTINUATION ENTRY", "FALSE" )
+jobfile.writec( "PCOMPG ENTRY", "TRUE" )
+jobfile.writec( "CONVERT CBAR CBEAM", "FALSE" )
+jobfile.writec( "ITERATIVE SOLVER", "FALSE" )
+jobfile.writei( "SUPER ELEMENT 0", 0 )
+jobfile.writec( "SEALL WRITE", "FALSE" )
+jobfile.writec( "PART SUPERELEMENT CREATE", "TRUE" )
+jobfile.writec( "AUTOQSET", "FALSE" )
+jobfile.writec( "FIXEDB", "FALSE" )
+jobfile.writei( "SUPER TREE COUNT", 0 )
+jobfile.writec( "MODEL TOLERANCE", "4.9999999E-06" )
+jobfile.writec( "ELEMENT PROPERTY OFFSET", "0" )
+jobfile.writec( "MATERIAL PROPERTY OFFSET", "0" )
+jobfile.writec( "TABLE OFFSET", "0" )
+jobfile.writec( "LOAD SET OFFSET", "0" )
+jobfile.writec( "LOAD CASE OFFSET", "0" )
+jobfile.writec( "CONTROL SET OFFSET", "0" )
+jobfile.writec( "RIGID ELEMENT OFFSET", "0" )
+jobfile.writec( "SCALAR POINT OFFSET", "0" )
+jobfile.writec( "BEGINNING CONTINUATION MARKER", "+      A" )
+jobfile.writec( "NUMBER ONLY", "ON" )
+jobfile.writec( "BEGINNING NUMBER", "OFF" )
+jobfile.writec( "TRAILING NUMBER", "OFF" )
+jobfile.writec( "SYNTAX NUMBER", "ON" )
+jobfile.writec( "SYNTAX MARKER", "." )
+jobfile.writec( "EXTERNAL SUPERELEMENT METHOD", "NONE" )
+jobfile.writec( "GRID COORDINATES ROUNDING", "15" )
+jobfile.writec( "COORD DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "MPC DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "LBC DATA PRECISION ROUNDING", "7" )
+jobfile.writec( "MAT DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "PROP DATA PRECISION ROUNDING", "7" )
+jobfile.writec( "USE LEGACY PRECISION", "FALSE" )
+jobfile.writec( "EXPONENTIAL WRITE", "As Needed" )
+jobfile.writec( "EXPONENTIAL FORM", "Condensed" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Solution Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "SOLUTION TYPE", "NORMAL MODES" )
+jobfile.writei( "SOLUTION SEQUENCE", 103 )
+jobfile.writec( "DATABASE RUN", "ON" )
+jobfile.writec( "INTERACTIVE MODES", "OFF" )
+jobfile.writec( "CYCLIC SYMMETRY", "OFF" )
+jobfile.writec( "AUTOMATIC CONSTRAINTS", "ON" )
+jobfile.writec( "SHELL NORMAL TOLERANCE", "" )
+jobfile.writec( "MASS CALCULATION", "Lumped" )
+jobfile.writec( "DATA DECK ECHO", "None" )
+jobfile.writec( "PLATE RZ STIFFNESS FACTOR", "100.0" )
+jobfile.writec( "MAXIMUM PRINTED LINES", "" )
+jobfile.writec( "MAXIMUM RUN TIME", "" )
+jobfile.writec( "WT-MASS CONVERSION", "1.0" )
+jobfile.writec( "NODE ID FOR WT-GENER", "" )
+jobfile.writec( "RIGID ELEMENT TYPE", "LINEAR" )
+jobfile.writec( "USE SOL600", "OFF" )
+jobfile.writei( "CONTACT-SEGMENT-CONTROL METHOD", 1 )
+jobfile.writec( "IMPLNL FGCRCEN", "" )
+jobfile.writec( "FGCRCEN", "" )
+jobfile.writec( "IMPLNL FGCRCN1", "" )
+jobfile.writec( "FGCRCN1", "" )
+jobfile.writei( "CONTACT-CRITERION", 0 )
+jobfile.writei( "CONTACT-REL_ABS", 0 )
+jobfile.writec( "CONTACT-FRICTION-TYPE", "None" )
+jobfile.writec( "CONTACT-AUGMENTATION-NORMAL METHOD", "None" )
+jobfile.writer( "CONTACT-AUGMENTATION-NORMAL PENALTY", 0. )
+jobfile.writec( "CONTACT-AUGMENTATION-TANGENTIAL METHOD", "0" )
+jobfile.writer( "CONTACT-AUGMENTATION-TANGENTIAL PENALTY", 0. )
+jobfile.writer( "CONTACT-AUGMENTATION-TANGENTIAL SLIP", 0. )
+jobfile.writei( "CONTACT-LINCNT METHOD", 0 )
+jobfile.writec( "RESIDUAL VECTOR", "Nastran Default" )
+jobfile.writec( "SN MEAN STRESS CORRECTION", "NONE" )
+jobfile.writec( "NEF FATIGUE STRESS OUTPUT", "NONE" )
+jobfile.writec( "NEF STRESS UNITS", "MPA" )
+jobfile.writec( "NEF STRESS COMBINATION", "ABSMAXPR" )
+jobfile.writec( "NEF RESULT LOCATION", "NODA" )
+jobfile.writec( "NEF RECOVERY LOCATION", "CORNER" )
+jobfile.writec( "NEF LAYER LOCATION", "WORST" )
+jobfile.writec( "NEF INTERPOLATION LIMIT", "0" )
+jobfile.writec( "NEF LEVEL OF MESSAGE", "0" )
+jobfile.writec( "NEF NUMBER OF THREADS", "1" )
+jobfile.writer( "NEF CERTAINTY OF SURVIVAL", 50. )
+jobfile.writer( "NEF OVERALL SCALE FACTOR", 1. )
+jobfile.writer( "NEF TOP STRESS PERCENTAGE FILTER", 100. )
+jobfile.writer( "NEF TOP DAMAGE PERCENTAGE FILTER", 100. )
+jobfile.writec( "NEF TIME HISTORY DIRECTORY", "C:\Users\tomas" )
+jobfile.writei( "NEF MAX LOAD PER EVENT", 1 )
+jobfile.writec( "NEF EVENT DATA", "0" )
+jobfile.writec( "NEF LOAD SEQUENCE DATA", "0" )
+jobfile.writec( "USE CONTACT TABLE", "OFF" )
+jobfile.writec( "INITIAL CONTACTPAIR LOADCASE NAME", "" )
+jobfile.writei( "MDOF DATA", 0 )
+jobfile.writec( "CELL WRITE", "ON" )
+jobfile.writei( "CELL INPUT 0", 0 )
+jobfile.writec( "FMS WRITE", "ON" )
+jobfile.writei( "FMS INPUT 0", 0 )
+jobfile.writec( "EXEC WRITE", "ON" )
+jobfile.writei( "EXEC INPUT 0", 0 )
+jobfile.writec( "CASE WRITE", "ON" )
+jobfile.writei( "CASE INPUT 0", 0 )
+jobfile.writec( "BULK WRITE", "ON" )
+jobfile.writei( "BULK INPUT 0", 0 )
+jobfile.writec( "CELL DTI POSITION", "START" )
+jobfile.writec( "FMS DTI POSITION", "START" )
+jobfile.writec( "EXEC DTI POSITION", "START" )
+jobfile.writec( "CASE DTI POSITION", "START" )
+jobfile.writec( "BULK DTI POSITION", "START" )
+jobfile.writec( "", "END" )
+jobfile.close(  )
+mscnastran_job.associate_subcases( "103", "Placa3rig", 1, ["Default"] )
+analysis_submit_2( "MSC.Nastran", "Placa3rig" )
+$# Patran 2022.1  (Student Edition) has obtained 0 concurrent license(s) from 
+$# FLEXlm per a request to execute on Windows node DESKTOP-SL99VP6(
+$# 60f6775e7a6d) (Windows 6.2 (Build 9200: Service Pack 0)) at 17-May-23 
+$# 16:59:51.
+$# 
+$# Reading model information from the specified database, 
+$# D:\Descargas\Aeroespecial\MUSE\ 1\EUE\Trabajo\ nastran\ 
+$# 2\Placa3rig\Inf\Placa3rig.db.
+$# Messages output from the Patran 2022.1  (Student Edition) input deck 
+$# translator on May       17, 2023 at 16:59:51.
+$# 
+$# The NASTRAN input file, Placa3rig.bdf, has been successfully opened.
+$# 
+$# Translating 624 elements from the element property region 2D_Shell_Al6061.
+$# 
+$# Translating 96 elements from the element property region 1D_Beam_Ext.
+$# 
+$# Translating 1 elements from the element property region 0D_Mass_Inf.
+$# 
+$# Translating 256 elements from the element property region 1D_Beam_Int.
+$# 
+$# Translating 12 elements from the element property region 1D_Bush.
+$# 
+$# Translating 1 elements from the element property region 0D_Mass_Int.
+$# 
+$# 6 property regions translated.
+$# 
+$# Translating 1 referenced material records.
+$# 
+$# Translating 2 multipoint constraints from the entire model.
+$# 
+$# Translating 687 nodes from the entire model.
+$# 
+$# Writing loads for Load Case : Default.
+$# 
+$# Translating nodal constraints in load set : SPC_CBUSH_123456.
+$# Writing interface element lbcs.
+$# Total execution time in real seconds: 0.01
+$# Total execution time in CPU seconds: 0.280998
+$# 
+$# End of NASTRAN input file translation.
+$# Student Edition Patran Nastran Preference Patran 2022.1  (Student Edition) 
+$# has released 0 license(s) to FLEXlm at 17-May-23 16:59:51.
+$# The translation has completed successfully.
+$# No Analysis Requested
+$# Warning reported from application Results
+$#     Detaching from the selected Direct Results Access file(s). This 
+$# operation cannot be undone. Please reattach file(s) if this was not the 
+$# desired action!
+$# Detach external results file:  D:\Descargas\Aeroespecial\MUSE 
+$# 1\EUE\Trabajo nast
+$# ran 2\Placa3rig\Inf\Analisis\Est_Lat\model_quasistatic_xy.xdb
+res_dra_detach_file( 1, 130, 44 )
+$# Detach external results file:  D:\Descargas\Aeroespecial\MUSE 
+$# 1\EUE\Trabajo nast
+$# ran 2\Placa3rig\Inf\Analisis\Est_Long\model_quasistatic_z.xdb
+res_dra_detach_file( 2, 130, 45 )
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "D:\Descargas\Aeroespecial\MUSE 1\EUE\Traba" // @
+"jo nastran 2\Placa3rig\Inf\Placa3rig.db" )
+msc_dra_add_param( "JOBNAME", "" )
+msc_dra_add_param( "RESULTS FILE", "D:\Descargas\Aeroespecial\MUSE 1\EUE\T" // @
+"rabajo nastran 2\Placa3rig\Inf\Analisis\Est_Long\model_quasistatic_z.xdb" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "4.9999999E-06" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "ON" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Both        " )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "", "Attach Results File No Job",  @
+"D:\Descargas\Aeroespecial\MUSE 1\EUE\Trabajo nastran 2\Placa3rig\Inf\Anal" // @
+"isis\Est_Long\model_quasistatic_z.xdb", TRUE )
+$# Attaching Direct Results Access file: "D:\Descargas\Aeroespecial\MUSE 
+$# 1\EUE\Trabajo nastran 
+$# 2\Placa3rig\Inf\Analisis\Est_Long\model_quasistatic_z.xdb"
+$# XDB file created by "MSC.NASTRAN V2022" on 5/17/2023 using "VENDOR:INTEL   
+$#              MODEL:INTEL(R) CORE(TM) I5 OPSYS:WINDOWS 10 HOME 6.2"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "D:\Descargas\Aeroespecial\MUSE 1\EUE\Traba" // @
+"jo nastran 2\Placa3rig\Inf\Placa3rig.db" )
+msc_dra_add_param( "JOBNAME", "" )
+msc_dra_add_param( "RESULTS FILE", "D:\Descargas\Aeroespecial\MUSE 1\EUE\T" // @
+"rabajo nastran 2\Placa3rig\Inf\Analisis\Est_Lat\model_quasistatic_xy.xdb" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "4.9999999E-06" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "ON" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Both        " )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "", "Attach Results File No Job",  @
+"D:\Descargas\Aeroespecial\MUSE 1\EUE\Trabajo nastran 2\Placa3rig\Inf\Anal" // @
+"isis\Est_Lat\model_quasistatic_xy.xdb", TRUE )
+$# Attaching Direct Results Access file: "D:\Descargas\Aeroespecial\MUSE 
+$# 1\EUE\Trabajo nastran 
+$# 2\Placa3rig\Inf\Analisis\Est_Lat\model_quasistatic_xy.xdb"
+$# XDB file created by "MSC.NASTRAN V2022" on 5/17/2023 using "VENDOR:INTEL   
+$#              MODEL:INTEL(R) CORE(TM) I5 OPSYS:WINDOWS 10 HOME 6.2"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "D:\Descargas\Aeroespecial\MUSE 1\EUE\Traba" // @
+"jo nastran 2\Placa3rig\Inf\Placa3rig.db" )
+msc_dra_add_param( "JOBNAME", "" )
+msc_dra_add_param( "RESULTS FILE", "D:\Descargas\Aeroespecial\MUSE 1\EUE\T" // @
+"rabajo nastran 2\Placa3rig\Inf\Analisis\Vib\placa3rig.h5" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "4.9999999E-06" )
+msc_dra_add_param( "OBJECTIVE FUNCTION", "ON" )
+msc_dra_add_param( "DESIGN CONSTRAINTS", "ON" )
+msc_dra_add_param( "DESIGN VARIABLES", "ON" )
+msc_dra_add_param( "COMBINE RESULTCASES", "ON" )
+msc_dra_add_param( "COMBINE MODULES", "OFF" )
+msc_dra_add_param( "SPLINE IMPORT DATA", "OFF" )
+msc_dra_add_param( "SPLINE POST DATA", "ZERO" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "ON" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "CREATE P-ORDER FIELD", "" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Both        " )
+msc_dra_add_param( "NASTRAN VERSION", "" )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "", "Attach HDF5 Results File",  @
+"D:\Descargas\Aeroespecial\MUSE 1\EUE\Trabajo nastran 2\Placa3rig\Inf\Anal" // @
+"isis\Vib\placa3rig.h5", TRUE )
+$# Attaching Direct Results Access file: "D:\Descargas\Aeroespecial\MUSE 
+$# 1\EUE\Trabajo nastran 2\Placa3rig\Inf\Analisis\Vib\placa3rig.h5"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Mode 1: Freq.=114.467
+$# Processing result sub-case: Mode 2: Freq.=114.467
+$# Processing result sub-case: Mode 3: Freq.=270.162
+$# Processing result sub-case: Mode 4: Freq.=401.985
+$# Processing result sub-case: Mode 5: Freq.=478.468
+$# Processing result sub-case: Mode 6: Freq.=478.468
+$# Processing result sub-case: Mode 7: Freq.=1610.25
+$# Processing result sub-case: Mode 8: Freq.=2385.96
+$# Processing result sub-case: Mode 9: Freq.=2385.96
+$# Processing result sub-case: Mode 10: Freq.=2703.01
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.016
+$# *** End:   Attach Result File ***
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A1:Static Subcase", "Bar Stresses", "Axial", "At Center", "VONM", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A1:Static Subcase", "Bar Stresses", "Bending", "At Point C", "VONM", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A1:Static Subcase", "Bar Stresses", "Maximum Combined", "At Center", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A1:Static Subcase", "Bar Stresses", "Minimum Combined", "At Center", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A1:Static Subcase", "Stress Tensor", "", "At Z1", "VONM", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A1:Static Subcase", "Stress Tensor", "", "At Z1", "VONM", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A1:Static Subcase", "Stress Invariants", "Von Mises", "At Z1", "", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A1:Static Subcase", "Stress Invariants", "Minor Principal", "At Z1", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A1:Static Subcase", "Stress Invariants", "Major Principal", "At Z1", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A1:Static Subcase", "Stress Invariants", "Major Principal", "At Z1", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A2:Static Subcase", "Stress Tensor", "", "At Z1", "VONM", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A2:Static Subcase", "Stress Invariants", "Von Mises", "At Z1", "", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A2:Static Subcase", "Stress Invariants", "Minor Principal", "At Z1", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A2:Static Subcase", "Stress Invariants", "Major Principal", "At Z1", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A2:Static Subcase", "Bar Stresses", "Minimum Combined", "At Center", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+ga_view_aa_set( -37.425537, -3.420682, -43.808949 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A2:Static Subcase", "Bar Stresses", "Maximum Combined", "At Center", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+gm_plot_erase_geometry( 0 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A2:Static Subcase", "Bar Stresses", "Minimum Combined", "At Center", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A2:Static Subcase", "Bar Stresses", "Bending", "At Point C", "VONM", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A2:Static Subcase", "Bar Stresses", "Axial", "At Center", "VONM", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+$# Warning reported from application Results
+$#     Detaching from the selected Direct Results Access file(s). This 
+$# operation cannot be undone. Please reattach file(s) if this was not the 
+$# desired action!
+$# Detach external results file:  D:\Descargas\Aeroespecial\MUSE 
+$# 1\EUE\Trabajo nast
+$# ran 2\Placa3rig\Inf\Analisis\Est_Long\model_quasistatic_z.xdb
+res_dra_detach_file( 1, 130, 46 )
+$# Detach external results file:  D:\Descargas\Aeroespecial\MUSE 
+$# 1\EUE\Trabajo nast
+$# ran 2\Placa3rig\Inf\Analisis\Est_Lat\model_quasistatic_xy.xdb
+res_dra_detach_file( 2, 130, 47 )
+$# Detach external results file:  D:\Descargas\Aeroespecial\MUSE 
+$# 1\EUE\Trabajo nast
+$# ran 2\Placa3rig\Inf\Analisis\Vib\placa3rig.h5
+res_dra_detach_file( 3, 150, 48 )
+beam_section_display( "I", "Sect_RigI2", ["0.02", "0.02", "0.02", "0.003",  @
+"0.003", "0.003"], "", "", 0. )
+beam_section_create( "Sect_RigI2", "I", ["0.02", "0.02", "0.02", "0.003",  @
+"0.003", "0.003"] )
+$# Beam Section "Sect_RigI2" created.
+elementprops_modify( "1D_Beam_Int", "1D_Beam_Int", 11, 2, 42, 1, 1, 20, [39,  @
+13, 6, 4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047,  @
+4048, 4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404,  @
+4410, 4411, 8200, 8201, 8202], [12, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1, 1, 1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sect_RigI2",  @
+"m:Al6061", "<0. 0. 1.>", "<0. 0. -0.0125>", "<0. 0. -0.0125>", "", "", "", "" @
+, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+"", "", "", "Analysis", "Analysis", "Analysis"], "Element 1096:1351" )
+$# Property Set "1D_Beam_Int" modified.
+ga_view_aa_set( -110.469818, -25.877169, -28.461285 )
+ga_view_aa_set( -58.490814, 5.472694, 35.713566 )
+material.create( "Analysis code ID", 1, "Analysis type ID", 1, "Ti64", 0,  @
+"Date: 17-May-23           Time: 17:07:01", "Isotropic", 1, "Directionality",  @
+1, "Linearity", 1, "Homogeneous", 0, "Linear Elastic", 1,  @
+"Model Options & IDs", ["", "", "", "", ""], [0, 0, 0, 0, 0], "Active Flag",  @
+1, "Create", 10, "External Flag", FALSE, "Property IDs", ["Elastic Modulus",  @
+"Poisson Ratio", "Density"], [2, 5, 16, 0], "Property Values", ["1.14E11",  @
+"0.342", "3.44E7", ""] )
+elementprops_modify( "1D_Beam_Ext", "1D_Beam_Ext", 11, 2, 42, 1, 1, 20, [39,  @
+13, 6, 4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047,  @
+4048, 4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404,  @
+4410, 4411, 8200, 8201, 8202], [12, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1, 1, 1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sect_Rig1",  @
+"m:Ti64", "<0. 0. 1.>", "<0. 0. -0.0125>", "<0. 0. -0.0125>", "", "", "", "",  @
+"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" @
+, "", "", "Analysis", "Analysis", "Analysis"], "Element 1000:1095" )
+$# Property Set "1D_Beam_Ext" modified.
+elementprops_modify( "1D_Beam_Int", "1D_Beam_Int", 11, 2, 42, 1, 1, 20, [39,  @
+13, 6, 4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047,  @
+4048, 4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404,  @
+4410, 4411, 8200, 8201, 8202], [12, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1, 1, 1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sect_RigI2",  @
+"m:Ti64", "<0. 0. 1.>", "<0. 0. -0.0125>", "<0. 0. -0.0125>", "", "", "", "",  @
+"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" @
+, "", "", "Analysis", "Analysis", "Analysis"], "Element 1096:1351" )
+$# Property Set "1D_Beam_Int" modified.
+elementprops_modify( "2D_Shell_Al6061", "2D_Shell_Al6061", 51, 25, 35, 1, 1,  @
+20, [13, 20, 36, 4037, 4111, 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405,  @
+4406, 4407, 4408, 4409], [5, 9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4],  @
+["m:Ti64", "", "0.0049999999", "", "", "", "", "", "", "", "", "", "", "", "", @
+ "", ""], "Element 1:576 3001:3048" )
+$# Property Set "2D_Shell_Al6061" modified.
+$# UNDO: Analysis -- Analyze
+$#  Beginning analysis of  Placa3rig
+jobfile.open( "Placa3rig", "ANALYZE NO JOBFILE" )
+$# Question from application APP INTERFACES
+$#     The jobname (Placa3rig) is already defined in the database. Do you 
+$# wish to overwrite?
+$? YES 6016027 
+msc_delete_old_files( "Placa3rig", ".bdf", ".h5" )
+$# Question from application APP INTERFACES
+$#     Files from a previous analysis conflict with the current job name: 
+$# "Placa3rig".  These files are Placa3rig.bdf.  Will you permit deletion of 
+$# these files?
+$? YES 6022037 
+jobfile.write_spl( "/* Jobfile for PATNAS created %A% at %A% */", ["17-May-23" @
+, "17:15:46"] )
+jobfile.writec( "", "TRANSLATOR = pat3nas" )
+jobfile.writec( "DATABASE", "D:\Descargas\Aeroespecial\MUSE 1\EUE\Trabajo " // @
+"nastran 2\Placa3rig\Inf\Placa3rig.db" )
+jobfile.writec( "JOBNAME", "Placa3rig" )
+jobfile.writec( "ANALYSIS TITLE", "" )
+jobfile.writec( "ANALYSIS SUBTITLE", "" )
+jobfile.writec( "ANALYSIS LABEL", "" )
+jobfile.writec( "", "" )
+jobfile.writec( "OBJECT", "Entire Model" )
+jobfile.writec( "METHOD", "Analysis Deck" )
+jobfile.writec( "", "" )
+jobfile.writec( "MODEL SUFFIX", ".bdf" )
+jobfile.writec( "RESULTS SUFFIX", ".h5" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * File Search Path Declaration" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\mscexplore_files\" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\bin\exe" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\bin" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\icons\RibbonIcons" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\icons" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\alters" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\helpfiles" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\shareware\msc\unsupported\utilities\extra_files" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\shareware\msc\unsupported\utilities\plb" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\shareware\msc\unsupported\utilities\icons" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\mscprocor_files\icons" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\mscprocor_files\lib" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\mscprocor_files\plb" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\mscprocor_files\dmap" )
+jobfile.writec( "File Search Path", "C:\Users\tomas" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Translation Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "DATA OUTPUT", "HDF5+PRINT" )
+jobfile.writec( "OUTPUT2 REQUESTS", "P3 Built In" )
+jobfile.writec( "OUTPUT2 FORMAT", "Binary" )
+jobfile.writec( "DIVISION TOLERANCE", "1.0e-08" )
+jobfile.writec( "NUMERICAL TOLERANCE", "1.0e-04" )
+jobfile.writec( "WRITING TOLERANCE", "1.0e-21" )
+jobfile.writec( "GEOM CHECK", "INFORM" )
+jobfile.writec( "SORTED BULK", "NO" )
+jobfile.writec( "CARD FORMAT", "either" )
+jobfile.writec( "NODE COORDINATES", "reference frame" )
+jobfile.writec( "COORD COORDINATES", "global" )
+jobfile.writec( "MSC.Nastran VERSION", "2022.1" )
+jobfile.writec( "WRITE STORED PRECISION", "TRUE" )
+jobfile.writec( "WRITE IN FREE FORMAT", "FALSE" )
+jobfile.writec( "PROPS ON ELEM ENTRY", "FALSE" )
+jobfile.writec( "CONTINUATION ENTRY", "FALSE" )
+jobfile.writec( "PCOMPG ENTRY", "TRUE" )
+jobfile.writec( "CONVERT CBAR CBEAM", "FALSE" )
+jobfile.writec( "ITERATIVE SOLVER", "FALSE" )
+jobfile.writei( "SUPER ELEMENT 0", 0 )
+jobfile.writec( "SEALL WRITE", "FALSE" )
+jobfile.writec( "PART SUPERELEMENT CREATE", "TRUE" )
+jobfile.writec( "AUTOQSET", "FALSE" )
+jobfile.writec( "FIXEDB", "FALSE" )
+jobfile.writei( "SUPER TREE COUNT", 0 )
+jobfile.writec( "MODEL TOLERANCE", "4.9999999E-06" )
+jobfile.writec( "ELEMENT PROPERTY OFFSET", "0" )
+jobfile.writec( "MATERIAL PROPERTY OFFSET", "0" )
+jobfile.writec( "TABLE OFFSET", "0" )
+jobfile.writec( "LOAD SET OFFSET", "0" )
+jobfile.writec( "LOAD CASE OFFSET", "0" )
+jobfile.writec( "CONTROL SET OFFSET", "0" )
+jobfile.writec( "RIGID ELEMENT OFFSET", "0" )
+jobfile.writec( "SCALAR POINT OFFSET", "0" )
+jobfile.writec( "BEGINNING CONTINUATION MARKER", "+      A" )
+jobfile.writec( "NUMBER ONLY", "ON" )
+jobfile.writec( "BEGINNING NUMBER", "OFF" )
+jobfile.writec( "TRAILING NUMBER", "OFF" )
+jobfile.writec( "SYNTAX NUMBER", "ON" )
+jobfile.writec( "SYNTAX MARKER", "." )
+jobfile.writec( "EXTERNAL SUPERELEMENT METHOD", "NONE" )
+jobfile.writec( "GRID COORDINATES ROUNDING", "15" )
+jobfile.writec( "COORD DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "MPC DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "LBC DATA PRECISION ROUNDING", "7" )
+jobfile.writec( "MAT DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "PROP DATA PRECISION ROUNDING", "7" )
+jobfile.writec( "USE LEGACY PRECISION", "FALSE" )
+jobfile.writec( "EXPONENTIAL WRITE", "As Needed" )
+jobfile.writec( "EXPONENTIAL FORM", "Condensed" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Solution Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "SOLUTION TYPE", "NORMAL MODES" )
+jobfile.writei( "SOLUTION SEQUENCE", 103 )
+jobfile.writec( "DATABASE RUN", "ON" )
+jobfile.writec( "INTERACTIVE MODES", "OFF" )
+jobfile.writec( "CYCLIC SYMMETRY", "OFF" )
+jobfile.writec( "AUTOMATIC CONSTRAINTS", "ON" )
+jobfile.writec( "SHELL NORMAL TOLERANCE", "" )
+jobfile.writec( "MASS CALCULATION", "Lumped" )
+jobfile.writec( "DATA DECK ECHO", "None" )
+jobfile.writec( "PLATE RZ STIFFNESS FACTOR", "100.0" )
+jobfile.writec( "MAXIMUM PRINTED LINES", "" )
+jobfile.writec( "MAXIMUM RUN TIME", "" )
+jobfile.writec( "WT-MASS CONVERSION", "1.0" )
+jobfile.writec( "NODE ID FOR WT-GENER", "" )
+jobfile.writec( "RIGID ELEMENT TYPE", "LINEAR" )
+jobfile.writec( "USE SOL600", "OFF" )
+jobfile.writei( "CONTACT-SEGMENT-CONTROL METHOD", 1 )
+jobfile.writec( "IMPLNL FGCRCEN", "" )
+jobfile.writec( "FGCRCEN", "" )
+jobfile.writec( "IMPLNL FGCRCN1", "" )
+jobfile.writec( "FGCRCN1", "" )
+jobfile.writei( "CONTACT-CRITERION", 0 )
+jobfile.writei( "CONTACT-REL_ABS", 0 )
+jobfile.writec( "CONTACT-FRICTION-TYPE", "None" )
+jobfile.writec( "CONTACT-AUGMENTATION-NORMAL METHOD", "None" )
+jobfile.writer( "CONTACT-AUGMENTATION-NORMAL PENALTY", 0. )
+jobfile.writec( "CONTACT-AUGMENTATION-TANGENTIAL METHOD", "0" )
+jobfile.writer( "CONTACT-AUGMENTATION-TANGENTIAL PENALTY", 0. )
+jobfile.writer( "CONTACT-AUGMENTATION-TANGENTIAL SLIP", 0. )
+jobfile.writei( "CONTACT-LINCNT METHOD", 0 )
+jobfile.writec( "RESIDUAL VECTOR", "Nastran Default" )
+jobfile.writec( "SN MEAN STRESS CORRECTION", "NONE" )
+jobfile.writec( "NEF FATIGUE STRESS OUTPUT", "NONE" )
+jobfile.writec( "NEF STRESS UNITS", "MPA" )
+jobfile.writec( "NEF STRESS COMBINATION", "ABSMAXPR" )
+jobfile.writec( "NEF RESULT LOCATION", "NODA" )
+jobfile.writec( "NEF RECOVERY LOCATION", "CORNER" )
+jobfile.writec( "NEF LAYER LOCATION", "WORST" )
+jobfile.writec( "NEF INTERPOLATION LIMIT", "0" )
+jobfile.writec( "NEF LEVEL OF MESSAGE", "0" )
+jobfile.writec( "NEF NUMBER OF THREADS", "1" )
+jobfile.writer( "NEF CERTAINTY OF SURVIVAL", 50. )
+jobfile.writer( "NEF OVERALL SCALE FACTOR", 1. )
+jobfile.writer( "NEF TOP STRESS PERCENTAGE FILTER", 100. )
+jobfile.writer( "NEF TOP DAMAGE PERCENTAGE FILTER", 100. )
+jobfile.writec( "NEF TIME HISTORY DIRECTORY", "C:\Users\tomas" )
+jobfile.writei( "NEF MAX LOAD PER EVENT", 1 )
+jobfile.writec( "NEF EVENT DATA", "0" )
+jobfile.writec( "NEF LOAD SEQUENCE DATA", "0" )
+jobfile.writec( "USE CONTACT TABLE", "OFF" )
+jobfile.writec( "INITIAL CONTACTPAIR LOADCASE NAME", "" )
+jobfile.writei( "MDOF DATA", 0 )
+jobfile.writec( "CELL WRITE", "ON" )
+jobfile.writei( "CELL INPUT 0", 0 )
+jobfile.writec( "FMS WRITE", "ON" )
+jobfile.writei( "FMS INPUT 0", 0 )
+jobfile.writec( "EXEC WRITE", "ON" )
+jobfile.writei( "EXEC INPUT 0", 0 )
+jobfile.writec( "CASE WRITE", "ON" )
+jobfile.writei( "CASE INPUT 0", 0 )
+jobfile.writec( "BULK WRITE", "ON" )
+jobfile.writei( "BULK INPUT 0", 0 )
+jobfile.writec( "CELL DTI POSITION", "START" )
+jobfile.writec( "FMS DTI POSITION", "START" )
+jobfile.writec( "EXEC DTI POSITION", "START" )
+jobfile.writec( "CASE DTI POSITION", "START" )
+jobfile.writec( "BULK DTI POSITION", "START" )
+jobfile.writec( "", "END" )
+jobfile.close(  )
+mscnastran_job.associate_subcases( "103", "Placa3rig", 1, ["Default"] )
+analysis_submit_2( "MSC.Nastran", "Placa3rig" )
+$# Patran 2022.1  (Student Edition) has obtained 0 concurrent license(s) from 
+$# FLEXlm per a request to execute on Windows node DESKTOP-SL99VP6(
+$# 60f6775e7a6d) (Windows 6.2 (Build 9200: Service Pack 0)) at 17-May-23 
+$# 17:15:47.
+$# 
+$# Reading model information from the specified database, 
+$# D:\Descargas\Aeroespecial\MUSE\ 1\EUE\Trabajo\ nastran\ 
+$# 2\Placa3rig\Inf\Placa3rig.db.
+$# Messages output from the Patran 2022.1  (Student Edition) input deck 
+$# translator on May       17, 2023 at 17:15:47.
+$# 
+$# The NASTRAN input file, Placa3rig.bdf, has been successfully opened.
+$# 
+$# Translating 624 elements from the element property region 2D_Shell_Al6061.
+$# 
+$# Translating 96 elements from the element property region 1D_Beam_Ext.
+$# 
+$# Translating 1 elements from the element property region 0D_Mass_Inf.
+$# 
+$# Translating 256 elements from the element property region 1D_Beam_Int.
+$# 
+$# Translating 12 elements from the element property region 1D_Bush.
+$# 
+$# Translating 1 elements from the element property region 0D_Mass_Int.
+$# 
+$# 6 property regions translated.
+$# 
+$# Translating 1 referenced material records.
+$# 
+$# Translating 2 multipoint constraints from the entire model.
+$# 
+$# Translating 687 nodes from the entire model.
+$# 
+$# Writing loads for Load Case : Default.
+$# 
+$# Translating nodal constraints in load set : SPC_CBUSH_123456.
+$# Writing interface element lbcs.
+$# Total execution time in real seconds: 0.01
+$# Total execution time in CPU seconds: 0.250999
+$# 
+$# End of NASTRAN input file translation.
+$# Student Edition Patran Nastran Preference Patran 2022.1  (Student Edition) 
+$# has released 0 license(s) to FLEXlm at 17-May-23 17:15:47.
+$# The translation has completed successfully.
+$# No Analysis Requested
+REAL mass_prop_mass_props_array(VIRTUAL)
+STRING mass_prop_entity_list[VIRTUAL]
+STRING mass_prop_reject_list[VIRTUAL]
+mass_prop.cleanup_detailed( mass_prop_mass_props_array, mass_prop_entity_list, @
+ mass_prop_reject_list )
+INTEGER mass_prop_len_elist
+INTEGER mass_prop_num_ents
+INTEGER mass_prop_len_rlist
+INTEGER mass_prop_num_rejects
+INTEGER mass_prop_cord_label
+INTEGER mass_prop_user_cord_label
+mass_prop_create_detailed( "3D", "Group", "FEM", "Summary", 1, [ @
+"default_group"], "", "Coord 0", "Use Element Properties",  @
+"Use Element Properties", "Coord 0", 3, 1, FALSE, FALSE, mass_prop_noutputs,  @
+mass_prop_gnames_out, mass_prop_entities, mass_prop_entity_types,  @
+mass_prop_mass_props_array, mass_prop_entity_list, mass_prop_len_elist,  @
+mass_prop_num_ents, mass_prop_reject_list, mass_prop_len_rlist,  @
+mass_prop_num_rejects, mass_prop_segment_id, mass_prop_cord_label,  @
+mass_prop_user_cord_label )
+$# Warning reported from application MASP
+$#     Some of the referenced element properties define an offset.  All 
+$# offsets are ignored in the calculation of mass properties. This can cause 
+$# the results to change substantially.
+$# Warning reported from application MASP
+$#     The moment of inertia tensor has 2 equal eigenvalues, or principal 
+$# inertias, 2567.747803, 1289.619263, and 1289.619263.  The choices of the 
+$# corresponding eigenvectors or principal directions is arbitrary and may 
+$# not be what you expected.
+$# Warning reported from application MASP
+$#     Some of the specified entities were excluded from the mass property 
+$# calculations because they have no material assigned to them in their 
+$# element property records.
+$# Warning reported from application MASP
+$#     Some of the specified entities were excluded from the mass property 
+$# calculations because some of their needed element properties are not found 
+$# or represented using data types that are supported by the Mass Properties.
+$# Warning reported from application MASP
+$#     The specified entities that were excluded because of the indicated 
+$# warning conditions are: Element 1352:1363
+mass_prop.cleanup_detailed( mass_prop_mass_props_array, mass_prop_entity_list, @
+ mass_prop_reject_list )
+mass_prop_create_detailed( "3D", "Group", "FEM", "Summary", 1, [ @
+"default_group"], "", "Coord 0", "Use Element Properties",  @
+"Use Element Properties", "Coord 0", 3, 1, FALSE, FALSE, mass_prop_noutputs,  @
+mass_prop_gnames_out, mass_prop_entities, mass_prop_entity_types,  @
+mass_prop_mass_props_array, mass_prop_entity_list, mass_prop_len_elist,  @
+mass_prop_num_ents, mass_prop_reject_list, mass_prop_len_rlist,  @
+mass_prop_num_rejects, mass_prop_segment_id, mass_prop_cord_label,  @
+mass_prop_user_cord_label )
+$# Warning reported from application MASP
+$#     Some of the referenced element properties define an offset.  All 
+$# offsets are ignored in the calculation of mass properties. This can cause 
+$# the results to change substantially.
+$# Warning reported from application MASP
+$#     The moment of inertia tensor has 2 equal eigenvalues, or principal 
+$# inertias, 2567.747803, 1289.619263, and 1289.619263.  The choices of the 
+$# corresponding eigenvectors or principal directions is arbitrary and may 
+$# not be what you expected.
+$# Warning reported from application MASP
+$#     Some of the specified entities were excluded from the mass property 
+$# calculations because they have no material assigned to them in their 
+$# element property records.
+$# Warning reported from application MASP
+$#     Some of the specified entities were excluded from the mass property 
+$# calculations because some of their needed element properties are not found 
+$# or represented using data types that are supported by the Mass Properties.
+$# Warning reported from application MASP
+$#     The specified entities that were excluded because of the indicated 
+$# warning conditions are: Element 1352:1363
+$#  Beginning analysis of  Placa3rig
+jobfile.open( "Placa3rig", "ANALYZE NO JOBFILE" )
+$# Question from application APP INTERFACES
+$#     The jobname (Placa3rig) is already defined in the database. Do you 
+$# wish to overwrite?
+$? YES 6016027 
+msc_delete_old_files( "Placa3rig", ".bdf", ".h5" )
+$# Question from application APP INTERFACES
+$#     Files from a previous analysis conflict with the current job name: 
+$# "Placa3rig".  These files are Placa3rig.bdf.  Will you permit deletion of 
+$# these files?
+$? YES 6022037 
+jobfile.write_spl( "/* Jobfile for PATNAS created %A% at %A% */", ["17-May-23" @
+, "17:16:29"] )
+jobfile.writec( "", "TRANSLATOR = pat3nas" )
+jobfile.writec( "DATABASE", "D:\Descargas\Aeroespecial\MUSE 1\EUE\Trabajo " // @
+"nastran 2\Placa3rig\Inf\Placa3rig.db" )
+jobfile.writec( "JOBNAME", "Placa3rig" )
+jobfile.writec( "ANALYSIS TITLE", "" )
+jobfile.writec( "ANALYSIS SUBTITLE", "" )
+jobfile.writec( "ANALYSIS LABEL", "" )
+jobfile.writec( "", "" )
+jobfile.writec( "OBJECT", "Entire Model" )
+jobfile.writec( "METHOD", "Analysis Deck" )
+jobfile.writec( "", "" )
+jobfile.writec( "MODEL SUFFIX", ".bdf" )
+jobfile.writec( "RESULTS SUFFIX", ".h5" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * File Search Path Declaration" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\shareware\msc\unsupported\utilities\extra_files" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\helpfiles" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\alters" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\icons" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\icons\RibbonIcons" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\bin" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\bin\exe" )
+jobfile.writec( "File Search Path", "C:\Users\tomas" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\mscprocor_files\dmap" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\mscprocor_files\plb" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\mscprocor_files\lib" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\mscprocor_files\icons" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\shareware\msc\unsupported\utilities\icons" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\shareware\msc\unsupported\utilities\plb" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\mscexplore_files\" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Translation Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "DATA OUTPUT", "HDF5+PRINT" )
+jobfile.writec( "OUTPUT2 REQUESTS", "P3 Built In" )
+jobfile.writec( "OUTPUT2 FORMAT", "Binary" )
+jobfile.writec( "DIVISION TOLERANCE", "1.0e-08" )
+jobfile.writec( "NUMERICAL TOLERANCE", "1.0e-04" )
+jobfile.writec( "WRITING TOLERANCE", "1.0e-21" )
+jobfile.writec( "GEOM CHECK", "INFORM" )
+jobfile.writec( "SORTED BULK", "NO" )
+jobfile.writec( "CARD FORMAT", "either" )
+jobfile.writec( "NODE COORDINATES", "reference frame" )
+jobfile.writec( "COORD COORDINATES", "global" )
+jobfile.writec( "MSC.Nastran VERSION", "2022.1" )
+jobfile.writec( "WRITE STORED PRECISION", "TRUE" )
+jobfile.writec( "WRITE IN FREE FORMAT", "FALSE" )
+jobfile.writec( "PROPS ON ELEM ENTRY", "FALSE" )
+jobfile.writec( "CONTINUATION ENTRY", "FALSE" )
+jobfile.writec( "PCOMPG ENTRY", "TRUE" )
+jobfile.writec( "CONVERT CBAR CBEAM", "FALSE" )
+jobfile.writec( "ITERATIVE SOLVER", "FALSE" )
+jobfile.writei( "SUPER ELEMENT 0", 0 )
+jobfile.writec( "SEALL WRITE", "FALSE" )
+jobfile.writec( "PART SUPERELEMENT CREATE", "TRUE" )
+jobfile.writec( "AUTOQSET", "FALSE" )
+jobfile.writec( "FIXEDB", "FALSE" )
+jobfile.writei( "SUPER TREE COUNT", 0 )
+jobfile.writec( "MODEL TOLERANCE", "4.9999999E-06" )
+jobfile.writec( "ELEMENT PROPERTY OFFSET", "0" )
+jobfile.writec( "MATERIAL PROPERTY OFFSET", "0" )
+jobfile.writec( "TABLE OFFSET", "0" )
+jobfile.writec( "LOAD SET OFFSET", "0" )
+jobfile.writec( "LOAD CASE OFFSET", "0" )
+jobfile.writec( "CONTROL SET OFFSET", "0" )
+jobfile.writec( "RIGID ELEMENT OFFSET", "0" )
+jobfile.writec( "SCALAR POINT OFFSET", "0" )
+jobfile.writec( "BEGINNING CONTINUATION MARKER", "+      A" )
+jobfile.writec( "NUMBER ONLY", "ON" )
+jobfile.writec( "BEGINNING NUMBER", "OFF" )
+jobfile.writec( "TRAILING NUMBER", "OFF" )
+jobfile.writec( "SYNTAX NUMBER", "ON" )
+jobfile.writec( "SYNTAX MARKER", "." )
+jobfile.writec( "EXTERNAL SUPERELEMENT METHOD", "NONE" )
+jobfile.writec( "GRID COORDINATES ROUNDING", "15" )
+jobfile.writec( "COORD DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "MPC DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "LBC DATA PRECISION ROUNDING", "7" )
+jobfile.writec( "MAT DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "PROP DATA PRECISION ROUNDING", "7" )
+jobfile.writec( "USE LEGACY PRECISION", "FALSE" )
+jobfile.writec( "EXPONENTIAL WRITE", "As Needed" )
+jobfile.writec( "EXPONENTIAL FORM", "Condensed" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Solution Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "SOLUTION TYPE", "NORMAL MODES" )
+jobfile.writei( "SOLUTION SEQUENCE", 103 )
+jobfile.writec( "DATABASE RUN", "ON" )
+jobfile.writec( "INTERACTIVE MODES", "OFF" )
+jobfile.writec( "CYCLIC SYMMETRY", "OFF" )
+jobfile.writec( "AUTOMATIC CONSTRAINTS", "ON" )
+jobfile.writec( "SHELL NORMAL TOLERANCE", "" )
+jobfile.writec( "MASS CALCULATION", "Lumped" )
+jobfile.writec( "DATA DECK ECHO", "None" )
+jobfile.writec( "PLATE RZ STIFFNESS FACTOR", "100.0" )
+jobfile.writec( "MAXIMUM PRINTED LINES", "" )
+jobfile.writec( "MAXIMUM RUN TIME", "" )
+jobfile.writec( "WT-MASS CONVERSION", "1.0" )
+jobfile.writec( "NODE ID FOR WT-GENER", "" )
+jobfile.writec( "RIGID ELEMENT TYPE", "LINEAR" )
+jobfile.writec( "USE SOL600", "OFF" )
+jobfile.writei( "CONTACT-SEGMENT-CONTROL METHOD", 1 )
+jobfile.writec( "IMPLNL FGCRCEN", "" )
+jobfile.writec( "FGCRCEN", "" )
+jobfile.writec( "IMPLNL FGCRCN1", "" )
+jobfile.writec( "FGCRCN1", "" )
+jobfile.writei( "CONTACT-CRITERION", 0 )
+jobfile.writei( "CONTACT-REL_ABS", 0 )
+jobfile.writec( "CONTACT-FRICTION-TYPE", "None" )
+jobfile.writec( "CONTACT-AUGMENTATION-NORMAL METHOD", "None" )
+jobfile.writer( "CONTACT-AUGMENTATION-NORMAL PENALTY", 0. )
+jobfile.writec( "CONTACT-AUGMENTATION-TANGENTIAL METHOD", "0" )
+jobfile.writer( "CONTACT-AUGMENTATION-TANGENTIAL PENALTY", 0. )
+jobfile.writer( "CONTACT-AUGMENTATION-TANGENTIAL SLIP", 0. )
+jobfile.writei( "CONTACT-LINCNT METHOD", 0 )
+jobfile.writec( "RESIDUAL VECTOR", "Nastran Default" )
+jobfile.writec( "SN MEAN STRESS CORRECTION", "NONE" )
+jobfile.writec( "NEF FATIGUE STRESS OUTPUT", "NONE" )
+jobfile.writec( "NEF STRESS UNITS", "MPA" )
+jobfile.writec( "NEF STRESS COMBINATION", "ABSMAXPR" )
+jobfile.writec( "NEF RESULT LOCATION", "NODA" )
+jobfile.writec( "NEF RECOVERY LOCATION", "CORNER" )
+jobfile.writec( "NEF LAYER LOCATION", "WORST" )
+jobfile.writec( "NEF INTERPOLATION LIMIT", "0" )
+jobfile.writec( "NEF LEVEL OF MESSAGE", "0" )
+jobfile.writec( "NEF NUMBER OF THREADS", "1" )
+jobfile.writer( "NEF CERTAINTY OF SURVIVAL", 50. )
+jobfile.writer( "NEF OVERALL SCALE FACTOR", 1. )
+jobfile.writer( "NEF TOP STRESS PERCENTAGE FILTER", 100. )
+jobfile.writer( "NEF TOP DAMAGE PERCENTAGE FILTER", 100. )
+jobfile.writec( "NEF TIME HISTORY DIRECTORY", "C:\Users\tomas" )
+jobfile.writei( "NEF MAX LOAD PER EVENT", 1 )
+jobfile.writec( "NEF EVENT DATA", "0" )
+jobfile.writec( "NEF LOAD SEQUENCE DATA", "0" )
+jobfile.writec( "USE CONTACT TABLE", "OFF" )
+jobfile.writec( "INITIAL CONTACTPAIR LOADCASE NAME", "" )
+jobfile.writei( "MDOF DATA", 0 )
+jobfile.writec( "CELL WRITE", "ON" )
+jobfile.writei( "CELL INPUT 0", 0 )
+jobfile.writec( "FMS WRITE", "ON" )
+jobfile.writei( "FMS INPUT 0", 0 )
+jobfile.writec( "EXEC WRITE", "ON" )
+jobfile.writei( "EXEC INPUT 0", 0 )
+jobfile.writec( "CASE WRITE", "ON" )
+jobfile.writei( "CASE INPUT 0", 0 )
+jobfile.writec( "BULK WRITE", "ON" )
+jobfile.writei( "BULK INPUT 0", 0 )
+jobfile.writec( "CELL DTI POSITION", "START" )
+jobfile.writec( "FMS DTI POSITION", "START" )
+jobfile.writec( "EXEC DTI POSITION", "START" )
+jobfile.writec( "CASE DTI POSITION", "START" )
+jobfile.writec( "BULK DTI POSITION", "START" )
+jobfile.writec( "", "END" )
+jobfile.close(  )
+mscnastran_job.associate_subcases( "103", "Placa3rig", 1, ["Default"] )
+analysis_submit_2( "MSC.Nastran", "Placa3rig" )
+$# Patran 2022.1  (Student Edition) has obtained 0 concurrent license(s) from 
+$# FLEXlm per a request to execute on Windows node DESKTOP-SL99VP6(
+$# 60f6775e7a6d) (Windows 6.2 (Build 9200: Service Pack 0)) at 17-May-23 
+$# 17:16:29.
+$# 
+$# Reading model information from the specified database, 
+$# D:\Descargas\Aeroespecial\MUSE\ 1\EUE\Trabajo\ nastran\ 
+$# 2\Placa3rig\Inf\Placa3rig.db.
+$# Messages output from the Patran 2022.1  (Student Edition) input deck 
+$# translator on May       17, 2023 at 17:16:29.
+$# 
+$# The NASTRAN input file, Placa3rig.bdf, has been successfully opened.
+$# 
+$# Translating 624 elements from the element property region 2D_Shell_Al6061.
+$# 
+$# Translating 96 elements from the element property region 1D_Beam_Ext.
+$# 
+$# Translating 1 elements from the element property region 0D_Mass_Inf.
+$# 
+$# Translating 256 elements from the element property region 1D_Beam_Int.
+$# 
+$# Translating 12 elements from the element property region 1D_Bush.
+$# 
+$# Translating 1 elements from the element property region 0D_Mass_Int.
+$# 
+$# 6 property regions translated.
+$# 
+$# Translating 1 referenced material records.
+$# 
+$# Translating 2 multipoint constraints from the entire model.
+$# 
+$# Translating 687 nodes from the entire model.
+$# 
+$# Writing loads for Load Case : Default.
+$# 
+$# Translating nodal constraints in load set : SPC_CBUSH_123456.
+$# Writing interface element lbcs.
+$# Total execution time in real seconds: 0.01
+$# Total execution time in CPU seconds: 0.219002
+$# 
+$# End of NASTRAN input file translation.
+$# Student Edition Patran Nastran Preference Patran 2022.1  (Student Edition) 
+$# has released 0 license(s) to FLEXlm at 17-May-23 17:16:29.
+$# The translation has completed successfully.
+$# No Analysis Requested
+ga_view_center_set( -0.001472, -0.039365 )
+ga_view_zoom_set( 0.420592 )
+ga_view_center_set( -0.006118, -0.005839 )
+ga_view_zoom_set( 0.473166 )
+ga_view_center_set( -0.011344, 0.031879 )
+ga_view_zoom_set( 0.532312 )
+ga_view_center_set( -0.017224, 0.074311 )
+ga_view_zoom_set( 0.598851 )
+ga_view_center_set( -0.024060, 0.118519 )
+ga_view_zoom_set( 0.673708 )
+ga_view_center_set( -0.016783, 0.075854 )
+ga_view_zoom_set( 0.598851 )
+ga_view_center_set( -0.010316, 0.037734 )
+ga_view_zoom_set( 0.532312 )
+ga_view_center_set( -0.004567, 0.003849 )
+ga_view_zoom_set( 0.473166 )
+ga_view_center_set( 0.000544, -0.026271 )
+ga_view_zoom_set( 0.420592 )
+ga_view_center_set( 0.011693, -0.092324 )
+ga_view_zoom_set( 0.305885 )
+ga_view_center_set( 0.013496, -0.109793 )
+ga_view_zoom_set( 0.271898 )
+ga_view_center_set( 0.015097, -0.125322 )
+ga_view_zoom_set( 0.241687 )
+ga_view_center_set( 0.016521, -0.139124 )
+ga_view_zoom_set( 0.214833 )
+ga_view_center_set( 0.018672, -0.161209 )
+ga_view_zoom_set( 0.171866 )
+ga_view_center_set( 0.021020, -0.185301 )
+ga_view_zoom_set( 0.124994 )
+ga_view_aa_set( -82.255714, 3.967674, 32.910828 )
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "D:\Descargas\Aeroespecial\MUSE 1\EUE\Traba" // @
+"jo nastran 2\Placa3rig\Inf\Placa3rig.db" )
+msc_dra_add_param( "JOBNAME", "Placa3rig" )
+msc_dra_add_param( "RESULTS FILE", "D:\Descargas\Aeroespecial\MUSE 1\EUE\T" // @
+"rabajo nastran 2\Placa3rig\Inf\Analisis\Vib\placa3rig.h5" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "4.9999999E-06" )
+msc_dra_add_param( "OBJECTIVE FUNCTION", "ON" )
+msc_dra_add_param( "DESIGN CONSTRAINTS", "ON" )
+msc_dra_add_param( "DESIGN VARIABLES", "ON" )
+msc_dra_add_param( "COMBINE RESULTCASES", "ON" )
+msc_dra_add_param( "COMBINE MODULES", "OFF" )
+msc_dra_add_param( "SPLINE IMPORT DATA", "OFF" )
+msc_dra_add_param( "SPLINE POST DATA", "ZERO" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "ON" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "CREATE P-ORDER FIELD", "" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Both        " )
+msc_dra_add_param( "NASTRAN VERSION", "" )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "Placa3rig", "Attach HDF5 Results File",  @
+"D:\Descargas\Aeroespecial\MUSE 1\EUE\Trabajo nastran 2\Placa3rig\Inf\Anal" // @
+"isis\Vib\placa3rig.h5", TRUE )
+$# Attaching Direct Results Access file: "D:\Descargas\Aeroespecial\MUSE 
+$# 1\EUE\Trabajo nastran 2\Placa3rig\Inf\Analisis\Vib\placa3rig.h5"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Mode 1: Freq.=12.9844
+$# Processing result sub-case: Mode 2: Freq.=16.2399
+$# Processing result sub-case: Mode 3: Freq.=16.2399
+$# Processing result sub-case: Mode 4: Freq.=18.1399
+$# Processing result sub-case: Mode 5: Freq.=22.8153
+$# Processing result sub-case: Mode 6: Freq.=22.8153
+$# Processing result sub-case: Mode 7: Freq.=33.418
+$# Processing result sub-case: Mode 8: Freq.=35.4496
+$# Processing result sub-case: Mode 9: Freq.=39.9088
+$# Processing result sub-case: Mode 10: Freq.=41.3392
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.016
+$# *** End:   Attach Result File ***
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "D:\Descargas\Aeroespecial\MUSE 1\EUE\Traba" // @
+"jo nastran 2\Placa3rig\Inf\Placa3rig.db" )
+msc_dra_add_param( "JOBNAME", "" )
+msc_dra_add_param( "RESULTS FILE", "D:\Descargas\Aeroespecial\MUSE 1\EUE\T" // @
+"rabajo nastran 2\Placa3rig\Inf\Analisis\Est_Long\model_quasistatic_z.xdb" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "4.9999999E-06" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "ON" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Both        " )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "", "Attach Results File No Job",  @
+"D:\Descargas\Aeroespecial\MUSE 1\EUE\Trabajo nastran 2\Placa3rig\Inf\Anal" // @
+"isis\Est_Long\model_quasistatic_z.xdb", TRUE )
+$# Attaching Direct Results Access file: "D:\Descargas\Aeroespecial\MUSE 
+$# 1\EUE\Trabajo nastran 
+$# 2\Placa3rig\Inf\Analisis\Est_Long\model_quasistatic_z.xdb"
+$# XDB file created by "MSC.NASTRAN V2022" on 5/17/2023 using "VENDOR:INTEL   
+$#              MODEL:INTEL(R) CORE(TM) I5 OPSYS:WINDOWS 10 HOME 6.2"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "D:\Descargas\Aeroespecial\MUSE 1\EUE\Traba" // @
+"jo nastran 2\Placa3rig\Inf\Placa3rig.db" )
+msc_dra_add_param( "JOBNAME", "" )
+msc_dra_add_param( "RESULTS FILE", "D:\Descargas\Aeroespecial\MUSE 1\EUE\T" // @
+"rabajo nastran 2\Placa3rig\Inf\Analisis\Est_Lat\model_quasistatic_xy.xdb" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "4.9999999E-06" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "ON" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Both        " )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "", "Attach Results File No Job",  @
+"D:\Descargas\Aeroespecial\MUSE 1\EUE\Trabajo nastran 2\Placa3rig\Inf\Anal" // @
+"isis\Est_Lat\model_quasistatic_xy.xdb", TRUE )
+$# Attaching Direct Results Access file: "D:\Descargas\Aeroespecial\MUSE 
+$# 1\EUE\Trabajo nastran 
+$# 2\Placa3rig\Inf\Analisis\Est_Lat\model_quasistatic_xy.xdb"
+$# XDB file created by "MSC.NASTRAN V2022" on 5/17/2023 using "VENDOR:INTEL   
+$#              MODEL:INTEL(R) CORE(TM) I5 OPSYS:WINDOWS 10 HOME 6.2"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 1: Freq.=12.9844", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+ga_view_aa_set( -42.127567, 11.486362, 88.270386 )
+ga_view_aa_set( -63.940937, 3.998500, 78.901688 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 2: Freq.=16.2399", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 3: Freq.=16.2399", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:DEFAULT",  @
+"A1:Mode 4: Freq.=18.1399", "Eigenvectors", "Translational", "(NON-LAYERED)",  @
+"MAG", "AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+$# Error reported from application ELEM_PROPS
+$#     The Element Properties must be Entered to continue.
+$? NO 29002021 
+res_display_tool_delete( "Fringe", "default_Fringe" )
+ga_view_aa_set( -61.825485, 0.236284, -127.737328 )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A2:Static Subcase", "Bar Stresses", "Minimum Combined", "At Center", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A2:Static Subcase", "Bar Stresses", "Maximum Combined", "At Center", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A2:Static Subcase", "Stress Tensor", "", "At Z1", "VONM", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A2:Static Subcase", "Stress Invariants", "Von Mises", "At Z1", "", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A2:Static Subcase", "Stress Invariants", "Minor Principal", "At Z1", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A2:Static Subcase", "Stress Invariants", "Major Principal", "At Z1", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+elementprops_modify( "2D_Shell_Al6061", "2D_Shell_Al6061", 51, 25, 35, 1, 1,  @
+20, [13, 20, 36, 4037, 4111, 4118, 4119, 8111, 4401, 4402, 4403, 4404, 4405,  @
+4406, 4407, 4408, 4409], [5, 9, 1, 1, 1, 1, 1, 4, 4, 1, 1, 1, 1, 1, 1, 4, 4],  @
+["m:Ti64", "", "0.002", "", "", "", "", "", "", "", "", "", "", "", "", "", "" @
+], "Element 1:576 3001:3048" )
+$# Property Set "2D_Shell_Al6061" modified.
+$# Warning reported from application Results
+$#     Detaching from the selected Direct Results Access file(s). This 
+$# operation cannot be undone. Please reattach file(s) if this was not the 
+$# desired action!
+$# Detach external results file:  D:\Descargas\Aeroespecial\MUSE 
+$# 1\EUE\Trabajo nast
+$# ran 2\Placa3rig\Inf\Analisis\Vib\placa3rig.h5
+res_dra_detach_file( 1, 150, 49 )
+$# Detach external results file:  D:\Descargas\Aeroespecial\MUSE 
+$# 1\EUE\Trabajo nast
+$# ran 2\Placa3rig\Inf\Analisis\Est_Long\model_quasistatic_z.xdb
+res_dra_detach_file( 2, 130, 50 )
+$# Detach external results file:  D:\Descargas\Aeroespecial\MUSE 
+$# 1\EUE\Trabajo nast
+$# ran 2\Placa3rig\Inf\Analisis\Est_Lat\model_quasistatic_xy.xdb
+res_dra_detach_file( 3, 130, 51 )
+beam_section_create( "Sect_Rig3", "BOX", ["0.0099999998", "0.02",  @
+"0.0010000001", "0.0010000001"] )
+$# Beam Section "Sect_Rig3" created.
+$# UNDO: Beam Section Create
+elementprops_modify( "1D_Beam_Int", "1D_Beam_Int", 11, 2, 42, 1, 1, 20, [39,  @
+13, 6, 4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047,  @
+4048, 4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404,  @
+4410, 4411, 8200, 8201, 8202], [12, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1, 1, 1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sect_Rig3",  @
+"m:Ti64", "<0. 0. 1.>", "<0. 0. -0.011>", "<0. 0. -0.011>", "", "", "", "", "" @
+, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+"", "", "Analysis", "Analysis", "Analysis"], "Element 1096:1351" )
+$# Property Set "1D_Beam_Int" modified.
+ga_view_aa_set( -122.260033, -0.156672, -112.782623 )
+elementprops_modify( "1D_Beam_Ext", "1D_Beam_Ext", 11, 2, 42, 1, 1, 20, [39,  @
+13, 6, 4042, 4043, 2047, 2048, 1, 10, 11, 4026, 1026, 4044, 4045, 4037, 4047,  @
+4048, 4050, 4051, 4053, 4054, 4056, 4057, 8112, 4061, 4303, 8111, 4403, 4404,  @
+4410, 4411, 8200, 8201, 8202], [12, 5, 2, 2, 2, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1,  @
+1, 1, 1, 1, 1, 1, 1, 1, 1, 6, 4, 4, 1, 1, 1, 6, 4, 4, 4], ["Sect_Rig3",  @
+"m:Ti64", "<0. 0. 1.>", "<0. 0. -0.011>", "<0. 0. -0.011>", "", "", "", "", "" @
+, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",  @
+"", "", "Analysis", "Analysis", "Analysis"], "Element 1000:1095" )
+$# Property Set "1D_Beam_Ext" modified.
+ga_view_aa_set( -52.270031, -0.687192, 21.688185 )
+ga_view_center_set( 0.007496, -0.060343 )
+ga_view_zoom_set( 0.337574 )
+ga_view_center_set( 0.015077, -0.037038 )
+ga_view_zoom_set( 0.379770 )
+ga_view_center_set( 0.023607, -0.010821 )
+ga_view_zoom_set( 0.427242 )
+ga_view_center_set( 0.033202, 0.018674 )
+ga_view_zoom_set( 0.480647 )
+ga_view_center_set( 0.010550, 0.016079 )
+ga_view_zoom_set( 0.427242 )
+ga_view_center_set( -0.009585, 0.013771 )
+ga_view_zoom_set( 0.379770 )
+ga_view_center_set( -0.027482, 0.011721 )
+ga_view_zoom_set( 0.337574 )
+REAL mass_prop_mass_props_array(VIRTUAL)
+STRING mass_prop_entity_list[VIRTUAL]
+STRING mass_prop_reject_list[VIRTUAL]
+mass_prop.cleanup_detailed( mass_prop_mass_props_array, mass_prop_entity_list, @
+ mass_prop_reject_list )
+INTEGER mass_prop_len_elist
+INTEGER mass_prop_num_ents
+INTEGER mass_prop_len_rlist
+INTEGER mass_prop_num_rejects
+INTEGER mass_prop_cord_label
+INTEGER mass_prop_user_cord_label
+mass_prop_create_detailed( "3D", "Group", "FEM", "Summary", 1, [ @
+"default_group"], "", "Coord 0", "Use Element Properties",  @
+"Use Element Properties", "Coord 0", 3, 1, FALSE, FALSE, mass_prop_noutputs,  @
+mass_prop_gnames_out, mass_prop_entities, mass_prop_entity_types,  @
+mass_prop_mass_props_array, mass_prop_entity_list, mass_prop_len_elist,  @
+mass_prop_num_ents, mass_prop_reject_list, mass_prop_len_rlist,  @
+mass_prop_num_rejects, mass_prop_segment_id, mass_prop_cord_label,  @
+mass_prop_user_cord_label )
+$# Warning reported from application MASP
+$#     Some of the referenced element properties define an offset.  All 
+$# offsets are ignored in the calculation of mass properties. This can cause 
+$# the results to change substantially.
+$# Warning reported from application MASP
+$#     The moment of inertia tensor has 2 equal eigenvalues, or principal 
+$# inertias, 1035.269897, 523.374695, and 523.374695.  The choices of the 
+$# corresponding eigenvectors or principal directions is arbitrary and may 
+$# not be what you expected.
+$# Warning reported from application MASP
+$#     Some of the specified entities were excluded from the mass property 
+$# calculations because they have no material assigned to them in their 
+$# element property records.
+$# Warning reported from application MASP
+$#     Some of the specified entities were excluded from the mass property 
+$# calculations because some of their needed element properties are not found 
+$# or represented using data types that are supported by the Mass Properties.
+$# Warning reported from application MASP
+$#     The specified entities that were excluded because of the indicated 
+$# warning conditions are: Element 1352:1363
+ga_view_center_set( -0.033697, 0.031545 )
+ga_view_zoom_set( 0.379770 )
+ga_view_center_set( -0.040968, 0.053987 )
+ga_view_zoom_set( 0.427242 )
+ga_view_center_set( -0.032439, 0.033223 )
+ga_view_zoom_set( 0.379770 )
+ga_view_center_set( -0.024857, 0.014766 )
+ga_view_zoom_set( 0.337574 )
+ga_view_center_set( -0.018118, -0.001641 )
+ga_view_zoom_set( 0.300065 )
+ga_view_center_set( -0.012029, -0.016126 )
+ga_view_zoom_set( 0.266725 )
+ga_view_center_set( -0.006355, -0.028914 )
+ga_view_zoom_set( 0.237089 )
+ga_view_aa_set( -72.577362, 2.026538, -134.251495 )
+material.rename( "Ti64", "Ti64" )
+material.create( "Analysis code ID", 1, "Analysis type ID", 1, "Ti64", 2,  @
+"Date: 17-May-23           Time: 17:07:01", "Isotropic", 1, "Directionality",  @
+1, "Linearity", 1, "Homogeneous", 0, "Linear Elastic", 1,  @
+"Model Options & IDs", ["", "", "", "", ""], [0, 0, 0, 0, 0], "Active Flag",  @
+1, "Modify", 31, "External Flag", FALSE, "Property IDs", ["Density", ""], [16, @
+ 0], "Property Values", ["3440.", ""] )
+REAL mass_prop_mass_props_array(VIRTUAL)
+STRING mass_prop_entity_list[VIRTUAL]
+STRING mass_prop_reject_list[VIRTUAL]
+mass_prop.cleanup_detailed( mass_prop_mass_props_array, mass_prop_entity_list, @
+ mass_prop_reject_list )
+INTEGER mass_prop_len_elist
+INTEGER mass_prop_num_ents
+INTEGER mass_prop_len_rlist
+INTEGER mass_prop_num_rejects
+INTEGER mass_prop_cord_label
+INTEGER mass_prop_user_cord_label
+mass_prop_create_detailed( "3D", "Group", "FEM", "Summary", 1, [ @
+"default_group"], "", "Coord 0", "Use Element Properties",  @
+"Use Element Properties", "Coord 0", 3, 1, FALSE, FALSE, mass_prop_noutputs,  @
+mass_prop_gnames_out, mass_prop_entities, mass_prop_entity_types,  @
+mass_prop_mass_props_array, mass_prop_entity_list, mass_prop_len_elist,  @
+mass_prop_num_ents, mass_prop_reject_list, mass_prop_len_rlist,  @
+mass_prop_num_rejects, mass_prop_segment_id, mass_prop_cord_label,  @
+mass_prop_user_cord_label )
+$# Warning reported from application MASP
+$#     Some of the referenced element properties define an offset.  All 
+$# offsets are ignored in the calculation of mass properties. This can cause 
+$# the results to change substantially.
+$# Warning reported from application MASP
+$#     The moment of inertia tensor has 2 equal eigenvalues, or principal 
+$# inertias, 1.080554, 1.080554, and 0.103527.  The choices of the 
+$# corresponding eigenvectors or principal directions is arbitrary and may 
+$# not be what you expected.
+$# Warning reported from application MASP
+$#     Some of the specified entities were excluded from the mass property 
+$# calculations because they have no material assigned to them in their 
+$# element property records.
+$# Warning reported from application MASP
+$#     Some of the specified entities were excluded from the mass property 
+$# calculations because some of their needed element properties are not found 
+$# or represented using data types that are supported by the Mass Properties.
+$# Warning reported from application MASP
+$#     The specified entities that were excluded because of the indicated 
+$# warning conditions are: Element 1352:1363
+$#  Beginning analysis of  Placa3rig
+jobfile.open( "Placa3rig", "ANALYZE NO JOBFILE" )
+$# Question from application APP INTERFACES
+$#     The jobname (Placa3rig) is already defined in the database. Do you 
+$# wish to overwrite?
+$? YES 6016027 
+msc_delete_old_files( "Placa3rig", ".bdf", ".h5" )
+$# Question from application APP INTERFACES
+$#     Files from a previous analysis conflict with the current job name: 
+$# "Placa3rig".  These files are Placa3rig.bdf.  Will you permit deletion of 
+$# these files?
+$? YES 6022037 
+jobfile.write_spl( "/* Jobfile for PATNAS created %A% at %A% */", ["17-May-23" @
+, "17:26:53"] )
+jobfile.writec( "", "TRANSLATOR = pat3nas" )
+jobfile.writec( "DATABASE", "D:\Descargas\Aeroespecial\MUSE 1\EUE\Trabajo " // @
+"nastran 2\Placa3rig\Inf\Placa3rig.db" )
+jobfile.writec( "JOBNAME", "Placa3rig" )
+jobfile.writec( "ANALYSIS TITLE", "" )
+jobfile.writec( "ANALYSIS SUBTITLE", "" )
+jobfile.writec( "ANALYSIS LABEL", "" )
+jobfile.writec( "", "" )
+jobfile.writec( "OBJECT", "Entire Model" )
+jobfile.writec( "METHOD", "Analysis Deck" )
+jobfile.writec( "", "" )
+jobfile.writec( "MODEL SUFFIX", ".bdf" )
+jobfile.writec( "RESULTS SUFFIX", ".h5" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * File Search Path Declaration" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "File Search Path", "C:\Users\tomas" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\bin\exe" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\bin" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\icons\RibbonIcons" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\icons" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\alters" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\helpfiles" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\mscexplore_files\" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\shareware\msc\unsupported\utilities\plb" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\shareware\msc\unsupported\utilities\icons" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\mscprocor_files\icons" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\mscprocor_files\lib" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\mscprocor_files\plb" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\mscprocor_files\dmap" )
+jobfile.writec( "File Search Path", "D:\Program Files\MSC.Software\NaPa_SE" // @
+"\20221\Patran\shareware\msc\unsupported\utilities\extra_files" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Translation Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "DATA OUTPUT", "HDF5+PRINT" )
+jobfile.writec( "OUTPUT2 REQUESTS", "P3 Built In" )
+jobfile.writec( "OUTPUT2 FORMAT", "Binary" )
+jobfile.writec( "DIVISION TOLERANCE", "1.0e-08" )
+jobfile.writec( "NUMERICAL TOLERANCE", "1.0e-04" )
+jobfile.writec( "WRITING TOLERANCE", "1.0e-21" )
+jobfile.writec( "GEOM CHECK", "INFORM" )
+jobfile.writec( "SORTED BULK", "NO" )
+jobfile.writec( "CARD FORMAT", "either" )
+jobfile.writec( "NODE COORDINATES", "reference frame" )
+jobfile.writec( "COORD COORDINATES", "global" )
+jobfile.writec( "MSC.Nastran VERSION", "2022.1" )
+jobfile.writec( "WRITE STORED PRECISION", "TRUE" )
+jobfile.writec( "WRITE IN FREE FORMAT", "FALSE" )
+jobfile.writec( "PROPS ON ELEM ENTRY", "FALSE" )
+jobfile.writec( "CONTINUATION ENTRY", "FALSE" )
+jobfile.writec( "PCOMPG ENTRY", "TRUE" )
+jobfile.writec( "CONVERT CBAR CBEAM", "FALSE" )
+jobfile.writec( "ITERATIVE SOLVER", "FALSE" )
+jobfile.writei( "SUPER ELEMENT 0", 0 )
+jobfile.writec( "SEALL WRITE", "FALSE" )
+jobfile.writec( "PART SUPERELEMENT CREATE", "TRUE" )
+jobfile.writec( "AUTOQSET", "FALSE" )
+jobfile.writec( "FIXEDB", "FALSE" )
+jobfile.writei( "SUPER TREE COUNT", 0 )
+jobfile.writec( "MODEL TOLERANCE", "4.9999999E-06" )
+jobfile.writec( "ELEMENT PROPERTY OFFSET", "0" )
+jobfile.writec( "MATERIAL PROPERTY OFFSET", "0" )
+jobfile.writec( "TABLE OFFSET", "0" )
+jobfile.writec( "LOAD SET OFFSET", "0" )
+jobfile.writec( "LOAD CASE OFFSET", "0" )
+jobfile.writec( "CONTROL SET OFFSET", "0" )
+jobfile.writec( "RIGID ELEMENT OFFSET", "0" )
+jobfile.writec( "SCALAR POINT OFFSET", "0" )
+jobfile.writec( "BEGINNING CONTINUATION MARKER", "+      A" )
+jobfile.writec( "NUMBER ONLY", "ON" )
+jobfile.writec( "BEGINNING NUMBER", "OFF" )
+jobfile.writec( "TRAILING NUMBER", "OFF" )
+jobfile.writec( "SYNTAX NUMBER", "ON" )
+jobfile.writec( "SYNTAX MARKER", "." )
+jobfile.writec( "EXTERNAL SUPERELEMENT METHOD", "NONE" )
+jobfile.writec( "GRID COORDINATES ROUNDING", "15" )
+jobfile.writec( "COORD DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "MPC DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "LBC DATA PRECISION ROUNDING", "7" )
+jobfile.writec( "MAT DATA PRECISION ROUNDING", "15" )
+jobfile.writec( "PROP DATA PRECISION ROUNDING", "7" )
+jobfile.writec( "USE LEGACY PRECISION", "FALSE" )
+jobfile.writec( "EXPONENTIAL WRITE", "As Needed" )
+jobfile.writec( "EXPONENTIAL FORM", "Condensed" )
+jobfile.writec( "", "" )
+jobfile.writec( "", "/*" )
+jobfile.writec( "", " * Solution Parameters" )
+jobfile.writec( "", " */" )
+jobfile.writec( "", "" )
+jobfile.writec( "SOLUTION TYPE", "NORMAL MODES" )
+jobfile.writei( "SOLUTION SEQUENCE", 103 )
+jobfile.writec( "DATABASE RUN", "ON" )
+jobfile.writec( "INTERACTIVE MODES", "OFF" )
+jobfile.writec( "CYCLIC SYMMETRY", "OFF" )
+jobfile.writec( "AUTOMATIC CONSTRAINTS", "ON" )
+jobfile.writec( "SHELL NORMAL TOLERANCE", "" )
+jobfile.writec( "MASS CALCULATION", "Lumped" )
+jobfile.writec( "DATA DECK ECHO", "None" )
+jobfile.writec( "PLATE RZ STIFFNESS FACTOR", "100.0" )
+jobfile.writec( "MAXIMUM PRINTED LINES", "" )
+jobfile.writec( "MAXIMUM RUN TIME", "" )
+jobfile.writec( "WT-MASS CONVERSION", "1.0" )
+jobfile.writec( "NODE ID FOR WT-GENER", "" )
+jobfile.writec( "RIGID ELEMENT TYPE", "LINEAR" )
+jobfile.writec( "USE SOL600", "OFF" )
+jobfile.writei( "CONTACT-SEGMENT-CONTROL METHOD", 1 )
+jobfile.writec( "IMPLNL FGCRCEN", "" )
+jobfile.writec( "FGCRCEN", "" )
+jobfile.writec( "IMPLNL FGCRCN1", "" )
+jobfile.writec( "FGCRCN1", "" )
+jobfile.writei( "CONTACT-CRITERION", 0 )
+jobfile.writei( "CONTACT-REL_ABS", 0 )
+jobfile.writec( "CONTACT-FRICTION-TYPE", "None" )
+jobfile.writec( "CONTACT-AUGMENTATION-NORMAL METHOD", "None" )
+jobfile.writer( "CONTACT-AUGMENTATION-NORMAL PENALTY", 0. )
+jobfile.writec( "CONTACT-AUGMENTATION-TANGENTIAL METHOD", "0" )
+jobfile.writer( "CONTACT-AUGMENTATION-TANGENTIAL PENALTY", 0. )
+jobfile.writer( "CONTACT-AUGMENTATION-TANGENTIAL SLIP", 0. )
+jobfile.writei( "CONTACT-LINCNT METHOD", 0 )
+jobfile.writec( "RESIDUAL VECTOR", "Nastran Default" )
+jobfile.writec( "SN MEAN STRESS CORRECTION", "NONE" )
+jobfile.writec( "NEF FATIGUE STRESS OUTPUT", "NONE" )
+jobfile.writec( "NEF STRESS UNITS", "MPA" )
+jobfile.writec( "NEF STRESS COMBINATION", "ABSMAXPR" )
+jobfile.writec( "NEF RESULT LOCATION", "NODA" )
+jobfile.writec( "NEF RECOVERY LOCATION", "CORNER" )
+jobfile.writec( "NEF LAYER LOCATION", "WORST" )
+jobfile.writec( "NEF INTERPOLATION LIMIT", "0" )
+jobfile.writec( "NEF LEVEL OF MESSAGE", "0" )
+jobfile.writec( "NEF NUMBER OF THREADS", "1" )
+jobfile.writer( "NEF CERTAINTY OF SURVIVAL", 50. )
+jobfile.writer( "NEF OVERALL SCALE FACTOR", 1. )
+jobfile.writer( "NEF TOP STRESS PERCENTAGE FILTER", 100. )
+jobfile.writer( "NEF TOP DAMAGE PERCENTAGE FILTER", 100. )
+jobfile.writec( "NEF TIME HISTORY DIRECTORY", "C:\Users\tomas" )
+jobfile.writei( "NEF MAX LOAD PER EVENT", 1 )
+jobfile.writec( "NEF EVENT DATA", "0" )
+jobfile.writec( "NEF LOAD SEQUENCE DATA", "0" )
+jobfile.writec( "USE CONTACT TABLE", "OFF" )
+jobfile.writec( "INITIAL CONTACTPAIR LOADCASE NAME", "" )
+jobfile.writei( "MDOF DATA", 0 )
+jobfile.writec( "CELL WRITE", "ON" )
+jobfile.writei( "CELL INPUT 0", 0 )
+jobfile.writec( "FMS WRITE", "ON" )
+jobfile.writei( "FMS INPUT 0", 0 )
+jobfile.writec( "EXEC WRITE", "ON" )
+jobfile.writei( "EXEC INPUT 0", 0 )
+jobfile.writec( "CASE WRITE", "ON" )
+jobfile.writei( "CASE INPUT 0", 0 )
+jobfile.writec( "BULK WRITE", "ON" )
+jobfile.writei( "BULK INPUT 0", 0 )
+jobfile.writec( "CELL DTI POSITION", "START" )
+jobfile.writec( "FMS DTI POSITION", "START" )
+jobfile.writec( "EXEC DTI POSITION", "START" )
+jobfile.writec( "CASE DTI POSITION", "START" )
+jobfile.writec( "BULK DTI POSITION", "START" )
+jobfile.writec( "", "END" )
+jobfile.close(  )
+mscnastran_job.associate_subcases( "103", "Placa3rig", 1, ["Default"] )
+analysis_submit_2( "MSC.Nastran", "Placa3rig" )
+$# Patran 2022.1  (Student Edition) has obtained 0 concurrent license(s) from 
+$# FLEXlm per a request to execute on Windows node DESKTOP-SL99VP6(
+$# 60f6775e7a6d) (Windows 6.2 (Build 9200: Service Pack 0)) at 17-May-23 
+$# 17:26:54.
+$# 
+$# Reading model information from the specified database, 
+$# D:\Descargas\Aeroespecial\MUSE\ 1\EUE\Trabajo\ nastran\ 
+$# 2\Placa3rig\Inf\Placa3rig.db.
+$# Messages output from the Patran 2022.1  (Student Edition) input deck 
+$# translator on May       17, 2023 at 17:26:54.
+$# 
+$# The NASTRAN input file, Placa3rig.bdf, has been successfully opened.
+$# 
+$# Translating 624 elements from the element property region 2D_Shell_Al6061.
+$# 
+$# Translating 96 elements from the element property region 1D_Beam_Ext.
+$# 
+$# Translating 1 elements from the element property region 0D_Mass_Inf.
+$# 
+$# Translating 256 elements from the element property region 1D_Beam_Int.
+$# 
+$# Translating 12 elements from the element property region 1D_Bush.
+$# 
+$# Translating 1 elements from the element property region 0D_Mass_Int.
+$# 
+$# 6 property regions translated.
+$# 
+$# Translating 1 referenced material records.
+$# 
+$# Translating 2 multipoint constraints from the entire model.
+$# 
+$# Translating 687 nodes from the entire model.
+$# 
+$# Writing loads for Load Case : Default.
+$# 
+$# Translating nodal constraints in load set : SPC_CBUSH_123456.
+$# Writing interface element lbcs.
+$# Total execution time in real seconds: 0.01
+$# Total execution time in CPU seconds: 0.203003
+$# 
+$# End of NASTRAN input file translation.
+$# Student Edition Patran Nastran Preference Patran 2022.1  (Student Edition) 
+$# has released 0 license(s) to FLEXlm at 17-May-23 17:26:54.
+$# The translation has completed successfully.
+$# No Analysis Requested
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "D:\Descargas\Aeroespecial\MUSE 1\EUE\Traba" // @
+"jo nastran 2\Placa3rig\Inf\Placa3rig.db" )
+msc_dra_add_param( "JOBNAME", "" )
+msc_dra_add_param( "RESULTS FILE", "D:\Descargas\Aeroespecial\MUSE 1\EUE\T" // @
+"rabajo nastran 2\Placa3rig\Inf\Analisis\Est_Lat\model_quasistatic_xy.xdb" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "4.9999999E-06" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "ON" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Both        " )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "", "Attach Results File No Job",  @
+"D:\Descargas\Aeroespecial\MUSE 1\EUE\Trabajo nastran 2\Placa3rig\Inf\Anal" // @
+"isis\Est_Lat\model_quasistatic_xy.xdb", TRUE )
+$# Attaching Direct Results Access file: "D:\Descargas\Aeroespecial\MUSE 
+$# 1\EUE\Trabajo nastran 
+$# 2\Placa3rig\Inf\Analisis\Est_Lat\model_quasistatic_xy.xdb"
+$# XDB file created by "MSC.NASTRAN V2022" on 5/17/2023 using "VENDOR:INTEL   
+$#              MODEL:INTEL(R) CORE(TM) I5 OPSYS:WINDOWS 10 HOME 6.2"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "D:\Descargas\Aeroespecial\MUSE 1\EUE\Traba" // @
+"jo nastran 2\Placa3rig\Inf\Placa3rig.db" )
+msc_dra_add_param( "JOBNAME", "" )
+msc_dra_add_param( "RESULTS FILE", "D:\Descargas\Aeroespecial\MUSE 1\EUE\T" // @
+"rabajo nastran 2\Placa3rig\Inf\Analisis\Est_Long\model_quasistatic_z.xdb" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "4.9999999E-06" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "ON" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Both        " )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "", "Attach Results File No Job",  @
+"D:\Descargas\Aeroespecial\MUSE 1\EUE\Trabajo nastran 2\Placa3rig\Inf\Anal" // @
+"isis\Est_Long\model_quasistatic_z.xdb", TRUE )
+$# Attaching Direct Results Access file: "D:\Descargas\Aeroespecial\MUSE 
+$# 1\EUE\Trabajo nastran 
+$# 2\Placa3rig\Inf\Analisis\Est_Long\model_quasistatic_z.xdb"
+$# XDB file created by "MSC.NASTRAN V2022" on 5/17/2023 using "VENDOR:INTEL   
+$#              MODEL:INTEL(R) CORE(TM) I5 OPSYS:WINDOWS 10 HOME 6.2"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.000
+$# *** End:   Attach Result File ***
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "D:\Descargas\Aeroespecial\MUSE 1\EUE\Traba" // @
+"jo nastran 2\Placa3rig\Inf\Placa3rig.db" )
+msc_dra_add_param( "JOBNAME", "" )
+msc_dra_add_param( "RESULTS FILE", "D:\Descargas\Aeroespecial\MUSE 1\EUE\T" // @
+"rabajo nastran 2\Placa3rig\Inf\Analisis\Vib\placa3rig.h5" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "4.9999999E-06" )
+msc_dra_add_param( "OBJECTIVE FUNCTION", "ON" )
+msc_dra_add_param( "DESIGN CONSTRAINTS", "ON" )
+msc_dra_add_param( "DESIGN VARIABLES", "ON" )
+msc_dra_add_param( "COMBINE RESULTCASES", "ON" )
+msc_dra_add_param( "COMBINE MODULES", "OFF" )
+msc_dra_add_param( "SPLINE IMPORT DATA", "OFF" )
+msc_dra_add_param( "SPLINE POST DATA", "ZERO" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "ON" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "CREATE P-ORDER FIELD", "" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Both        " )
+msc_dra_add_param( "NASTRAN VERSION", "" )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "", "Attach HDF5 Results File",  @
+"D:\Descargas\Aeroespecial\MUSE 1\EUE\Trabajo nastran 2\Placa3rig\Inf\Anal" // @
+"isis\Vib\placa3rig.h5", TRUE )
+$# Attaching Direct Results Access file: "D:\Descargas\Aeroespecial\MUSE 
+$# 1\EUE\Trabajo nastran 2\Placa3rig\Inf\Analisis\Vib\placa3rig.h5"
+$# *** Begin: Attach Result File ***
+$# Processing result sub-case: Mode 1: Freq.=103.46
+$# Processing result sub-case: Mode 2: Freq.=103.46
+$# Processing result sub-case: Mode 3: Freq.=246.267
+$# Processing result sub-case: Mode 4: Freq.=382.106
+$# Processing result sub-case: Mode 5: Freq.=452.029
+$# Processing result sub-case: Mode 6: Freq.=452.029
+$# Processing result sub-case: Mode 7: Freq.=1846.92
+$# Processing result sub-case: Mode 8: Freq.=2486.42
+$# Processing result sub-case: Mode 9: Freq.=2486.42
+$# Processing result sub-case: Mode 10: Freq.=2660.89
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.015
+$# *** End:   Attach Result File ***
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A2:Static Subcase", "Bar Stresses", "Axial", "At Center", "VONM", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+REAL mass_prop_mass_props_array(VIRTUAL)
+STRING mass_prop_entity_list[VIRTUAL]
+STRING mass_prop_reject_list[VIRTUAL]
+mass_prop.cleanup_detailed( mass_prop_mass_props_array, mass_prop_entity_list, @
+ mass_prop_reject_list )
+INTEGER mass_prop_len_elist
+INTEGER mass_prop_num_ents
+INTEGER mass_prop_len_rlist
+INTEGER mass_prop_num_rejects
+INTEGER mass_prop_cord_label
+INTEGER mass_prop_user_cord_label
+mass_prop_create_detailed( "3D", "Group", "FEM", "Summary", 1, [ @
+"default_group"], "", "Coord 0", "Use Element Properties",  @
+"Use Element Properties", "Coord 0", 3, 1, FALSE, FALSE, mass_prop_noutputs,  @
+mass_prop_gnames_out, mass_prop_entities, mass_prop_entity_types,  @
+mass_prop_mass_props_array, mass_prop_entity_list, mass_prop_len_elist,  @
+mass_prop_num_ents, mass_prop_reject_list, mass_prop_len_rlist,  @
+mass_prop_num_rejects, mass_prop_segment_id, mass_prop_cord_label,  @
+mass_prop_user_cord_label )
+$# Warning reported from application MASP
+$#     Some of the referenced element properties define an offset.  All 
+$# offsets are ignored in the calculation of mass properties. This can cause 
+$# the results to change substantially.
+$# Warning reported from application MASP
+$#     The moment of inertia tensor has 2 equal eigenvalues, or principal 
+$# inertias, 1.080554, 1.080554, and 0.103527.  The choices of the 
+$# corresponding eigenvectors or principal directions is arbitrary and may 
+$# not be what you expected.
+$# Warning reported from application MASP
+$#     Some of the specified entities were excluded from the mass property 
+$# calculations because they have no material assigned to them in their 
+$# element property records.
+$# Warning reported from application MASP
+$#     Some of the specified entities were excluded from the mass property 
+$# calculations because some of their needed element properties are not found 
+$# or represented using data types that are supported by the Mass Properties.
+$# Warning reported from application MASP
+$#     The specified entities that were excluded because of the indicated 
+$# warning conditions are: Element 1352:1363
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A2:Static Subcase", "Bar Stresses", "Bending", "At Point C", "VONM", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A2:Static Subcase", "Bar Stresses", "Maximum Combined", "At Center", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A2:Static Subcase", "Bar Stresses", "Minimum Combined", "At Center", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A2:Static Subcase", "Stress Tensor", "", "At Z1", "VONM", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A2:Static Subcase", "Stress Invariants", "Von Mises", "At Z1", "", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A2:Static Subcase", "Stress Invariants", "Minor Principal", "At Z1", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_Z",  @
+"A2:Static Subcase", "Stress Invariants", "Major Principal", "At Z1", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Bar Stresses", "Axial", "At Center", "VONM", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Bar Stresses", "Bending", "At Point C", "VONM", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Bar Stresses", "Maximum Combined", "At Center", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Bar Stresses", "Minimum Combined", "At Center", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Stress Tensor", "", "At Z1", "VONM", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Stress Invariants", "Von Mises", "At Z1", "", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Stress Invariants", "Minor Principal", "At Z1", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Stress Invariants", "Major Principal", "At Z1", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Bar Stresses", "Axial", "At Center", "VONM", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Bar Stresses", "Bending", "At Point C", "VONM", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Bar Stresses", "Maximum Combined", "At Center", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Bar Stresses", "Minimum Combined", "At Center", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Stress Invariants", "Major Principal", "At Z1", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Stress Invariants", "Minor Principal", "At Z1", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Stress Invariants", "Von Mises", "At Z1", "", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Bar Stresses", "Axial", "At Center", "VONM", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Bar Stresses", "Bending", "At Point C", "VONM", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Bar Stresses", "Maximum Combined", "At Center", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Bar Stresses", "Minimum Combined", "At Center", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Stress Invariants", "Major Principal", "At Z1", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Stress Invariants", "Minor Principal", "At Z1", "",  @
+"AsIs", "DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Stress Invariants", "Von Mises", "At Z1", "", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "SC1:QSTATIC_XY",  @
+"A1:Static Subcase", "Stress Tensor", "", "At Z1", "VONM", "AsIs",  @
+"DeriveAverage", "All", "ShapeFunc", "", 0. )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN"] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 13, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3", "ImperfFlag:OFF"],  @
+TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+$# Warning reported from application Results
+$#     Detaching from the selected Direct Results Access file(s). This 
+$# operation cannot be undone. Please reattach file(s) if this was not the 
+$# desired action!
+$# Detach external results file:  D:\Descargas\Aeroespecial\MUSE 
+$# 1\EUE\Trabajo nast
+$# ran 2\Placa3rig\Inf\Analisis\Est_Lat\model_quasistatic_xy.xdb
+res_dra_detach_file( 1, 130, 52 )
+$# Detach external results file:  D:\Descargas\Aeroespecial\MUSE 
+$# 1\EUE\Trabajo nast
+$# ran 2\Placa3rig\Inf\Analisis\Est_Long\model_quasistatic_z.xdb
+res_dra_detach_file( 2, 130, 53 )
+$# Detach external results file:  D:\Descargas\Aeroespecial\MUSE 
+$# 1\EUE\Trabajo nast
+$# ran 2\Placa3rig\Inf\Analisis\Vib\placa3rig.h5
+res_dra_detach_file( 3, 150, 54 )
+uil_primary_file.db_save(  )
+uil_file_close.goquit(  )
+$# Flushing the User Data Manager
+$# Session file patran.ses.02 stopped recording at 17-May-23 17:37:43

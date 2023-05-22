@@ -1,0 +1,120 @@
+\section{Enunciado}
+
+Se ha de diseñar una bandeja cuadrada que corresponda a la bandeja inferior del microsatélite. Esta bandeja tendra por tanto que soportar tanto una masa puntual correspondiente a los equipos que se sitúen sobre ella como una segunda masa que simule el peso del resto del satélite. Además, con el fin de modelizar la unión de la bandeja al sistema de separación, se han de incluir una serie de elementos \textit{CBUSH} que simulen los tornillos. Las dimensiones de la bandeja, la masa de los equipos y del satélite y la configuración de los rigidizadores interiores ha sido asignada en función del grupo de trabajo, siendo la descrita en este informe la que se muestra en la \autoref{tab: caracteristicas} y \autoref{fig: configrigi}.
+
+\begin{table}[H]
+\centering
+\caption{Características de la bandeja asignada.}
+\label{tab: caracteristicas}
+\begin{tabular}{l c c c}
+\toprule
+\multicolumn{1}{c}{\textbf{Configuración}}  & \multicolumn{1}{c}{\textbf{Masa equipos} [kg]}   & \multicolumn{1}{c}{\textbf{Masa estructura} [kg]} & \multicolumn{1}{c}{\textbf{Dimensiones} [mm]} \\ \midrule
+  Ortogonal ($\pm 45^{\circ}$ )  & 11 & 39.325 & 450 $\times$ 450 \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{Figures/Config.png}
+    \caption{Configuración ortogonal $\pm 45^{\circ}$}
+    \label{fig: configrigi}
+\end{figure}
+
+Las masas puntuales especificadas en la \autoref{tab: caracteristicas} han de colocarse de la siguiente forma:
+\begin{itemize}
+\item La masa del equipo se modeliza igual que en el caso de la bandeja intermedia, esto es, colocando una masa puntual ubicada en el eje de simetría de la bandeja, a una distancia de 80 mm sobre la superficie. Para lograr la unión entre el equipo y la bandeja, se utiliza un elemento rígido RBE2, conectados a 4 puntos de la bandeja. Los puntos de conexión en la bandeja son seleccionados por cada grupo, siendo preferible que estén en el cruce de los rigidizadores.
+\item La masa del resto de la estructura se simula incluyendo una segunda masa puntual que representa la masa del resto del satélite (3 bandejas rigidizadas, 2 equipos, 4 paneles laterales y 4 vigas en L) que se apoya sobre el contorno exterior de esta bandeja inferior mediante un elemento rígido RBE2. Esta segunda masa está situada en el eje central, a una distancia de 0.38 m con respecto al plano de la bandeja
+\end{itemize}
+
+El número de elementos \textit{CBUSH} de la union adaptador-bandeja ha de oscilar entre 8 y 12, estando los nodos superiores de estos elementos situados en la bandeja y los inferiores a 20 mm de la misma. Sobre estos últimos nodos se aplican restricciones a los 6 grados de libertad 
+
+Los requisitos estructurales que debe de cumplir el diseño propuesto se muestran en la \autoref{tab: requisitos estructurales}.
+
+\begin{table}[H]
+\centering
+\caption{Requisitos estructurales de la bandeja intermedia.}
+\label{tab: requisitos estructurales}
+\begin{tabular}{l c}
+\toprule
+\multicolumn{1}{c}{\textbf{Requisitos}} & \multicolumn{1}{c}{\textbf{Valores}}\\ \midrule
+ Frecuencias propias & $f_{n} > 100$ Hz \\ 
+ & \\
+ Márgenes de seguridad en los & \multirow{2}{*}{$MoS_{i}>0$} \\ 
+ principales análisis estructurales & \\\bottomrule
+\end{tabular}
+\end{table}
+
+Los análisis que se deben realizar son los siguientes:
+
+\begin{itemize}
+\item Análisis de modos propios, para el cálculo de las frecuencias propias.
+\item Análisis estáticos (uno en cada eje), para el cálculo de los márgenes de seguridad de tensiones. Las aceleraciones utilizadas para los análisis estáticos en función de la dirección se muestra en la .
+\end{itemize}
+
+\begin{table}[H]
+\centering
+\caption{Aceleraciones en función de la dirección de aplicación.}
+\label{tab: aceleraciones}      
+\begin{tabular}{l c}
+\toprule
+\multicolumn{1}{c}{\textbf{Dirección}} & \multicolumn{1}{c}{\textbf{Aceleración} [g]}\\ \midrule
+ Lateral (paralelo a la bandeja)   & 50   \\
+ Longitudinal (normal a la bandeja) & 80 \\ \bottomrule
+\end{tabular}
+\end{table}
+
+Para el cálculo de los márgenes de seguridad, se debe aplicar las fórmulas obtenidas de \cite{garcia2023manual}.
+
+\begin{equation}
+MoS_{y} = \left(\dfrac{\sigma_{y}}{\sigma_{\text{VMmax}} K_{p} K_{m} K_{LD} FOSY}\right)-1,
+\end{equation}
+
+\begin{equation}
+    MoS_{u} = \left(\dfrac{\sigma_{u}}{\sigma_{\text{VMmax}} K_{p} K_{m} K_{LD} FOSU}\right)-1.
+\end{equation}
+
+Todos los parámetros de estas escuaciones se muestran en la \autoref{tab: paramsequs}.
+
+\begin{table}[H]
+\centering
+\caption{Parámetros para el cálculo de los márgenes de seguridad.}
+\label{tab: paramsequs}
+\begin{tabular}{c l c}
+\toprule
+\multicolumn{1}{c}{\textbf{Parámetro}} & \multicolumn{1}{c}{\textbf{Significado}} & \multicolumn{1}{c}{\textbf{Valor}} \\ \midrule
+  $K_{p}$   & Factor de proyecto  & 1.1 \\
+  & & \\
+  $K_{M}$   & Factor del modelo   & 1.2 \\
+  & & \\
+  $K_{LD}$  & Factor de diseño local & 1.1 \\ 
+  & & \\
+  $FOSY$    & Factor de seguridad del límite elástico & 1.1 \\
+  & & \\ 
+  $FOSU$    & Factor de seguridad de la carga última  & 1.25 \\ 
+  & & \\
+  $\sigma_{y}$ & Límite elástico del material & \multicolumn{1}{l}{Depende del material} \\
+  & & \\ 
+  $\sigma_{u}$ & Resistencia última del material & \multicolumn{1}{l}{Depende del material} \\ 
+  & & \\
+  \multirow{2}{*}{$\sigma_{\text{VMmax}}$ }& Máxima tensión de Von Mises obtenido & \multicolumn{1}{l}{\multirow{2}{*}{Solución de cada análisis}} \\ 
+  & de un análisis determinado & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Teniendo en cuenta todo lo anterior, se debe determinar el diseño óptimo de la bandeja. Las variables que se deben variar para conseguir el diseño son:
+
+\begin{itemize}
+\item Cantidad y colocación de rigidizadores interiores (respetando la configuracón mostrada en la \autoref{fig: configrigi}).
+\item Material.
+\item Espesor de la placa de la bandeja.
+\item Dimensiones de la sección rectangular de los rigidizadores exteriores.
+\item Diseño de la sección de los rigidizadores interiores y sus correspondientes dimensiones.
+\end{itemize}
+
+Como objetivo de la optimización de la bandeja intermedia, se debe conseguir cumplir con \textbf{al menos uno} de los siguientes criterios:
+
+\begin{itemize}
+\item La primera frecuencia propia se sitúe entre 100 y 125 Hz.
+\item El margen de seguridad para el valor máximo de tensión de Von Mises en el \textbf{caso de carga más crítico} se sitúe entre 0 y 0.5. 
+\end{itemize}

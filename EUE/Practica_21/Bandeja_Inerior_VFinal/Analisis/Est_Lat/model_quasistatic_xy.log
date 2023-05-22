@@ -1,0 +1,133 @@
+MSC Nastran V2022.1 (Intel Windows 10 Home 6.2 9200) Control File: 
+----------------------------------------------------------------- 
+Nastran BUFFSIZE=8193 $(d:/program files/msc.software/napa_se/20221/nastran/conf/nast20221.rcf[2])
+JID='d:/descargas/aeroespecial/muse 1/eue/trabajo nastran 2/placa3rig/inf/analisis/est_lat/model_quasistatic_xy.dat'
+OUT='./model_quasistatic_xy'
+MEM=637MB      $ 
+MACH='Intel'
+OPER='Windows 10 Home'
+OSV='6.2 9200'
+MODEL='Intel(R) Core(TM) i5-7300HQ CP (DESKTOP-SL99VP6)'
+NPROC='4'
+CONFIG=6
+NPROC=4
+symbol=DELDIR='d:/program files/msc.software/napa_se/20221/nastran/msc20221/nast/del' $(program default)
+symbol=DEMODIR='d:/program files/msc.software/napa_se/20221/nastran/msc20221/nast/demo' $(program default)
+symbol=SSSALTERDIR='d:/program files/msc.software/napa_se/20221/nastran/msc20221/nast/sssalter' $(program default)
+symbol=TPLDIR='d:/program files/msc.software/napa_se/20221/nastran/msc20221/nast/tpl' $(program default)
+SDIR='d:/program files/msc.software/scratch/model_quasistatic_xy.T528_37'
+DBS='d:/program files/msc.software/scratch/model_quasistatic_xy.T528_37'
+SCR='yes'
+SMEM=100
+BPOOL=150
+DMPMEM=0
+NEWDEL='d:/program files/msc.software/napa_se/20221/nastran/msc20221/win64i8/SSS'
+DEL='MSCDEF'
+SPOTWELD=''
+DML=MSCDEF
+SDL=MSCDEF
+AUTH='EDU'
+AUTHQUE=20
+MSGCAT='d:/program files/msc.software/napa_se/20221/nastran/msc20221/win64i8/analysis.msg'
+MSGDEST='f06'
+NEWS='d:/program files/msc.software/napa_se/20221/nastran/msc20221/nast/news.txt'
+----------------------------------------------------------------- 
+MSC_ISHELLPATH=d:\descargas\aeroespecial\muse 1\eue\trabajo nastran 2\placa3rig\inf\analisis\est_lat 
+MSC_JIDPATH= 
+PATH=d:\program files\msc.software\napa_se\20221\nastran\msc20221\win64i8\nCode\bin;d:\program files\msc.software\napa_se\20221\nastran\msc20221\win64i8\nvidia;d:\program files\msc.software\napa_se\20221\nastran\msc20221\win64i8\lib;d:\program files\msc.software\napa_se\20221\nastran\msc20221\win64i8;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\Program Files\MSC.Software\NaPa_SE\20221\Patran\bin;C:\Program Files (x86)\Intel\oneAPI\mpi\latest\bin\;C:\Program Files (x86)\Intel\oneAPI\mpi\latest\bin\release\;C:\Program Files (x86)\Intel\oneAPI\mpi\latest\libfabric\bin\;C:\Program Files (x86)\Intel\oneAPI\mpi\latest\libfabric\bin\utils\;C:\Program Files (x86)\Intel\oneAPI\tbb\latest\redist\intel64\vc_mt\;C:\Program Files (x86)\Intel\oneAPI\tbb\latest\redist\ia32\vc_mt\;C:\Program Files (x86)\Intel\oneAPI\compiler\latest\windows\redist\intel64_win\compiler;C:\Program Files (x86)\Intel\oneAPI\compiler\latest\windows\redist\ia32_win\compiler;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program Files\MATLAB\R2022b\bin;C:\Program Files\PuTTY\;C:\Users\tomas\AppData\Local\Microsoft\WindowsApps;d:\program files\msc.software\napa_se\20221\nastran\msc20221\win64i8\msmpi 
+SCA_SERVICE_CATALOG=d:\program files\msc.software\napa_se\20221\nastran\msc20221\res\SCAServiceCatalog.xml 
+SCA_RESOURCE_DIR=d:\program files\msc.software\napa_se\20221\nastran\msc20221\res 
+Cmd Line:    D:\Program Files\MSC.Software\NaPa_SE\20221\Nastran\msc20221\win64i8\nastran.exe JID=D:\Descargas\Aeroespecial\MUSE 1\EUE\Trabajo nastran 2\Placa3rig\Inf\Analisis\Est_Lat\MODEL_quasistatic_xy.dat 
+Current Dir: D:\Descargas\Aeroespecial\MUSE 1\EUE\Trabajo nastran 2\Placa3rig\Inf\Analisis\Est_Lat 
+Time Cmd:    d:\program files\msc.software\napa_se\20221\nastran\msc20221\win64i8\msctime 
+Executable:  d:\program files\msc.software\napa_se\20221\nastran\msc20221\win64i8\analysis.exe 
+Arch= Kywd:  [Not specified]  
+MSC_MSG:     stderr  
+FPE:         yes  
+----------------------------------------------------------------- 
+Current resource limits:
+ Physical memory:                    16248 MB
+ Physical memory available:           7796 MB
+ Paging file size:                   18680 MB
+ Paging file size available:          7403 MB
+ Virtual memory:                 134217727 MB
+ Virtual memory available:       134213510 MB
+----------------------------------------------------------------- 
+System configuration:
+ Hostname:         DESKTOP-SL99VP6
+ Architecture:     win64i8
+ Platform:         Intel Windows 10 Home 6.2 9200 (Windows Compute Cluster)
+ Model:            Intel(R) Core(TM) i5-7300HQ CP
+ Clock freq.:      2773 MHz
+ Number of CPUs:   4
+ Executable:       standard
+ Raw model ID:     6
+ Config number:    6
+ Physical memory:  16248 MB
+ Virtual memory:   18680 MB
+ Numeric format:   64-bit little-endian IEEE.
+ Bytes per word:   8
+ Disk block size:  512 bytes (64 words)
+ Remote shell cmd: "d:/program files/msc.software/napa_se/20221/nastran/msc20221/win64i8/mscrmtcmd.exe" (Windows non-CCS nodes, UNIX)
+                   <ccs_cmd> (Windows CCS nodes)
+----------------------------------------------------------------- 
+MSC Nastran started  Wed May 17 17:28:38 Hdvr 2023 
+ 17:28:40  Beginning Analysis
+SCA Kernel 27.0.867996 successfully initialized
+BLAS/LAPACK .dll "d:\program files\msc.software\napa_se\20221\nastran\msc20221\win64i8\libimalloc.dll" has been loaded.
+BLAS/LAPACK .dll "d:\program files\msc.software\napa_se\20221\nastran\msc20221\win64i8\mkl_core.dll" has been loaded.
+BLAS/LAPACK .dll "d:\program files\msc.software\napa_se\20221\nastran\msc20221\win64i8\mkl_intel_thread.dll" has been loaded.
+BLAS/LAPACK .dll "d:\program files\msc.software\napa_se\20221\nastran\msc20221\win64i8\mkl_rt.dll" has been loaded.
+BLAS/LAPACK .dll "d:\program files\msc.software\napa_se\20221\nastran\msc20221\win64i8\MSCblas.dll" has been loaded.
+
+ 17:28:40  MSC Authorization Information - Checkout Successful (1016, 0)
+ 17:28:40  -------------------------------------------------------------
+ 17:28:40  Acquired 1 license for Student Edition Nastran
+
+
+Beginning bulk data processing using the IFPStar component.
+For more information on IFPStar, please see KB article KB8019200
+on our support pages, at http://simcompanion.mscsoftware.com.
+
+ 17:28:40  Reading INCLUDE file "../Placa3rig.bdf"
+ 17:28:40  2758 records read from INCLUDE file "../Placa3rig.bdf"
+ 17:28:40  41 records read from JID file "d:/descargas/aeroespecial/muse 1/eue/trabajo nastran 2/placa3rig/inf/analisis/est_lat/model_quasistatic_xy.dat"
+ 17:28:40  A total of 2799 records were read from 2 files.
+
+Processing of bulk data entries is complete.
+
+ 17:28:41  Finite element model generation started.
+ 17:28:41  Finite element model generated 4122 degrees of freedom.
+ 17:28:41  Finite element model generation successfully completed.
+ 17:28:41  Application of Loads and Boundary Conditions to the finite element model started.
+OMP: Info #274: omp_set_nested routine deprecated, please use omp_set_max_active_levels instead.
+ 17:28:41  Application of Loads and Boundary Conditions to the finite element model successfully completed.
+ 17:28:41  Solution of the system equations for linear statics started.
+ 17:28:41  Solution of the system equations for linear statics successfully completed.
+ 17:28:41  Linear static analysis completed.
+ ================================================== 
+ Warning/Fatal Message Summary           Occurrence
+       USER WARNING MESSAGE     6418.1          1 
+ ================================================== 
+ 17:28:41  21 records read from JID file "d:/descargas/aeroespecial/muse 1/eue/trabajo nastran 2/placa3rig/inf/analisis/est_lat/model_quasistatic_xy.dat"
+ 17:28:41  NSEXIT: EXIT(0)
+ 17:28:41  Analysis complete  0
+Real:        1.031 seconds ( 0:00:01.031)
+User:        0.562 seconds ( 0:00:00.562)
+Sys:         0.437 seconds ( 0:00:00.437)
+ ==================================================
+ OS:                           6.2
+ OEM ID:                       9
+ Model:                        Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz  
+ Number of processors:         4
+ Page size:                    4096
+ Processor type:               8664
+ Minimum application address:  10000
+ Maximum application address:  fffeffff
+ Active processor mask:        15
+ Nsocket:                      1
+ Ncore:                        4  ( 1 X 4 )
+ HyperThreading:               Off
+ Ram:                          16248 Mb
+Can't open the file d:\program
+MSC Nastran finished Wed May 17 17:28:41 Hdvr 2023 
